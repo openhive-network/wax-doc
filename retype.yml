@@ -1,0 +1,17 @@
+input: src
+output: .retype
+url: # Add your website address here
+branding:
+  title: Hive Docs
+  label: Docs
+links:
+  - text: Hive Website
+    link: https://hive.io
+    icon: heart
+    target: blank
+  - text: Hive Blog
+    link: https://hive.blog
+    icon: comment-discussion
+    target: blank
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
