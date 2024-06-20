@@ -1,5 +1,0 @@
----
-icon: rocket
----
-
-# Configuration steps
