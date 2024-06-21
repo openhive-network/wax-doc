@@ -1,6 +1,9 @@
 input: src
 output: .retype
-url: # Add your website address here
+url: http://localhost:5005
+serve:
+  port: 5005
+favicon: /favicon.ico
 meta:
   title: " | Hive Docs"
 branding:

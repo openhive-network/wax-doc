@@ -2,3 +2,4 @@
 retype.manifest
 .retype
 node_modules
+.pnpm-store

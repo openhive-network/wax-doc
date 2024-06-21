@@ -1,6 +1,6 @@
 ---
 order: -2
-icon: stack
+icon: fiscal-host
 ---
 
 # Encrypt operations
