@@ -9,8 +9,8 @@ Within the Hive ecosystem, asset conversions are a common requirement. The `@hiv
 
 Here’s how you can achieve this for different assets like HIVE, HBD, and VESTS.
 
-
 ## Code Snippet to Receive NaiAsset
+
 ```typescript
 import { createWaxFoundation } from '@hiveio/wax';
 
@@ -30,5 +30,6 @@ console.log(`HBD Asset: ${JSON.stringify(hbdAsset)}`);
 console.log(`Vests Asset: ${JSON.stringify(vestsAsset)}`);
 ```
 
-### Important Note
+!!!warning Assets number representation
 Make sure to provide the amount in integer form without decimal points. For example, `300.000 HIVE` should be represented as `300000` in the amount, not `300.0`.
+!!!

@@ -11,12 +11,12 @@ Wax library provides a simple interface for operations encryption withing transa
 
 Currently, the following operations can be encrypted using the `@hiveio/wax` library:
 
-- `comment`: Encrypts the `body` field.
-- `custom_json`: Encrypts the `json` field. Custom JSON encryption is unique as it wraps the encrypted data in an `encrypted` key.
-- `transfer`: Encrypts the `memo` field.
-- `transfer_to_savings`: Encrypts the `memo` field.
-- `transfer_from_savings`: Encrypts the `memo` field.
-- `recurrent_transfer`: Encrypts the `memo` field.
+- [!badge variant="info" text="comment"] - Encrypts the `body` field.
+- [!badge variant="info" text="custom_json"] - Encrypts the `json` field. Custom JSON encryption is unique as it wraps the encrypted data in an `encrypted` key.
+- [!badge variant="info" text="transfer"] - Encrypts the `memo` field.
+- [!badge variant="info" text="transfer_to_savings"] - Encrypts the `memo` field.
+- [!badge variant="info" text="transfer_from_savings"] - Encrypts the `memo` field.
+- [!badge variant="info" text="recurrent_transfer"] - Encrypts the `memo` field.
 
 ## Encrypting Operations within a Transaction
 

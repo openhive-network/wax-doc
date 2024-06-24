@@ -7,7 +7,9 @@ icon: rocket
 
 **Note:** Custom options allow configuring specific endpoints and settings to optimize for performance, network latency, or other custom needs.
 
-## Initializing Wax Base interface
+## Initializing Wax interface with options
+
++++ Wax Base
 
 ```typescript
 import { createWaxFoundation, IWaxOptions } from '@hiveio/wax';
@@ -21,7 +23,7 @@ const customOptions: IWaxOptions = {
 await createWaxFoundation(customOptions);
 ```
 
-## Initializing Wax Chain interface
++++ Wax Chain
 
 ```typescript
 import { createHiveChain, IWaxOptionsChain } from '@hiveio/wax';
@@ -35,5 +37,7 @@ const customOptions: IWaxOptionsChain = {
 // Initialize Hive Chain with custom options
 createHiveChain(customOptions);
 ```
+
++++
 
 These snippets demonstrate how to initialize the Wax Foundation and Hive Chain using either default or custom configuration options. By utilizing custom options, it's possible to optimize for specific performance or endpoint needs within the Hive ecosystem.

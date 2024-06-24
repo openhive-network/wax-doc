@@ -6,6 +6,9 @@ serve:
 favicon: /static/favicon.ico
 meta:
   title: " | Hive Docs"
+snippets:
+  lineNumbers:
+    - typescript
 branding:
   title: Hive Docs
   logo: /static/hive.svg

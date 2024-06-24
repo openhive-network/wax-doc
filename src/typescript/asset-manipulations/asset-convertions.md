@@ -12,6 +12,7 @@ Asset conversions in the Hive ecosystem are crucial for various financial transa
 The `vestsToHp` method converts VESTS into Hive Power (HP). This conversion requires three `NaiAsset` instances: one for the VESTS and two others for the total vesting fund Hive and total vesting shares.
 
 ### Code Snippet for `vestsToHp`
+
 ```typescript
 import { createWaxFoundation } from '@hiveio/wax';
 
@@ -38,6 +39,7 @@ console.log(`HP Asset: ${JSON.stringify(hpAsset)}`);
 The `hbdToHive` method converts HBD into Hive. This conversion requires three `NaiAsset` instances: one for the HBD, one for the base (another HBD asset), and one for the quote (a HIVE asset).
 
 ### Code Snippet for `hbdToHive`
+
 ```typescript
 import { createWaxFoundation } from '@hiveio/wax';
 

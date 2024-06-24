@@ -24,6 +24,6 @@ console.log(`WIF Private Key: ${privateKeyData.wifPrivateKey}`);
 console.log(`Brain Key: ${privateKeyData.brainKey}`);
 ```
 
-## Security Reminder
-
+!!!danger Security Reminder
 Generated keys or brain keys should always be stored securely. **Do not share your private keys or brain key with anyone.** These keys are crucial for accessing your Hive account, and sharing them could result in unauthorized access to your assets. Importing them into secure storage solutions like Beekeeper allows safe usage without exposing them directly.
+!!!

@@ -7,7 +7,9 @@ icon: rocket
 
 **Note:** Using default options provides ease-of-use and simplicity but might not be optimized for specific performance needs or endpoints.
 
-## Initializing Wax Base interface
+## Initializing Wax interface
+
++++ Wax Base
 
 ```typescript
 import { createWaxFoundation } from '@hiveio/wax';
@@ -16,7 +18,7 @@ import { createWaxFoundation } from '@hiveio/wax';
 await createWaxFoundation();
 ```
 
-## Initializing Wax Chain interface
++++ Wax Chain
 
 ```typescript
 import { createHiveChain } from '@hiveio/wax';
@@ -24,3 +26,5 @@ import { createHiveChain } from '@hiveio/wax';
 // Initialize Hive Chain using default options
 await createHiveChain();
 ```
+
++++
