@@ -5,7 +5,9 @@ icon: rocket
 
 # Using Custom Options
 
-**Note:** Custom options allow configuring specific endpoints and settings to optimize for performance, network latency, or other custom needs.
+!!!secondary Optimization notice
+Custom options allow configuring specific endpoints and settings to optimize for performance, network latency, or other custom needs.
+!!!
 
 ## Initializing Wax interface with options
 

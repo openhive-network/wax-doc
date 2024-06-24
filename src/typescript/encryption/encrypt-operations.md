@@ -18,6 +18,10 @@ Currently, the following operations can be encrypted using the `@hiveio/wax` lib
 - [!badge variant="info" text="transfer_from_savings"] - Encrypts the `memo` field.
 - [!badge variant="info" text="recurrent_transfer"] - Encrypts the `memo` field.
 
+!!!secondary Non-encrypted operations
+Upon operating in the encrypted transaction builder interface (`startEncrypt` method invoked), operations that are not able to be encrypted will be saved to the transaction as is
+!!!
+
 ## Encrypting Operations within a Transaction
 
 ```typescript
