@@ -3,7 +3,7 @@ output: .retype
 url: http://localhost:5005
 serve:
   port: 5005
-favicon: /favicon.ico
+favicon: /static/favicon.ico
 meta:
   title: " | Hive Docs"
 branding:
