@@ -35,3 +35,5 @@ footer:
   links:
     - text: License
       link: https://gitlab.syncad.com/mtyszczak/hive-docs/-/blob/main/LICENSE.md
+exclude:
+  - /static/snippets
