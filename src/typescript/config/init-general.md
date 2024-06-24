@@ -11,20 +11,10 @@ icon: rocket
 
 +++ Wax Base
 
-```typescript
-import { createWaxFoundation } from '@hiveio/wax';
-
-// Initialize Wax Foundation using default options
-await createWaxFoundation();
-```
+:::code source="../../static/snippets/src/typescript/config/init-general/base.ts" language="typescript" title="src/typescript/config/init-general/base.ts" :::
 
 +++ Wax Chain
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-// Initialize Hive Chain using default options
-await createHiveChain();
-```
+:::code source="../../static/snippets/src/typescript/config/init-general/chain.ts" language="typescript" title="src/typescript/config/init-general/chain.ts" :::
 
 +++
