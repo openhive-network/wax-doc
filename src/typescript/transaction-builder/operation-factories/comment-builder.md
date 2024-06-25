@@ -3,14 +3,14 @@ order: -1
 icon: comment
 ---
 
-# Using CommentBuilder
+# Using Comment-reply and Post factory
 
 The `CommentBuilder` class within the Wax library allows you to create and manage comment operations on the Hive blockchain. Below, we provide snippets for creating comments and replies with both default and explicit values.
 
 ## Creating a Comment with Basic Values and Description
 
 ```typescript
-import { createHiveChain, ReplyBuilder } from '@hiveio/wax';
+import { createHiveChain, ArticleBuilder, ReplyBuilder } from '@hiveio/wax';
 
 // Initialize the chain
 const chain = await createHiveChain();
@@ -23,8 +23,8 @@ const tx = new chain.TransactionBuilder('04c507a8c7fe5be96be64ce7c86855e1806cbde
  * 1. The builder you would like to use,
  * 2. Arrow function to use specific methods that are available inside the builder you have chosen.
  */
-tx.useBuilder(ReplyBuilder, builder => {
-    builder.setDescription('This is the description of the post');
+tx.useBuilder(ArticleBuilder, builder => {
+    builder.setDescription('This is the description of the post inside ArticleBuilder');
 }, 'parent_author', 'parent_permlink', 'author', 'body');
 
 tx.build(); // Builds the operation ready for broadcasting
@@ -46,7 +46,7 @@ const tx = new chain.TransactionBuilder('04c507a8c7fe5be96be64ce7c86855e1806cbde
 // Use multiple explicit values
 tx.useBuilder(ReplyBuilder, builder => {
     builder
-        .setDescription('This is the description of the post')
+        .setDescription('This is the description of the post inside ReplyBuilder')
         .pushTags('hive')
         .addBeneficiaries({ account: 'test-account', weight: 40 });
 }, 'parent_author', 'parent_permlink', 'author', 'body');
