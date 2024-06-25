@@ -21,7 +21,8 @@ const key = 'STM8...' // Public key
 
 tx.useBuilder(WitnessSetPropertiesBuilder, () => {}, owner, key);
 
-tx.build(); // builds the operation ready for broadcasting
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```
 
 ## Setting Explicit Witness Properties
@@ -48,5 +49,6 @@ tx.useBuilder(WitnessSetPropertiesBuilder, builder => {
         .setUrl(witnessUrl);
 }, owner, key);
 
-tx.build(); // builds the operation ready for broadcasting
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```

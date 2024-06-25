@@ -27,7 +27,8 @@ tx.useBuilder(ArticleBuilder, builder => {
     builder.setDescription('This is the description of the post inside ArticleBuilder');
 }, 'parent_author', 'parent_permlink', 'author', 'body');
 
-tx.build(); // Builds the operation ready for broadcasting
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```
 
 ## Creating a Comment with Multiple Explicit Values
@@ -51,5 +52,6 @@ tx.useBuilder(ReplyBuilder, builder => {
         .addBeneficiaries({ account: 'test-account', weight: 40 });
 }, 'parent_author', 'parent_permlink', 'author', 'body');
 
-tx.build() // Builds the operation ready for broadcasting;
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```
