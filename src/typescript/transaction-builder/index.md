@@ -1,5 +1,5 @@
 ---
-order: -5
+order: -4
 icon: database
 expanded: false
 label: Transaction builder
