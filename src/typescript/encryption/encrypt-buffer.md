@@ -13,7 +13,7 @@ One important detail to note is that public keys within the Hive ecosystem start
 
 ## Using Direct Encryption and Decryption Methods
 
-The `encrypt` and `decrypt` methods allow for straightforward encryption and decryption operations with explicit public keys. Below are examples covering the case with one and two keys:
+The `encrypt` and `decrypt` methods allow for straightforward encryption and decryption operations with explicit public keys. First argument is your opened beekeeper wallet instance, second argument is your content as string to be encrypted/decrypted, and then public key(s) used for encryption/decryption. Below are examples covering the case with one and two keys (sender key and receiver key):
 
 +++ One key encryption
 
@@ -23,4 +23,12 @@ The `encrypt` and `decrypt` methods allow for straightforward encryption and dec
 
 :::code source="../../static/snippets/src/typescript/encryption/encrypt-buffer/multiple-keys.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-buffer/multiple-keys.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-buffer%2Fmultiple-keys.ts)" :::
 
+!!!secondary
+Second public key is passed to the encryption method in this example for later use during decryption - matching public key to the private key in the wallet.
+!!!
+
 +++
+
+!!!danger Using private keys
+Public key, you are providing to the `encrypt`/`decrypt` method should be previously imported as private keys to the Beekeeper wallet instance, you are providing as an argument. If requested public key is not found in the wallet, exception is thrown.
+!!!
