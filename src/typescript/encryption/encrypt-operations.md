@@ -24,67 +24,14 @@ Upon operating in the encrypted transaction builder interface (`startEncrypt` me
 
 ## Encrypting Operations within a Transaction
 
-```typescript
-import { createHiveChain } from "@hiveio/wax";
++++ One key encryption
 
-// Assume you have an unlocked wallet instance from BeeKeeper and public key (STM...)
-const wallet = /* your unlocked wallet instance */;
-const publicKey = "STM..." as TPublicKey;
+:::code source="../../static/snippets/src/typescript/encryption/encrypt-operations/one-key.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-operations/one-key.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-operations%2Fone-key.ts)" :::
 
-const hiveChain = await createHiveChain();
++++ Two keys encryption
 
-// Create a transaction builder
-const tx = await hiveChain.getTransactionBuilder();
+:::code source="../../static/snippets/src/typescript/encryption/encrypt-operations/multiple-keys.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-operations/multiple-keys.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-operations%2Fmultiple-keys.ts)" :::
 
-// Start the encryption chain
-tx.startEncrypt(publicKey)
-  .push({ // Add encrypted operation
-    transfer: {
-      from: "alice",
-      to: "bob",
-      amount: hiveChain.hive(100),
-      memo: "This memo will be encrypted"
-    }
-  })
-  .stopEncrypt(); // Stop the encryption chain
-
-// Sign and build the transaction
-const signedTx = tx.build(wallet, publicKey);
-
-console.log(signedTx);
-```
-
-## Encrypting Operations for Two Accounts within a Transaction
-
-```typescript
-import { createHiveChain } from "@hiveio/wax";
-
-// Assume you have an unlocked wallet instance from BeeKeeper and two public keys (STM...)
-const wallet = /* your unlocked wallet instance */;
-const publicKey1 = "STM..." as TPublicKey;
-const publicKey2 = "STM..." as TPublicKey;
-
-const hiveChain = await createHiveChain();
-
-// Create a transaction builder
-const tx = await hiveChain.getTransactionBuilder();
-
-// Start the encryption chain with two keys
-tx.startEncrypt(publicKey1, publicKey2)
-  .push({ // Add encrypted operations
-    transfer_to_savings: {
-      from: "alice",
-      to: "bob",
-      amount: hiveChain.hive(100),
-      memo: "This memo will be encrypted with two keys"
-    }
-  })
-  .stopEncrypt(); // Stop the encryption chain
-
-// Sign and build the transaction
-const signedTx = tx.build(wallet, publicKey1);
-
-console.log(signedTx);
-```
++++
 
 These examples demonstrate how to handle encryption and decryption using both direct methods and the transaction builder interface in the Wax library.

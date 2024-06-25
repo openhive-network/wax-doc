@@ -11,18 +11,7 @@ Using a brain key, you can regenerate the same key pairs whenever needed, provid
 
 ## Code Snippet to Suggest a Brain Key
 
-```typescript
-import { createWaxFoundation } from '@hiveio/wax';
-
-const waxApi = await createWaxFoundation();
-
-// Suggest brain key
-const privateKeyData = waxApi.suggestBrainKey();
-
-console.log(`Associated Public Key: ${privateKeyData.associatedPublicKey}`);
-console.log(`WIF Private Key: ${privateKeyData.wifPrivateKey}`);
-console.log(`Brain Key: ${privateKeyData.brainKey}`);
-```
+:::code source="../../static/snippets/src/typescript/key-generation/suggest-brain-key/suggest-brain-key.ts" language="typescript" title="Test it yourself: [src/typescript/key-generation/suggest-brain-key/suggest-brain-key.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fkey-generation%2Fgenerate-key%2Fsuggest-brain-key.ts)" :::
 
 !!!danger Security Reminder
 Generated keys or brain keys should always be stored securely. **Do not share your private keys or brain key with anyone.** These keys are crucial for accessing your Hive account, and sharing them could result in unauthorized access to your assets. Importing them into secure storage solutions like Beekeeper allows safe usage without exposing them directly.

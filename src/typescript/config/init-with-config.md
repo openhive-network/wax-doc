@@ -13,32 +13,11 @@ Custom options allow configuring specific endpoints and settings to optimize for
 
 +++ Wax Base
 
-```typescript
-import { createWaxFoundation, IWaxOptions } from '@hiveio/wax';
-
-// Define custom options
-const customOptions: IWaxOptions = {
-  chainId: 'f875a0b000000000000000000000000000000000000000000000000000000000' // Example custom chain ID
-};
-
-// Initialize Wax Foundation with custom options
-await createWaxFoundation(customOptions);
-```
+:::code source="../../static/snippets/src/typescript/config/init-with-config/base.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/base.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fbase.ts)" :::
 
 +++ Wax Chain
 
-```typescript
-import { createHiveChain, IWaxOptionsChain } from '@hiveio/wax';
-
-// Define custom options
-const customOptions: IWaxOptionsChain = {
-  chainId: 'f875a0b000000000000000000000000000000000000000000000000000000000', // Example custom chain ID
-  apiEndpoint: 'https://hive.custom.endpoint' // Example custom API endpoint
-};
-
-// Initialize Hive Chain with custom options
-createHiveChain(customOptions);
-```
+:::code source="../../static/snippets/src/typescript/config/init-with-config/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/chain.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fchain.ts)" :::
 
 +++
 
