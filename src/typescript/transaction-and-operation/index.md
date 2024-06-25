@@ -1,13 +1,13 @@
 ---
-order: -4
+order: -3
 icon: duplicate
 expanded: false
-label: Transaction and Operation
+label: Blockchain data types
 ---
 
 # Transaction and Operation Representation in the Hive Ecosystem
 
-In the Hive ecosystem, transactions and operations are represented using specific data structures to ensure consistency and accuracy across applications. This standardized representation allows for seamless integration and interoperability among various services and tools within the ecosystem.
+In the Hive ecosystem, transactions, operations and their properties (i.e. assets) are represented using specific types and data structures defined inside Hive Protocol C++ library. To ensure consistency and accuracy across applications, the Wax library includes language independent definitions (defined using ProtoBuf technology) of such entities, finally resulting in generated code specific to choosen execution environent (here is a Typescript language). This standardized representation allows for seamless integration and interoperability among various services and tools within the ecosystem. It also simplifies usage of such types due to ability to directly share comments and other documentation directly into Typescript generated code.
 
 ## Transactions
 
@@ -18,6 +18,7 @@ A **transaction** in the Hive ecosystem encapsulates all the operations that a u
 - **expiration**: A timestamp indicating when the transaction expires.
 - **operations**: A list of operations that are part of the transaction.
 - **extensions**: Additional data or extensions provided in the transaction.
+- **signatures**: A list of cryptographic signatures generated for given transaction. Can be empty for unsigned transactions.
 
 ## Operations
 
@@ -52,6 +53,7 @@ Protobuf (Protocol Buffers) is a language-neutral and platform-neutral mechanism
 
 - **Protobuf Definitions**:
   - These definitions describe the data structures in a language-agnostic way.
+  - They are defined directly inside Hive Protocol library and shared from there
   - Examples:
     ```protobuf
     message transfer {
