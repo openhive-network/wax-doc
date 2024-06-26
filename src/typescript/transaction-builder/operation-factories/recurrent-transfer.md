@@ -25,7 +25,8 @@ const executions = 30; // for 30 days
 
 tx.useBuilder(RecurrentTransferBuilder, () => {}, from, to, amount, memo, recurrence, executions);
 
-tx.build(); // builds the operation ready for broadcasting
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```
 
 ## Add Pair Id
@@ -50,7 +51,8 @@ tx.useBuilder(RecurrentTransferPairIdBuilder, builder => {
     builder.generateRemoval();
 }, from, to, pairId, amount, memo);
 
-tx.build(); // builds the operation ready for broadcasting
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```
 
 ## Generate Removal Using RecurrentTransferBuilder
@@ -75,5 +77,6 @@ tx.useBuilder(RecurrentTransferPairIdBuilder, builder => {
     builder.generateRemoval();
 }, from, to, pairId, amount, memo);
 
-tx.build(); // builds the operation ready for broadcasting
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```

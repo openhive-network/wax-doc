@@ -24,7 +24,8 @@ const permlink = "proposal-update";
 
 tx.useBuilder(UpdateProposalBuilder, () => {}, proposalId, creator, dailyPay, subject, permlink);
 
-tx.build(); // builds the operation ready for broadcasting
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```
 
 ## Adding an End Date to an Update Proposal
@@ -45,5 +46,6 @@ const endDate = '2023-03-14' // You can also give end date as a timestamp, eg. 1
 
 tx.useBuilder(UpdateProposalBuilder, () => {}, proposalId, creator, dailyPay, subject, permlink, endDate);
 
-tx.build(); // builds the operation ready for broadcasting
+// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
+tx.build();
 ```
