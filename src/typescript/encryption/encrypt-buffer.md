@@ -17,11 +17,11 @@ The `encrypt` and `decrypt` methods allow for straightforward encryption and dec
 
 +++ One key encryption
 
-:::code source="../../static/snippets/src/typescript/encryption/encrypt-buffer/one-key.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-buffer/one-key.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-buffer%2Fone-key.ts)" :::
+:::code source="../../static/snippets/src/typescript/encryption/encrypt-buffer/one-key.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-buffer/one-key.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-buffer%2Fone-key.ts&startScript=test-encryption-encrypt-buffer-one-key)" :::
 
 +++ Two keys encryption
 
-:::code source="../../static/snippets/src/typescript/encryption/encrypt-buffer/multiple-keys.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-buffer/multiple-keys.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-buffer%2Fmultiple-keys.ts)" :::
+:::code source="../../static/snippets/src/typescript/encryption/encrypt-buffer/multiple-keys.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-buffer/multiple-keys.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-buffer%2Fmultiple-keys.ts&startScript=test-encryption-encrypt-buffer-multiple-keys)" :::
 
 !!!secondary
 Second public key is passed to the encryption method in this example for later use during decryption - matching public key to the private key in the wallet.
