@@ -39,7 +39,7 @@ tx.push(operation);
 const builtTransaction = tx.build();
 ```
 
-You can also build your transaction into proto form, and add your signature to the internal signatures array (it will also aply the transaction expiration time):
+You can also build your transaction into proto form, and add your signature to the internal signatures array (it will also apply the transaction expiration time):
 
 ```typescript
 import { createWaxFoundation } from '@hiveio/wax';
@@ -72,7 +72,7 @@ const signedTransaction = tx.build('signature here...');
 **Also remember that you can add more than one signature while building your transaction.**
 !!!
 
-If you want to build and sign your transaction and return it in proto form, you can use this sample (it will also aply the transaction expiration time):
+If you want to build and sign your transaction and return it in proto form, you can use this sample (it will also apply the transaction expiration time):
 
 ```typescript
 import { createWaxFoundation } from '@hiveio/wax';
@@ -110,7 +110,7 @@ tx.build(wallet, publicKey);
 You can also sign the transaction without building it, just replacing the last line of code:
 
 ```typescript
-// Sign transaction without building it (it will also aply the transaction expiration time).
+// Sign transaction without building it (it will also apply the transaction expiration time).
 tx.sign(wallet, publicKey);
 ```
 
