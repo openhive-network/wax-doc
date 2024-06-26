@@ -34,6 +34,6 @@ footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
   links:
     - text: License
-      link: https://gitlab.syncad.com/mtyszczak/hive-docs/-/blob/main/LICENSE.md
+      link: https://gitlab.syncad.com/hive/wax-doc/-/blob/main/LICENSE.md
 exclude:
   - /static/snippets

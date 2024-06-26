@@ -26,7 +26,7 @@ Upon operating in the encrypted transaction builder interface (`startEncrypt` me
 
 +++ One key encryption
 
-:::code source="../../static/snippets/src/typescript/encryption/encrypt-operations/one-key.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-operations/one-key.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-operations%2Fone-key.ts)" :::
+:::code source="../../static/snippets/src/typescript/encryption/encrypt-operations/one-key.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-operations/one-key.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-operations%2Fone-key.ts)" :::
 
 !!!secondary
 `publicKey1` used here for the transaction signing may differ from the public key used for operations encryption
@@ -34,7 +34,7 @@ Upon operating in the encrypted transaction builder interface (`startEncrypt` me
 
 +++ Two keys encryption
 
-:::code source="../../static/snippets/src/typescript/encryption/encrypt-operations/multiple-keys.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-operations/multiple-keys.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-operations%2Fmultiple-keys.ts)" :::
+:::code source="../../static/snippets/src/typescript/encryption/encrypt-operations/multiple-keys.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-operations/multiple-keys.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-operations%2Fmultiple-keys.ts)" :::
 
 !!!secondary
 `publicKey1` used here for the transaction signing may differ from the public key used for operations encryption
@@ -42,7 +42,7 @@ Upon operating in the encrypted transaction builder interface (`startEncrypt` me
 
 +++ Mixed encryption
 
-:::code source="../../static/snippets/src/typescript/encryption/encrypt-operations/multiple-start-encrypt.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-operations/multiple-start-encrypt.ts](https://stackblitz.com/github/mtyszczak/hive-docs-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-operations%2Fmultiple-start-encrypt.ts)" :::
+:::code source="../../static/snippets/src/typescript/encryption/encrypt-operations/multiple-start-encrypt.ts" language="typescript" title="Test it yourself: [src/typescript/encryption/encrypt-operations/multiple-start-encrypt.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fencryption%2Fencrypt-operations%2Fmultiple-start-encrypt.ts)" :::
 
 !!!secondary
 `publicKey1` used here for the transaction signing may differ from the public key used for operations encryption
