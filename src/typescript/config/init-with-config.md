@@ -13,11 +13,11 @@ Custom options allow configuring specific endpoints and settings to optimize for
 
 +++ Wax Base
 
-:::code source="../../static/snippets/src/typescript/config/init-with-config/base.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/base.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fbase.ts)" :::
+:::code source="../../static/snippets/src/typescript/config/init-with-config/base.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/base.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fbase.ts&startScript=test-config-init-with-config-base)" :::
 
 +++ Wax Chain
 
-:::code source="../../static/snippets/src/typescript/config/init-with-config/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fchain.ts)" :::
+:::code source="../../static/snippets/src/typescript/config/init-with-config/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fchain.ts&startScript=test-config-init-with-config-chain)" :::
 
 +++
 

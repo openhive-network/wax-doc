@@ -17,6 +17,6 @@ Using default options provides ease-of-use and simplicity but might not be optim
 
 +++ Wax Chain
 
-:::code source="../../static/snippets/src/typescript/config/init-general/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-general/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain.ts)" :::
+:::code source="../../static/snippets/src/typescript/config/init-general/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-general/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain.ts&startScript=test-config-init-general-chain)" :::
 
 +++
