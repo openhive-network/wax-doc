@@ -7,7 +7,7 @@ label: Blockchain data types
 
 # Transaction and Operation Representation in the Hive Ecosystem
 
-In the Hive ecosystem, transactions, operations and their properties (i.e. assets) are represented using specific types and data structures defined inside Hive Protocol C++ library. To ensure consistency and accuracy across applications, the Wax library includes language independent definitions (defined using ProtoBuf technology) of such entities, finally resulting in generated code specific to choosen execution environent (here is a Typescript language). This standardized representation allows for seamless integration and interoperability among various services and tools within the ecosystem. It also simplifies usage of such types due to ability to directly share comments and other documentation directly into Typescript generated code.
+In the Hive ecosystem, transactions, operations and their properties (i.e. assets) are represented using specific types and data structures defined inside Hive Protocol C++ library. To ensure consistency and accuracy across applications, the Wax library includes language independent definitions (defined using ProtoBuf technology) of such entities, finally resulting in generated code specific to choosen execution environment (here is a Typescript language). This standardized representation allows for seamless integration and interoperability among various services and tools within the ecosystem. It also simplifies usage of such types due to ability to directly share comments and other documentation directly into Typescript generated code.
 
 ## Transactions
 
