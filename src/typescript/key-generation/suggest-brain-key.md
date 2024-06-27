@@ -3,7 +3,7 @@ order: -2
 icon: key-asterisk
 ---
 
-# Suggest brain key
+# Suggest Brain Key
 
 A brain key is a long passphrase that provides enough entropy to generate cryptographic keys. The `suggestBrainKey` function returns a brain key along with the corresponding private and public keys.
 

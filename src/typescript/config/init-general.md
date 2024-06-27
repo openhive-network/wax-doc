@@ -3,7 +3,7 @@ order: -2
 icon: rocket
 ---
 
-# General wax initialization
+# General Wax initialization
 
 !!!secondary Optimization notice
 Using default options provides ease-of-use and simplicity but might not be optimized for specific performance needs or endpoints.
