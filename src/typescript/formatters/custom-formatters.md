@@ -31,30 +31,7 @@ Upon leaving the function scope, you may return the value other than `undefined`
 
 ### Matching property name by the function name
 
-```typescript
-import { createHiveChain, WaxFormattable } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-class MyFormatters {
-  myFunction(value) {
-    return value.toString();
-  }
-
-  @WaxFormattable()
-  myCustomProp({ source }) {
-    return this.myFunction(source.myCustomProp);
-  }
-}
-
-const formatter = chain.formatter.extend(MyFormatters);
-
-const data = {
-  myCustomProp: 12542
-};
-
-console.log(formatter.waxify`MyData: ${data}`);
-```
+:::code source="../../static/snippets/src/typescript/formatters/custom-formatters/by-name.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/custom-formatters/by-name.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fcustom-formatters%2Fby-name.ts&startScript=test-formatters-custom-formatters-by-name)" :::
 
 === Output
 
@@ -66,45 +43,7 @@ MyData: 12542
 
 ### Matching property name and value for operation formatting
 
-```typescript
-import { createHiveChain, WaxFormattable } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-class OperationsFormatter {
-  @WaxFormattable({ matchProperty: "type", matchValue: "transfer_operation" })
-  public transferOperationFormatter({ source }): string {
-    return `${source.value.from} transferred ${chain.waxify`${source.value.amount!}`} to ${source.value.to}`;
-  }
-
-  @WaxFormattable({ matchProperty: "type", matchValue: "vote_operation" })
-  public voteOperationFormatter({ source }): string {
-    return `${source.value.voter} voted on @${source.value.author}/${source.value.permlink}`;
-  }
-}
-
-const formatter = chain.formatter.extend(OperationsFormatter);
-
-const data = [{
-  type: "vote_operation",
-  value: {
-    voter: "otom",
-    author: "c0ff33a",
-    permlink: "ewxhnjbj",
-    weight: 2200
-  }
-}, {
-  type: "transfer_operation",
-  value: {
-    from: "oneplus7",
-    to: "kryptogames",
-    amount: naiAsset,
-    memo: "Roll under 50 4d434bd943616"
-  }
-}];
-
-console.log(formatter.format(data));
-```
+:::code source="../../static/snippets/src/typescript/formatters/custom-formatters/by-value.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/custom-formatters/by-value.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fcustom-formatters%2Fby-value.ts&startScript=test-formatters-custom-formatters-by-value)" :::
 
 === Output
 
@@ -119,28 +58,7 @@ console.log(formatter.format(data));
 
 ### Matching property instance of for hive apps operation formatting
 
-```typescript
-import { createHiveChain, WaxFormattable, ResourceCreditsOperation, ResourceCreditsOperationBuilder, IFormatFunctionArguments } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-class HiveAppsOperationsFormatter {
-  @WaxFormattable({ matchInstanceOf: ResourceCreditsOperation })
-  public rcOperationFormatter({ target }: IFormatFunctionArguments<operation, { custom_json: ResourceCreditsOperation }>) {
-    return `${target.custom_json.from} delegated ${target.custom_json.rc.amount} to ${target.custom_json.delegatees.join(",")}`;
-  }
-}
-
-const tx = new chain.getTransactionBuilder();
-
-tx.push(
-  new ResourceCreditsOperationBuilder().removeDelegation("gtg", "initminer").authorize("gtg").build()
-);
-
-const formatter = chain.formatter.extend(HiveAppsOperationsFormatter);
-
-console.log(formatter.format(tx.build().operations));
-```
+:::code source="../../static/snippets/src/typescript/formatters/custom-formatters/by-instance.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/custom-formatters/by-instance.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fcustom-formatters%2Fby-instance.ts&startScript=test-formatters-custom-formatters-by-instance)" :::
 
 === Output
 

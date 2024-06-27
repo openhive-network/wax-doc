@@ -9,15 +9,7 @@ icon: container
 
 Using Wax Formatters, you can format numbers represented as `string`, `number`, `BigInt` and [`long`](https://www.npmjs.com/package/long) using `formatNumber` method
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-const output = chain.formatter.formatNumber(76543212345678, 3, "en-US");
-
-console.log(output);
-```
+:::code source="../../static/snippets/src/typescript/formatters/blockchain-formatters/format-number.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/blockchain-formatters/format-number.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fblockchain-formatters%2Fformat-number.ts&startScript=test-formatters-blockchain-formatters-format-number)" :::
 
 === Output
 
@@ -31,22 +23,7 @@ console.log(output);
 
 If you want to format a string, use `waxify` literal
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-// Data from blockchain
-const naiAsset = {
-  amount: "300000",
-  precision: 3,
-  nai: "@@000000021"
-};
-
-const output = chain.waxify`Amount: ${naiAsset}`;
-
-console.log(output);
-```
+:::code source="../../static/snippets/src/typescript/formatters/blockchain-formatters/format-nai.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/blockchain-formatters/format-nai.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fblockchain-formatters%2Fformat-nai.ts&startScript=test-formatters-blockchain-formatters-format-nai)" :::
 
 === Output
 
@@ -58,34 +35,7 @@ Amount: 300.000 HIVE
 
 ## Formatting Transaction
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-// Data from blockchain
-const tx = {
-  ref_block_num: 1959,
-  ref_block_prefix: 3625727107,
-  expiration: "2023-11-09T22:01:24",
-  operations: [
-    {
-      type: "transfer_operation",
-      value: {
-        from: "oneplus7",
-        to: "kryptogames",
-        amount: naiAsset,
-        memo: "Roll under 50 4d434bd943616"
-      }
-    }
-  ],
-  extensions: []
-};
-
-const output = chain.waxify`Tx: #${tx}`;
-
-console.log(output);
-```
+:::code source="../../static/snippets/src/typescript/formatters/blockchain-formatters/format-tx.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/blockchain-formatters/format-tx.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fblockchain-formatters%2Fformat-tx.ts&startScript=test-formatters-blockchain-formatters-format-tx)" :::
 
 === Output
 
@@ -100,36 +50,7 @@ Tx: #3725c81634f152011e2043eb7119911b953d4267
 Sometimes there is a need to convert an entire transaction object, but you do not want it to be replaced with the string.
 You can achieve that by using `format` method and extending the default Wax Formatter with your custom options, e.g.:
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-// Data from blockchain
-const tx = {
-  ref_block_num: 1959,
-  ref_block_prefix: 3625727107,
-  expiration: "2023-11-09T22:01:24",
-  operations: [
-    {
-      type: "transfer_operation",
-      value: {
-        from: "oneplus7",
-        to: "kryptogames",
-        amount: naiAsset,
-        memo: "Roll under 50 4d434bd943616"
-      }
-    }
-  ],
-  extensions: []
-};
-
-const formatter = chain.formatter.extend({ transaction: { displayAsId: false } });
-
-const output = formatter.format(tx);
-
-console.log(output);
-```
+:::code source="../../static/snippets/src/typescript/formatters/blockchain-formatters/format-options.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/blockchain-formatters/format-options.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fblockchain-formatters%2Fformat-options.ts&startScript=test-formatters-blockchain-formatters-format-options)" :::
 
 ==- Output
 

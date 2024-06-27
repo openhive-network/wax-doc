@@ -17,41 +17,7 @@ For these examples you will require [`class-validator`](https://www.npmjs.com/pa
 
 If you do not want to implement your own validators, there is a simple interface to do so:
 
-```typescript
-import { createHiveChain, TWaxApiRequest, TWaxExtended } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-// https://developers.hive.io/apidefinitions/#transaction_status_api.find_transaction-parameter_json
-// Create a request interface without validators - this will be the input from the end user
-interface IFindTransactionRequest {
-  transaction_id: string;
-  expiration: string;
-}
-
-// https://developers.hive.io/apidefinitions/#transaction_status_api.find_transaction-expected_response_json
-// Create a response interface without validators - this will be the output from the remote API
-interface IFindTransactionResponse {
-  status: 'unknown' | string;
-}
-
-// Create the proper API structure
-type TExtendedApi = {
-  transaction_status_api: { // API
-    find_transaction: TWaxApiRequest<IFindTransactionRequest, IFindTransactionResponse> // Method
-  }
-};
-
-const extended = chain.extend<TExtendedApi>();
-
-// Call the transaction_status_api API using our extended interface
-const result = await extended.api.transaction_status_api.find_transaction({
-  transaction_id: "0000000000000000000000000000000000000000",
-  expiration: "2016-03-24T18:00:21"
-});
-
-console.info(result);
-```
+:::code source="../../static/snippets/src/typescript/api/extend-api/interface-extend.ts" language="typescript" title="Test it yourself: [src/typescript/api/extend-api/interface-extend.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fapi%2Fextend-api%2Finterface-extend.ts&startScript=test-api-extend-api-interface-extend)" :::
 
 === Output
 
@@ -67,50 +33,7 @@ As you see in the example, there is a type called: `TWaxApiRequest` which as a f
 
 In order to create validators, you have to create a separate class for: request and response and create a proper API structure, like in the example (for `transaction_status_api.find_transaction`):
 
-```typescript
-import { IsHexadecimal, IsDateString, IsString } from 'class-validator';
-import { createHiveChain, TWaxExtended } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-// https://developers.hive.io/apidefinitions/#transaction_status_api.find_transaction-parameter_json
-// Create a request class with validators that will require a valid input from the end user
-class FindTransactionRequest {
-  @IsHexadecimal()
-  public transaction_id!: string;
-
-  @IsDateString()
-  public expiration!: string;
-}
-
-// https://developers.hive.io/apidefinitions/#transaction_status_api.find_transaction-expected_response_json
-// Create a response class with validators that will require a valid output from the remote API
-class FindTransactionResponse {
-  @IsString()
-  public status!: 'unknown' | string;
-}
-
-// Create the proper API structure
-const ExtendedApi = {
-  transaction_status_api: { // API
-    find_transaction: { // Method
-      params: FindTransactionRequest, // params is our request
-      result: FindTransactionResponse // result is out response
-    }
-  }
-};
-
-const extended: TWaxExtended<typeof ExtendedApi> = chain.extend(ExtendedApi);
-
-// Call the transaction_status_api API using our extended interface
-const result = await extended.api.transaction_status_api.find_transaction({
-  transaction_id: "0000000000000000000000000000000000000000",
-  expiration: "2016-03-24T18:00:21"
-});
-
-console.info(result);
-
-```
+:::code source="../../static/snippets/src/typescript/api/extend-api/validate-extend.ts" language="typescript" title="Test it yourself: [src/typescript/api/extend-api/validate-extend.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fapi%2Fextend-api%2Fvalidate-extend.ts&startScript=test-api-extend-api-validate-extend)" :::
 
 === Output
 

@@ -57,39 +57,15 @@ You can also calculate the manabar values using high-level Wax Chain interface t
 
 ### Calculation of Upvote Manabar for an Account
 
-```typescript
-import { createHiveChain, EManabarType } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-const fullRegenTime = await chain.calculateManabarFullRegenerationTimeForAccount("gtg", EManabarType.UPVOTE);
-const manabarValue = await chain.calculateCurrentManabarValueForAccount("gtg", EManabarType.UPVOTE);
-
-console.log("Full Regeneration Time for Upvote Manabar:", fullRegenTime, manabarValue.percent);
-```
+:::code source="../../static/snippets/src/typescript/manabars/manabars-calculations/manabar-upvote-account.ts" language="typescript" title="Test it yourself: [src/typescript/manabars/manabars-calculations/manabar-upvote-account.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fmanabars%2Fmanabars-calculations%2Fmanabar-upvote-account.ts&startScript=test-manabars-manabars-calculations-manabar-upvote-account)" :::
 
 ### Calculation of Full Regeneration Time for Downvote Manabar
 
-```typescript
-import { createHiveChain, EManabarType } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-const fullRegenTime = await chain.calculateManabarFullRegenerationTimeForAccount("gtg", EManabarType.DOWNVOTE);
-const manabarValue = await chain.calculateCurrentManabarValueForAccount("gtg", EManabarType.DOWNVOTE);
-
-console.log("Full Regeneration Time for Downvote Manabar:", fullRegenTime, manabarValue.percent);
-```
+:::code source="../../static/snippets/src/typescript/manabars/manabars-calculations/manabar-downvote-account.ts" language="typescript" title="Test it yourself: [src/typescript/manabars/manabars-calculations/manabar-downvote-account.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fmanabars%2Fmanabars-calculations%2Fmanabar-downvote-account.ts&startScript=test-manabars-manabars-calculations-manabar-downvote-account)" :::
 
 ### Calculation of Full Regeneration Time for Resource Credits Manabar
 
-```typescript
-import { createHiveChain, EManabarType } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-const fullRegenTime = await chain.calculateManabarFullRegenerationTimeForAccount("gtg", EManabarType.RC);
-const manabarValue = await chain.calculateCurrentManabarValueForAccount("gtg", EManabarType.RC);
-
-console.log("Full Regeneration Time for Resource Credits Manabar:", fullRegenTime, manabarValue.percent);
-```
+:::code source="../../static/snippets/src/typescript/manabars/manabars-calculations/manabar-rc-account.ts" language="typescript" title="Test it yourself: [src/typescript/manabars/manabars-calculations/manabar-rc-account.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fmanabars%2Fmanabars-calculations%2Fmanabar-rc-account.ts&startScript=test-manabars-manabars-calculations-manabar-rc-account)" :::
 
 !!!secondary Results parsing
 Function `calculateManabarFullRegenerationTimeForAccount` returns a JavaScript `Date` object, which can be easily processed.

@@ -29,15 +29,7 @@ chainInstance.api[apiType][apiMethod](dataToSend);
 
 Using Wax Formatters, you can format numbers represented as `string`, `number`, `BigInt` and [`long`](https://www.npmjs.com/package/long) using `formatNumber` method
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-const output = await chain.api.block_api.get_block({ block_num: 1 });
-
-console.log(output);
-```
+:::code source="../../static/snippets/src/typescript/api/default-api/retrieve-block.ts" language="typescript" title="Test it yourself: [src/typescript/api/default-api/retrieve-block.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fapi%2Fdefault-api%2Fretrieve-block.ts&startScript=test-api-default-api-retrieve-block)" :::
 
 ==- Output
 
@@ -64,17 +56,7 @@ GetBlockResponse {
 
 Sometimes you may want to call `database_api` from a local Node, while `get_block` from some of the [well-known API endpoint URLs](https://developers.hive.io/quickstart/#quickstart-hive-full-nodes). You can achieve it using Wax feature: `setEndpointUrl`:
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-chain.api.database_api.endpointUrl = "https://best.honey.provider"; // Custom endpoint URL for database_api
-
-chain.endpointUrl = "https://api.hive.blog"; // This is default for all APIs
-
-console.log(chain.api.database_api.endpointUrl);
-```
+:::code source="../../static/snippets/src/typescript/api/default-api/set-endpoint.ts" language="typescript" title="Test it yourself: [src/typescript/api/default-api/set-endpoint.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fapi%2Fdefault-api%2Fset-endpoint.ts&startScript=test-api-default-api-set-endpoint)" :::
 
 === Output
 

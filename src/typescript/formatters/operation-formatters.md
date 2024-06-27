@@ -7,25 +7,7 @@ icon: tasklist
 
 ## Formatting RC delegation operations
 
-```typescript
-import { createHiveChain, ResourceCreditsOperationBuilder } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-const tx = new chain.getTransactionBuilder();
-
-tx.push(new ResourceCreditsOperationBuilder()
-  .delegate("initminer", 4127361273, "gtg", "null")
-  .removeDelegation("initminer", "null")
-  .authorize("initminer")
-  .build());
-
-const built = tx.build();
-
-const output = chain.formatter.format(built.operations);
-
-console.log(output);
-```
+:::code source="../../static/snippets/src/typescript/formatters/operation-formatters/rc-delegate.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/rc-delegate.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Frc-delegate.ts&startScript=test-formatters-operation-formatters-rc-delegate)" :::
 
 ==- Output
 
@@ -57,32 +39,7 @@ console.log(output);
 
 ## Formatting community operations
 
-```typescript
-import { createHiveChain, CommunityOperationBuilder } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-const tx = new chain.getTransactionBuilder();
-
-tx.push(new CommunityOperationBuilder()
-  .flagPost("mycomm", "gtg", "first-post", "note")
-  .mutePost("mycomm", "gtg", "first-post", "note")
-  .pinPost("mycomm", "gtg", "first-post")
-  .subscribe("mycomm")
-  .unmutePost("mycomm", "gtg", "first-post", "note")
-  .unpinPost("mycomm", "gtg", "first-post")
-  .unsubscribe("mycomm")
-  .setUserTitle("mycomm", "gtg", "first-post")
-  .updateProps("mycomm", { title: "Custom title" })
-  .authorize("gtg")
-  .build());
-
-const built = tx.build();
-
-const output = chain.formatter.format(built.operations);
-
-console.log(output);
-```
+:::code source="../../static/snippets/src/typescript/formatters/operation-formatters/community.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/community.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Fcommunity.ts&startScript=test-formatters-operation-formatters-community)" :::
 
 ==- Output
 
@@ -218,34 +175,7 @@ console.log(output);
 
 ## Formatting follow operations
 
-```typescript
-import { createHiveChain, FollowOperationBuilder } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-const tx = new chain.getTransactionBuilder();
-
-tx.push(new FollowOperationBuilder()
-  .followBlacklistBlog("initminer", "gtg", "null")
-  .followMutedBlog("initminer", "gtg")
-  .resetAllBlog("initminer", "gtg", "null")
-  .resetBlacklistBlog("initminer", "gtg")
-  .resetFollowBlacklistBlog("initminer", "gtg", "null")
-  .resetFollowMutedBlog("initminer", "gtg")
-  .unblacklistBlog("initminer", "gtg", "null")
-  .unfollowBlacklistBlog("initminer", "gtg")
-  .unfollowBlog("initminer", "gtg", "null")
-  .unfollowMutedBlog("initminer", "gtg")
-  .reblog("initminer", "gtg", "first-post")
-  .authorize("initminer")
-  .build());
-
-const built = tx.build();
-
-const output = chain.formatter.format(built.operations);
-
-console.log(output);
-```
+:::code source="../../static/snippets/src/typescript/formatters/operation-formatters/follow.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/follow.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Ffollow.ts&startScript=test-formatters-operation-formatters-follow)" :::
 
 ==- Output
 
@@ -350,28 +280,7 @@ console.log(output);
 
 You can also parse the serialized [!badge variant="info" text="witness_set_properties"] operation - `props` property from the chain:
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-// Data from blockchain
-const witness_props = {
-  type: "witness_set_properties_operation",
-  value: {
-    owner: "null",
-    props: [
-      ["new_signing_key","3553544d365471534a61533161526a367036795a456f35786963583762764c6872666456716935546f4e724b78485533465242456457"],
-      ["key", "029072da2e84ebd6eb520f944db3d1af718500b0f1ddf60e11e986f990acddd524"]
-    ],
-    extensions: []
-  }
-};
-
-const output = chain.formatter.format(witness_props);
-
-console.log(output.value.props);
-```
+:::code source="../../static/snippets/src/typescript/formatters/operation-formatters/witness-update.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/witness-update.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Fwitness-update.ts&startScript=test-formatters-operation-formatters-witness-update)" :::
 
 ==- Output
 

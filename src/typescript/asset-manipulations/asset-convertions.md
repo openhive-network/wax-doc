@@ -13,26 +13,7 @@ The `vestsToHp` method converts VESTS into Hive Power (HP). This conversion requ
 
 ### Code Snippet for `vestsToHp`
 
-```typescript
-import { createWaxFoundation } from '@hiveio/wax';
-
-// Create a Wax Foundation instance
-const waxApi = await createWaxFoundation();
-
-// Assume these amounts represent the vests, totalVestingFundHive, and totalVestingShares
-const vestsAmount = 10000;
-const totalVestingFundHiveAmount = 20000;
-const totalVestingSharesAmount = 50000;
-
-// Convert amounts to `NaiAsset`
-const vestsAsset = waxApi.vests(vestsAmount);
-const totalVestingFundHiveAsset = waxApi.hive(totalVestingFundHiveAmount);
-const totalVestingSharesAsset = waxApi.vests(totalVestingSharesAmount);
-
-// Use `vestsToHp` to perform the conversion
-const hpAsset = waxApi.vestsToHp(vestsAsset, totalVestingFundHiveAsset, totalVestingSharesAsset);
-console.log(`HP Asset: ${JSON.stringify(hpAsset)}`);
-```
+:::code source="../../static/snippets/src/typescript/asset-manipulations/asset-convertions/vests-to-hp.ts" language="typescript" title="Test it yourself: [src/typescript/asset-manipulations/asset-convertions/vests-to-hp.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fasset-manipulations%2Fasset-convertions%2Fvests-to-hp.ts&startScript=test-asset-manipulations-asset-convertions-vests-to-hp)" :::
 
 ## Using `hbdToHive`
 
@@ -40,23 +21,4 @@ The `hbdToHive` method converts HBD into Hive. This conversion requires three `N
 
 ### Code Snippet for `hbdToHive`
 
-```typescript
-import { createWaxFoundation } from '@hiveio/wax';
-
-// Create a Wax Foundation instance
-const waxApi = await createWaxFoundation();
-
-// Assume these amounts represent the HBD, base, and quote
-const hbdAmount = 1000;
-const baseAmount = 1500;
-const quoteAmount = 2000;
-
-// Convert amounts to `NaiAsset`
-const hbdAsset = waxApi.hbd(hbdAmount);
-const baseAsset = waxApi.hbd(baseAmount);
-const quoteAsset = waxApi.hive(quoteAmount);
-
-// Use `hbdToHive` to perform the conversion
-const hiveAsset = waxApi.hbdToHive(hbdAsset, baseAsset, quoteAsset);
-console.log(`Converted Hive Asset: ${JSON.stringify(hiveAsset)}`);
-```
+:::code source="../../static/snippets/src/typescript/asset-manipulations/asset-convertions/hbd-to-hive.ts" language="typescript" title="Test it yourself: [src/typescript/asset-manipulations/asset-convertions/hbd-to-hive.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fasset-manipulations%2Fasset-convertions%2Fhbd-to-hive.ts&startScript=test-asset-manipulations-asset-convertions-hbd-to-hive)" :::
