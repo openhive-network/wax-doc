@@ -110,8 +110,8 @@ console.log(formatter.format(data));
 
 ```javascript
 [
-  "otom voted on @c0ff33a/ewxhnjbj",
-  "oneplus7 transferred 300.000 HIVE to kryptogames"
+  'otom voted on @c0ff33a/ewxhnjbj',
+  'oneplus7 transferred 300.000 HIVE to kryptogames'
 ]
 ```
 
@@ -144,8 +144,8 @@ console.log(formatter.format(tx.build().operations));
 
 === Output
 
-```text
-gtg delegated 0 to initminer
+```javascript
+[ 'gtg delegated 0 to initminer' ]
 ```
 
 ===

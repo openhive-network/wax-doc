@@ -144,7 +144,11 @@ console.log(output);
       value: {
         from: "oneplus7",
         to: "kryptogames",
-        amount: naiAsset,
+        amount: {
+          amount: "300000",
+          precision: 3,
+          nai: "@@000000021"
+        },
         memo: "Roll under 50 4d434bd943616"
       }
     }

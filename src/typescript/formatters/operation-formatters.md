@@ -377,8 +377,8 @@ console.log(output.value.props);
 
 ```javascript
 {
-  key: "STM5z76mjZJnTZHHZjgnFxFadTb1ztc6R7EuDgCzd6dNiv6ETB2tj",
-  new_signing_key: "STM2nf9tLEWSdisd5pjocs2odhD3PvsnJTfMmK7Gm2Z2x8CvpXs1WC",
+  key: 'STM5z76mjZJnTZHHZjgnFxFadTb1ztc6R7EuDgCzd6dNiv6ETB2tj',
+  new_signing_key: 'STM2nf9tLEWSdisd5pjocs2odhD3PvsnJTfMmK7Gm2Z2x8CvpXs1WC',
   account_creation_fee: undefined,
   url: undefined,
   hbd_exchange_rate: undefined,

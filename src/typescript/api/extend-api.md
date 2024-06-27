@@ -56,7 +56,7 @@ console.info(result);
 === Output
 
 ```javascript
-{ status: 'unknown' }
+{ status: 'too_old' }
 ```
 
 ===
@@ -115,7 +115,7 @@ console.info(result);
 === Output
 
 ```javascript
-{ status: 'unknown' }
+FindTransactionResponse { status: 'too_old' }
 ```
 
 ===
