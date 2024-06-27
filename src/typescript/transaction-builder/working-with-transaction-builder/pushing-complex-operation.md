@@ -10,23 +10,20 @@ If you want to work with `TransactionBuilder` in more complex way, it is recomme
 
 Below is an example of fully building more complex transaction using the `TransactionBuilder` interface and our `useBuilder` functionality.
 
-```typescript
-import { createHiveChain, WitnessSetPropertiesBuilder } from '@hiveio/wax';
+:::code source="../../../static/snippets/src/typescript/transaction-builder/working-with-tb/complex-operation/complex-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/working-with-tb/complex-operation/complex-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fworking-with-tb%2Fcomplex-operation%2Fcomplex-operation.ts&startScript=test-tb-working-with-tb-complex-operation)" :::
 
-// Initialize chain
-const chain = await createHiveChain();
+=== Output
 
-// Initialize transaction
-const tx = await chain.getTransactionBuilder();
-
-// Build operation
-tx.useBuilder(WitnessSetPropertiesBuilder, builder => {
-  builder.setUrl('https://example.com')
-}, 'owner', 'STM...');
-
-// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
-const builtTransaction = tx.build();
+```javascript
+[
+  {
+    witness_set_properties: { owner: 'owner', props: [Object], extensions: [] }
+  }
+]
 ```
+
+===
+
 The `useBuilder` method allows for simple construction of an operation. It takes the following parameters:
 - The constructor of the builder class you want to use,
 - An arrow function, inside which you can make use of all the methods available within the given builder,

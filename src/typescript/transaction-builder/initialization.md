@@ -8,63 +8,16 @@ label: Initialization
 
 Once you want to initiliaze `TransactionBuilder` with explicit reference Block data (to satisfy TAPOS) and transaction expiration time:
 
-```typescript
-import { createWaxFoundation } from '@hiveio/wax';
-
-const wax = await createWaxFoundation();
-
-// Constructs a new Transaction Builder object with given data.
-new wax.TransactionBuilder('04c507a8c7fe5be96be64ce7c86855e1806cbde3', '+30m');
-```
+:::code source="../../static/snippets/src/typescript/transaction-builder/initialization/explicit-data-initialization.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/initialization/explicit-data-initialization.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Finitialization%2Fexplicit-data-initialization.ts&startScript=test-tb-initialization-explicit-data-initialization)" :::
 
 Once you have your protobuf transaction ready, you can provide it while constructing:
 
-```typescript
-import { createWaxFoundation, transaction } from '@hiveio/wax';
-
-const wax = await createWaxFoundation();
-
-const tx: transaction = {
-  ref_block_num: 34559,
-  ref_block_prefix: 1271006404,
-  expiration: '2021-12-13T11:31:33',
-  operations: [],
-  extensions: [],
-  signatures: []
-};
-
-// Constructs a new Transaction Builder object with ready protobuf transaction.
-new wax.TransactionBuilder(tx);
-```
+:::code source="../../static/snippets/src/typescript/transaction-builder/initialization/protobuf-transaction-initialization.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/initialization/protobuf-transaction-initialization.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Finitialization%2Fprotobuf-transaction-initialization.ts&startScript=test-tb-initialization-protobuf-transaction-initialization)" :::
 
 Once you have your transaction in Hive API-form and you want to convert it to our `TransactionBuilder`:
 
-```typescript
-import { createWaxFoundation, transaction } from '@hiveio/wax';
-
-const wax = await createWaxFoundation();
-
-// Stringify the transaction to be able to show the example.
-const tx: transaction = JSON.stringify({
-  ref_block_num: 34559,
-  ref_block_prefix: 1271006404,
-  expiration: '2021-12-13T11:31:33',
-  operations: [],
-  extensions: [],
-  signatures: []
-});
-
-// Converts Hive API-form transaction in JSON form to our transaction builder.
-wax.TransactionBuilder.fromApi(tx);
-```
+:::code source="../../static/snippets/src/typescript/transaction-builder/initialization/api-form-initialization.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/initialization/api-form-initialization.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Finitialization%2Fapi-form-initialization.ts&startScript=test-tb-initialization-api-form-initialization)" :::
 
 Once you want to have "ready to use" `TransactionBuilder` with reference block data from the remote:
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-const chain = await createHiveChain();
-
-// expirationTime is optional in this case.
-await chain.getTransactionBuilder();
-```
+:::code source="../../static/snippets/src/typescript/transaction-builder/initialization/from-remote-initialization.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/initialization/from-remote-initialization.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Finitialization%2Ffrom-remote-initialization.ts&startScript=test-tb-initialization-from-remote-initialization)" :::

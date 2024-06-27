@@ -8,39 +8,15 @@ label: Reading properites
 
 The `TransactionBuilder` interface also allows you to read your transaction properties like `sig_digest`, `id`, etc.
 
-```typescript
-import { createWaxFoundation } from '@hiveio/wax';
+:::code source="../../../static/snippets/src/typescript/transaction-builder/working-with-tb/reading-properties/reading-properties.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/working-with-tb/reading-properties/reading-properties.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fworking-with-tb%2Freading-properties%2Freading-properties.ts&startScript=test-tb-working-with-tb-reading-properties)" :::
 
-// Initialize wax base interface
-const wax = await createWaxFoundation();
+=== Output
 
-// Initialize transaction
-const tx = new wax.TransactionBuilder('04c507a8c7fe5be96be64ce7c86855e1806cbde3', '+30m');
-
-// Declare example operation
-const operation = JSON.stringify({
-  type: 'vote_operation',
-  value: {
-    voter: 'voter',
-    author: 'test-author',
-    permlink: 'test-permlink',
-    weight: 2200
-  }
-});
-
-// Push operation into the transction
-tx.push(operation);
-
-// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
-const builtTransaction = tx.build();
-
-// Most transaction properties should be read from the transaction before building it.
-tx.id;
-tx.sigDigest;
-tx.signatureKeys;
-
-// Some transaction properties should be read from the transaction after building it.
-builtTransaction.signatures;
-builtTransaction.expiration;
-builtTransaction.operations;
+```text
+id: 7546920767a3ec6ee6555f07e23d2f295ee77c7f
+sigDigest: e25a352f97d92247bfc56b2420beeb7c0ccfe5ea9fac5180ea27c3d7e15d5540
+expiration: 2024-06-27T11:32:16
+ref_block_num: 1960
 ```
+
+===

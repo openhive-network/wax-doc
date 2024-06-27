@@ -10,29 +10,21 @@ If your case is to perform simple actions on your transaction or create a new tr
 
 Below is an example of fully building a simple transaction using the basic `TransactionBuilder` interface.
 
-```typescript
-import { createWaxFoundation } from '@hiveio/wax';
+:::code source="../../../static/snippets/src/typescript/transaction-builder/working-with-tb/simple-operation/simple-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/working-with-tb/simple-operation/simple-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fworking-with-tb%2Fsimple-operation%2Fsimple-operation.ts&startScript=test-tb-working-with-tb-simple-operation)" :::
 
-// Initialize wax base interface
-const wax = await createWaxFoundation();
+=== Output
 
-// Initialize transaction
-const tx = new wax.TransactionBuilder('04c507a8c7fe5be96be64ce7c86855e1806cbde3', '2023-11-09T21:51:27');
-
-// Declare example operation
-const operation = JSON.stringify({
-  type: 'vote_operation',
-  value: {
-    voter: 'voter',
-    author: 'test-author',
-    permlink: 'test-permlink',
-    weight: 2200
+```javascript
+[
+  {
+    vote: {
+      voter: 'voter',
+      author: 'test_author',
+      permlink: 'test_permlink',
+      weight: 2200
+    }
   }
-});
-
-// Push operation into the transction
-tx.push(operation);
-
-// Build up ProtoTransaction object holding all operations and transaction TAPOS & expiration data, but transaction is **not signed yet**
-const builtTransaction = tx.build();
+]
 ```
+
+===
