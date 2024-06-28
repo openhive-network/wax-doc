@@ -8,6 +8,8 @@ label: Example usage
 
 Once you know all the `TransactionBuilder` functionality, let's look at an example of complete usage.
 
++++ Example usage (HF26 format)
+
 :::code source="../../static/snippets/src/typescript/transaction-builder/example-usage/example-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/example-usage/example-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fexample-usage%2Fexample-usage.ts&startScript=test-tb-example-usage)" :::
 
 ==- Output
@@ -89,9 +91,65 @@ _I {
   }
 }
 ```
-
 ===
 
 !!!secondary
 Please note that the output for `txSigned` and `txMultiSigned` is not complete due to its complexity. Only the signatures field is presented. You can see the full output in the console by testing it yourself.
+!!!
+
++++ Example usage (Legacy format)
+
+:::code source="../../static/snippets/src/typescript/transaction-builder/example-usage/example-legacy-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/example-usage/example-legacy-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fexample-usage%2Fexample-legacy-usage.ts&startScript=test-tb-example-legacy-usage)" :::
+
+==- Output
+
+```javascript
+// Hive API-legacy form JSON before signing
+{
+  "ref_block_num": 62661,
+  "ref_block_prefix": 599480679,
+  "expiration": "2024-07-01T10:43:35",
+  "operations": [
+    [
+      "vote",
+      {
+        "voter": "voter",
+        "author": "test_author",
+        "permlink": "test_permlink",
+        "weight": 2200
+      }
+    ]
+  ],
+  "extensions": [],
+  "signatures": []
+}
+
+// Hive API-legacy form JSON after signing
+{
+  "ref_block_num": 63407,
+  "ref_block_prefix": 1196655671,
+  "expiration": "2024-07-01T11:20:51",
+  "operations": [
+    [
+      "vote",
+      {
+        "voter": "voter",
+        "author": "test_author",
+        "permlink": "test_permlink",
+        "weight": 2200
+      }
+    ]
+  ],
+  "extensions": [],
+  "signatures": [
+    "200d601328ce2634744daca1629ae3b83094937592811eb53e75238d1ebddf9fbf4723934be2ab4ad6a0db6151fb7d6bd766289e9cca9e6a1fa258da34c2aa86f2"
+  ]
+}
+```
+===
+
+!!!secondary
+Also if you want to use some custom tool for signing the transaction instead of our provided methods, you can do it based on the sample above. If you do not want to use `TransactionBuilder` in legacy form, you can do it just by replacing:
+
+`const digest = tx.legacy_sigDigest;` -> `const digest = tx.sigDigest;`.
 !!!
