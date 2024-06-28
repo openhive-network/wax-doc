@@ -3,18 +3,19 @@ order: -1
 icon: unread
 ---
 
-# Receiving NaiAsset
+# NaiAsset objects
 
-Within the Hive ecosystem, asset conversions are a common requirement. The `@hiveio/wax` library facilitates these operations by providing methods to receive `NaiAsset` instances from given amounts.
+There are three asset types (token types) in Hive's layer 1 protocol: HIVE (liquid hive), VESTS (staked hive), and HBD (hive-backed dollars). All asset amounts are specified as fixed-point numbers to prevent rounding errors (these are especially problematic for financial calculations) . Hive and HBD use 3 digits of precision, VESTS are specified using 6 digits of precision.
 
-Here’s how you can achieve this for different assets like HIVE, HBD, and VESTS.
+Assets can be represented using two formats. The first is the deprecated string format. Here's an example of the deprecated format for 1 Hive token: `"1.000 HIVE"`. 
 
-## Code Snippet to Receive NaiAsset
+The second format, Numeric Asset Identifiers (NAI), are the recommended format. With NAIs, asset types are specified using numbers rather than strings. NAIs were introduced to simplify supporting user-created asset types in the future. 
+
+Here's an example of an NAI asset for 1 hive token: `{"amount":"1000","precision":3,"nai":"@@000000021"}`. 
+
+Important note: Amounts must be specified as integer values (no decimal point) and the precision is used to shift the decimal place appropriately. The nai field is used to specify the asset type: 21 is HIVE, 37 is VESTS, and 13 is HBD. Precision is fixed for each asset type (3 or 6), so when creating NAI objects only the integer quantity and type must be specified.
+
+## Creating NaiAsset objects for each asset type
 
 :::code source="../../static/snippets/src/typescript/asset-manipulations/receiving-nai-asset/receive-nai-asset.ts" language="typescript" title="Test it yourself: [src/typescript/asset-manipulations/receiving-nai-asset/receive-nai-asset.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fasset-manipulations%2Freceiving-nai-asset%2Freceive-nai-asset.ts&startScript=test-asset-manipulations-receiving-nai-asset-receive-nai-asset)" :::
 
-!!!warning Assets number representation
-Make sure to provide the amount in integer form without decimal points. For example, `300.000 HIVE` should be represented as `300000` in the amount, not `300.0`.
-
-Also remember that when dealing with assets in the Hive ecosystem, it's important to account for precision. The standard convention removes decimal points and adjusts the amount to an integer by factoring in precision. For example, if a token has 3 decimal places, `300.000 HIVE` should be represented as `300000` (3 decimal places removed). Always ensure you correctly handle asset precision in your implementation to avoid errors in calculations or representations.
-!!!

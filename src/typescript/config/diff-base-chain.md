@@ -7,7 +7,7 @@ icon: info
 
 ## Detailed Explanation of Hive Interfaces and Their Differences
 
-The `@hiveio/wax` library, which is part of the Hive ecosystem provides two main interfaces for interacting with the Hive blockchain: the Hive Base Interface and the Hive Chain Interface. Each interface has distinct use cases and functionalities.
+The `@hiveio/wax` library provides two main interfaces for interacting with the Hive blockchain: the Hive Base Interface and the Hive Chain Interface. Each interface has distinct use cases and functionalities.
 
 ### Hive Base Interface
 

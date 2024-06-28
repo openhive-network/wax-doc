@@ -3,13 +3,13 @@ order: -2
 icon: rocket
 ---
 
-# General Wax initialization
+## Constructing a Wax interface
 
-!!!secondary Optimization notice
-Using default options provides ease-of-use and simplicity but might not be optimized for specific performance needs or endpoints.
-!!!
+The root Wax Foundation and Hive Chain interfaces can be constructed using either default or custom configuration options.
+Custom options allow selecting a specific blockchain network (e.g. mainnet, testnet, or mirrornet) and a specific Hive API endpoint (e.g. api.hive.blog). It also provides settings to optimize for performance(???), network latency (???), or other custom needs (WHAT ARE THESE? Make some link to what the options are)
 
-## Initializing Wax interface
+
+## Default Wax initialization
 
 +++ Wax Base
 
@@ -18,5 +18,17 @@ Using default options provides ease-of-use and simplicity but might not be optim
 +++ Wax Chain
 
 :::code source="../../static/snippets/src/typescript/config/init-general/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-general/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain.ts&startScript=test-config-init-general-chain)" :::
+
++++
+
+## Initializing Wax interface with options
+
++++ Wax Base
+
+:::code source="../../static/snippets/src/typescript/config/init-with-config/base.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/base.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fbase.ts&startScript=test-config-init-with-config-base)" :::
+
++++ Wax Chain
+
+:::code source="../../static/snippets/src/typescript/config/init-with-config/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fchain.ts&startScript=test-config-init-with-config-chain)" :::
 
 +++

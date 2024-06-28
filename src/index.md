@@ -3,12 +3,16 @@ order: -1
 icon: home
 ---
 
-# Welcome Hive people
+# Intro to Wax library
 
-The Wax module offers cross-language interoperability features, supporting TypeScript, C++, and Python, and includes a comprehensive set of tools and interfaces for interaction with the Hive blockchain ecosystem. It seamlessly integrates with the Hive protocol library, ensuring access to the full range of Hive blockchain functionalities. This module enables developers to create, manage, and interact with various components of the Hive protocol, including but not limited to transaction creation and analysis, adding operations to ongoing transactions, and performing cryptographic calculations, such as obtaining transaction digests, by directly utilizing the Hive protocol code.
+Wax is a mulit-language object-oriented library for using the Hive blockchain API. There are currently three language implementations of the library: TypeScript, C++, and Python.  Each implementation of Wax incorporates the same code used by core Hive protocol library to define Hive objects (operations, transactions, etc), ensuring that Wax will always maintain compatibility with the core blockchain code.  
 
-Additionally, the Wax module simplifies the execution of JSON-API calls and provides built-in data formatters that automatically convert Hive operations into human-readable text. The library is designed for easy extensibility on the client side, offering a high-level API interface that abstracts the complexities of interacting with the Hive blockchain. By encapsulating and concealing the intricate details, it facilitates the development of applications and services within the Hive ecosystem for developers.
+Wax enables developers to 1) create, manage, and interact with various objects of the Hive protocol such as operations and transactions and 2) make Hive API calls and process the responses to those calls (double check if this creates objects or not?).
+
+Additionally, the Wax module simplifies the execution of JSON-API calls and provides built-in data formatters that automatically convert Hive operations into human-readable text (WHAT DOES THIS REALLY MEAN?). 
 
 [!ref icon="./static/typescript.svg" text="TypeScript Reference"](/typescript/config/diff-base-chain/)
 
 [!ref icon="./static/python.svg" text="Python Reference"](/python/config/diff-base-chain/)
+
+DESCRIBE HOW TO EDIT/RUN EXAMPLES!
