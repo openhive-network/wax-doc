@@ -82,3 +82,7 @@ Protobuf (Protocol Buffers) is a language-neutral and platform-neutral mechanism
     ```
 
 This common definition provided by Protobuf allows for quick adaptation and ensures that different implementations (like those in the Wax library) are correctly aligned with the ecosystem's standards.
+
+!!!secondary
+The complete documentation for protobuf operations can be found [here](https://gitlab.syncad.com/hive/wax/-/wikis/interfaces/operation)
+!!!
