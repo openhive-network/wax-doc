@@ -5,21 +5,21 @@ icon: database
 
 # Using default APIs
 
-`@hiveio/wax` provides a simple interface for calling and verifying API requests and responses (fully typed). Wax is delivered with a predefined set of APIs, like:
+`@hiveio/wax` provides an object-oriented interface for calling and verifying API requests and responses. Hive API requests are arranged into various categories:
 
-- `account_by_key_api`
-- `block_api`
-- `database_api`
-- `network_broadcast_api`
-- `rc_api`
+- `account_by_key_api`: API requests related to reading account keys.
+- `block_api`: API requests for fetching blockchain blocks.
+- `database_api`: API requests for reading Hive state information.
+- `network_broadcast_api`: API requests for broadcasting transactions to write to the blockchain.
+- `rc_api`: API requests for reading/analyzing resource contrstraings (rc).
 
 ## Regular Usage
 
 !!!secondary
-Wax uses [`class-validator`](https://www.npmjs.com/package/class-validator) and [`class-transformer`](https://www.npmjs.com/package/class-transformer) for requests and responses validation. It may throw if server responds with an unexpected value.
+Wax uses [`class-validator`](https://www.npmjs.com/package/class-validator) and [`class-transformer`](https://www.npmjs.com/package/class-transformer) for requests and responses validation. It may throw if a server responds with an unexpected value.
 !!!
 
-You can call API methods in the following favor:
+You can call API methods in the following manner:
 
 ```javascript
 chainInstance.api[apiType][apiMethod](dataToSend);
