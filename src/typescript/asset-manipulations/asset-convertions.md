@@ -5,7 +5,7 @@ icon: arrow-switch
 
 # Asset Conversions
 
-Asset conversions in the Hive ecosystem are crucial for various financial transactions. The `@hiveio/wax` library provides methods like `vestsToHp` and `hbdToHive` to facilitate these conversions.
+Asset conversions are required for various Hive financial transactions. The `@hiveio/wax` library provides methods like `vestsToHp` and `hbdToHive` to facilitate these conversions.
 
 ## Using `vestsToHp`
 
