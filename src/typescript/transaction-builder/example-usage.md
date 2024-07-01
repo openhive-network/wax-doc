@@ -74,22 +74,6 @@ signatures: [
   '1fa3b3153c15633841bedac753ef0770d020b6e67c4325402aa8657556d2feafac4c8ed7a3a7638e0cef5d50e01e91b6a17e8740161f1fda65a9331a02b9cc0ff9',
   '20562268d6bffe4bebc95dddceccf40479ea8e6a2d079f7d0d2a3627d45b2d1bef7283852299b8a1d64444f89007b90bd92714c3aec8a541906bd0754419d85980'
 ]
-
-// txBroadcasted
-_I {
-  max_block_age: -1,
-  trx: AI {
-    operations: [ [Object], [Object] ],
-    extensions: [],
-    signatures: [
-      '1fa3b3153c15633841bedac753ef0770d020b6e67c4325402aa8657556d2feafac4c8ed7a3a7638e0cef5d50e01e91b6a17e8740161f1fda65a9331a02b9cc0ff9',
-      '20562268d6bffe4bebc95dddceccf40479ea8e6a2d079f7d0d2a3627d45b2d1bef7283852299b8a1d64444f89007b90bd92714c3aec8a541906bd0754419d85980'
-    ],
-    ref_block_num: 14509,
-    ref_block_prefix: 1156896789,
-    expiration: '2024-06-27T11:45:47'
-  }
-}
 ```
 ===
 

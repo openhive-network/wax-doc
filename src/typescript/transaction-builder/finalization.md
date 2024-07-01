@@ -18,12 +18,20 @@ The simple `build` method returns the proto transaction and also aplies the expi
 
 ```javascript
 {
-  ref_block_num: 1960,
-  ref_block_prefix: 3915120327,
-  expiration: '2023-11-09T21:51:27',
-  extensions: [],
-  operations: [ { vote: [Object] } ],
-  signatures: []
+  "ref_block_num": 1960,
+  "ref_block_prefix": 3915120327,
+  "expiration": "2023-11-09T21:51:27",
+  "operations": [
+    {
+      "type": "vote_operation",
+      "value": {
+        "voter": "voter",
+        "author": "test_author",
+        "permlink": "test_permlink",
+        "weight": 2200
+      }
+    }
+  ]
 }
 ```
 
@@ -37,12 +45,23 @@ You can also build your transaction into proto form, and add your signature to t
 
 ```javascript
 {
-  ref_block_num: 1960,
-  ref_block_prefix: 3915120327,
-  expiration: '2023-11-09T21:51:27',
-  extensions: [],
-  operations: [ { vote: [Object] } ],
-  signatures: [ 'signature...' ]
+  "ref_block_num": 1960,
+  "ref_block_prefix": 3915120327,
+  "expiration": "2023-11-09T21:51:27",
+  "operations": [
+    {
+      "type": "vote_operation",
+      "value": {
+        "voter": "voter",
+        "author": "test_author",
+        "permlink": "test_permlink",
+        "weight": 2200
+      }
+    }
+  ],
+  "signatures": [
+    "signature..."
+  ]
 }
 ```
 
@@ -60,13 +79,22 @@ If you want to build and sign your transaction and return it in proto form, you 
 
 ```javascript
 {
-  ref_block_num: 1960,
-  ref_block_prefix: 3915120327,
-  expiration: '2023-11-09T21:51:27',
-  extensions: [],
-  operations: [ { vote: [Object] } ],
-  signatures: [
-    '1fe8647a82f131671997ce26250bf5a1cb7a18609cbc69b3b2fd7fcaefc848c7fc308abfb0992c1ce9a805715f102416d85c4313a8a00527fa1500ac93898b418a'
+  "ref_block_num": 1960,
+  "ref_block_prefix": 3915120327,
+  "expiration": "2023-11-09T21:51:27",
+  "operations": [
+    {
+      "type": "vote_operation",
+      "value": {
+        "voter": "voter",
+        "author": "test_author",
+        "permlink": "test_permlink",
+        "weight": 2200
+      }
+    }
+  ],
+  "signatures": [
+    "1fe8647a82f131671997ce26250bf5a1cb7a18609cbc69b3b2fd7fcaefc848c7fc308abfb0992c1ce9a805715f102416d85c4313a8a00527fa1500ac93898b418a"
   ]
 }
 ```

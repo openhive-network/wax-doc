@@ -30,30 +30,25 @@ Meanwhile the other friends does not need your help anymore, so you can remove t
 ==- Output
 
 ```javascript
-[
-  // Delegate
-  {
-    custom_json: {
-      id: 'rc',
-      json: '["delegate_rc",{"from":"your_account","delegatees":["your_friend_account"],"max_rc":"1000","extensions":[]}]',
-      required_auths: [],
-      required_posting_auths: [Array]
-    }
-  },
-  // Remove delegation
-  {
-    custom_json: {
-      id: 'rc',
-      json: '["delegate_rc",{"from":"your_account","delegatees":["other_friend_account"],"max_rc":"0","extensions":[]}]',
-      required_auths: [],
-      required_posting_auths: [Array]
-    }
+// Delegate
+{
+  custom_json: {
+    id: 'rc',
+    json: '["delegate_rc",{"from":"your_account","delegatees":["your_friend_account"],"max_rc":"1000","extensions":[]}]',
+    required_auths: [],
+    required_posting_auths: [ 'your_account' ]
   }
-]
-```
+}
 
-```text
-Required posting auths: your_account
+// Remove delegation
+{
+  custom_json: {
+    id: 'rc',
+    json: '["delegate_rc",{"from":"your_account","delegatees":["other_friend_account"],"max_rc":"0","extensions":[]}]',
+    required_auths: [],
+    required_posting_auths: [ 'your_account' ]
+  }
+}
 ```
 ===
 
@@ -70,38 +65,35 @@ Here is an example of complex `FollowOperationBuilder` usage:
 ==- Output
 
 ```javascript
-[
-  // Follow blog
-  {
-    custom_json: {
-      id: 'follow',
-      json: '["follow",{"follower":"your_account","following":"interesting_blog","what":["blog"]}]',
-      required_auths: [],
-      required_posting_auths: [Array]
-    }
-  },
-  // Mute blog
-  {
-    custom_json: {
-      id: 'follow',
-      json: '["follow",{"follower":"your_account","following":"spammer","what":["ignore"]}]',
-      required_auths: [],
-      required_posting_auths: [Array]
-    }
-  },
-  // Reblog
-  {
-    custom_json: {
-      id: 'follow',
-      json: '["reblog",{"account":"your_account","author":"reblog_me","permlink":"post_permlink"}]',
-      required_auths: [],
-      required_posting_auths: [Array]
-    }
+// Follow blog
+{
+  custom_json: {
+    id: 'follow',
+    json: '["follow",{"follower":"your_account","following":"interesting_blog","what":["blog"]}]',
+    required_auths: [],
+    required_posting_auths: [ 'your_account' ]
   }
-]
-```
-```text
-Required posting auths: your_account
+}
+
+// Mute blog
+{
+  custom_json: {
+    id: 'follow',
+    json: '["follow",{"follower":"your_account","following":"spammer","what":["ignore"]}]',
+    required_auths: [],
+    required_posting_auths: [ 'your_account' ]
+  }
+}
+
+// Reblog
+{
+  custom_json: {
+    id: 'follow',
+    json: '["reblog",{"account":"your_account","author":"reblog_me","permlink":"post_permlink"}]',
+    required_auths: [],
+    required_posting_auths: [ 'your_account' ]
+  }
+}
 ```
 ===
 
@@ -120,29 +112,25 @@ You want to join a specific community to stay updated with its content and you w
 ==- Output
 
 ```javascript
-[
-  // Subscribe
-  {
-    custom_json: {
-      id: 'community',
-      json: '["subscribe",{"community":"community_name"}]',
-      required_auths: [],
-      required_posting_auths: [Array]
-    }
-  },
-  // Flag post
-  {
-    custom_json: {
-      id: 'community',
-      json: '["flagPost",{"community":"community_name","account":"author_account","permlink":"post_permlink","notes":"violation notes"}]',
-      required_auths: [],
-      required_posting_auths: [Array]
-    }
+// Subscribe
+{
+  custom_json: {
+    id: 'community',
+    json: '["subscribe",{"community":"community_name"}]',
+    required_auths: [],
+    required_posting_auths: [ 'your_account' ]
   }
-]
-```
-```text
-Required posting auths: your_account
+}
+
+// Flag post
+{
+  custom_json: {
+    id: 'community',
+    json: '["flagPost",{"community":"community_name","account":"author_account","permlink":"post_permlink","notes":"violation notes"}]',
+    required_auths: [],
+    required_posting_auths: [ 'your_account' ]
+  }
+}
 ```
 ===
 
@@ -155,19 +143,14 @@ Since you are an community administrator, you can update its properties:
 ==- Output
 
 ```javascript
-[
-  {
-    custom_json: {
-      id: 'community',
-      json: '["updateProps",{"community":"community_name","props":{"title":"New Community Title","about":"Community Description","description":"Detailed community description","flag_text":"Post flagging rules","is_nsfw":false,"lang":"en"}}]',
-      required_auths: [],
-      required_posting_auths: [Array]
-    }
+{
+  custom_json: {
+    id: 'community',
+    json: '["updateProps",{"community":"community_name","props":{"title":"New Community Title","about":"Community Description","description":"Detailed community description","flag_text":"Post flagging rules","is_nsfw":false,"lang":"en"}}]',
+    required_auths: [],
+    required_posting_auths: [ 'your_account' ]
   }
-]
-```
-```text
-Required posting auths: your_account
+}
 ```
 ===
 
