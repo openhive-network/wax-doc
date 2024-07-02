@@ -15,11 +15,16 @@ Below is an example of fully building more complex transaction using the `Transa
 === Output
 
 ```javascript
-[
-  {
-    witness_set_properties: { owner: 'owner', props: [Object], extensions: [] }
+{
+  witness_set_properties: {
+    owner: 'owner',
+    props: {
+      key: '02472d6eb6d691b6de8b103b51ebdf4e128a523946d8cd03d6ded91b1497ee2e83',
+      url: '1368747470733a2f2f6578616d706c652e636f6d'
+    },
+    extensions: []
   }
-]
+}
 ```
 
 ===
