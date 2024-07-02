@@ -3,15 +3,14 @@ order: -1
 icon: info
 ---
 
-# Base and Chain
 
-## Detailed Explanation of Hive Interfaces and Their Differences
+# Implementation details: `IHiveChainInterface` (requires an endpoint) vs `IWaxBaseInterface` (no endpoint required)
 
-The `@hiveio/wax` library, which is part of the Hive ecosystem provides two main interfaces for interacting with the Hive blockchain: the Hive Base Interface and the Hive Chain Interface. Each interface has distinct use cases and functionalities.
+This section is mainly for library maintainers who need to understand the low-level structure of the library.
 
-### Hive Base Interface
+### Root Interface Design Theory
 
-The `IWaxBaseInterface` is a lower-level, core interface of the library. It mainly deals with basic functionalities and data structures without performing any direct network operations. Here's a breakdown of what it includes:
+The `IWaxBaseInterface` is a low-level interface that deals with basic functionalities that don't require communication with an API endpoint. About the only reason to directly use this interface is for creating an offline transaction signer, and even then the transactions first need to be constructed using an online application because valid hive transactions require current blockchain data. Here's a breakdown of what it includes:
 
 1. **Transaction Building:**
    - Provides a constructor for creating transaction builders (`ITransactionBuilderConstructor`), which allows users to manually build transactions.
@@ -31,7 +30,7 @@ The `IWaxBaseInterface` is a lower-level, core interface of the library. It main
 
 ### Hive Chain Interface
 
-The `IHiveChainInterface` extends the functionalities of the `IWaxBaseInterface` and adds high-level network-related operations. This interface connects to the Hive blockchain (or a specific Hive node) and provides more functionalities that require internet access. Here are some highlights:
+The `IHiveChainInterface` extends the functionalities of the `IWaxBaseInterface` and adds high-level network-related operations. This interface connects to a Hive API endpoint. Here are some highlights:
 
 1. **Network Operations:**
    - **Transaction Builder with Automatic Data Fetching:** It can fetch the head block or reference block data automatically, which is crucial for building and broadcasting transactions.
@@ -46,10 +45,3 @@ The `IHiveChainInterface` extends the functionalities of the `IWaxBaseInterface`
 
 4. **Enhanced Manabar Calculation:**
    - Methods like `calculateCurrentManabarValueForAccount` and `calculateManabarFullRegenerationTimeForAccount` which fetch and calculate real-time blockchain account states directly from the network.
-
-### Practical Usage
-
-- **Offline Operations:** If you only need to work with the transaction data structures and not connect to the network (e.g., building, signing, and serializing transactions for later broadcast), the Base Interface suffices.
-- **Online Operations:** For operations that require real-time blockchain interactions (e.g., querying blockchain state, automatic TaPoS - Transaction as Proof of Stake handling, broadcasting transactions), the Chain Interface is necessary.
-
-In summary, choosing between the two interfaces depends on whether network interaction is required for your blockchain operations. Use `IWaxBaseInterface` for offline and core functionalities, and `IHiveChainInterface` for when you need real-time network connectivity and dynamic blockchain data management.

@@ -5,13 +5,17 @@ expanded: false
 label: Blockchain data types
 ---
 
-# Transaction and Operation Representation in the Hive Ecosystem
+# Hive Protocol: Transaction and Operations
 
-In the Hive ecosystem, transactions, operations and their properties (i.e. assets) are represented using specific types and data structures defined inside Hive Protocol C++ library. To ensure consistency and accuracy across applications, the Wax library includes language independent definitions (defined using ProtoBuf technology) of such entities, finally resulting in generated code specific to choosen execution environment (here is a Typescript language). This standardized representation allows for seamless integration and interoperability among various services and tools within the ecosystem. It also simplifies usage of such types due to ability to directly share comments and other documentation directly into Typescript generated code.
+Hive transactions, operations and their properties (i.e. assets) are represented using specific types and data structures defined inside the Hive Protocol library. These objects are initially defined using Protobuf, and language-specific versions are generated from the Protobuf code. This standardized representation allows for seamless integration and interoperability among various services and tools within the ecosystem.
 
 ## Transactions
 
-A **transaction** in the Hive ecosystem encapsulates all the operations that a user wants to execute. Each transaction contains metadata such as the expiration time and reference block information, along with the list of operations to be performed. Here is a general structure of a transaction:
+Hive **transactions** are created by a user to group a sequence of Hive operations that should all succeed or fail together.  Even singular operations need to be put inside a transaction because account signing is also performed at the transaction level. In addition to a sequence of operations, each transaction contains metadata such as the expiration time. 
+
+FULL EXPLANATIONS NEED TO BE ADDED HERE ABOUT TAPOS AND EXPIRATION TIME AFTER MORE RESEARCH.
+
+Here is a general structure of a transaction:
 
 - **ref_block_num**: A 16-bit integer referencing the block number.
 - **ref_block_prefix**: A 32-bit integer referencing the block prefix.
@@ -22,9 +26,9 @@ A **transaction** in the Hive ecosystem encapsulates all the operations that a u
 
 ## Operations
 
-**Operations** are the individual actions that can be contained within a transaction. Each operation corresponds to a specific action, such as transferring tokens, voting, or posting content.
+**Operations** are commands to the blockchain processing engine. Example operations include transferring tokens, adding text posts to the blockchain, voting for posts, voting for witnesses, etc.
 
-Here's a general example of different operation types:
+Here are some examples of the contents of some operations:
 
 - **transfer_operation**: Handles token transfers between accounts.
   - **from**: The sender's account name.
@@ -47,13 +51,17 @@ Here's a general example of different operation types:
   - **body**: The content body.
   - **json_metadata**: Additional metadata in JSON format.
 
-## Usage with Protobuf
+YOU CAN FIND A FULL LIST OF POSSIBLE OF OPERATIONS AND THEIR FIELDS HERE. ADD LINK TO PROTOBUF GENERATED DOCUMENTATION HERE.
 
-Protobuf (Protocol Buffers) is a language-neutral and platform-neutral mechanism for serializing structured data. In the Hive ecosystem, Protobuf is used to define these transaction and operation data structures, making it easy to document and share these structures across different languages and platforms.
+WHY IS THERE A MISMATCH BETWEEN NAMES IN EXAMPLES ABOVE AND PROTOBUF DEFINITIONS?
+
+## Implementation Note: Why use Protobuf?
+
+Protobuf (Protocol Buffers) is a language-neutral and platform-neutral mechanism for serializing structured data. Hive uses Protobuf definitions for transaction and operation data structures in order to make it easy to document and share these structures across different languages and platforms. These common definitions enable safe and rapid update to the Hive protocol while ensuring that different implementations (like those in the Wax library) are correctly aligned with the blockchain network's protocol standard.
 
 - **Protobuf Definitions**:
   - These definitions describe the data structures in a language-agnostic way.
-  - They are defined directly inside Hive Protocol library and shared from there
+  - They are defined directly inside the Hive Protocol library and shared from there
   - Examples:
     ```protobuf
     message transfer {
@@ -80,9 +88,3 @@ Protobuf (Protocol Buffers) is a language-neutral and platform-neutral mechanism
         required string json_metadata = 7 [json_name = "json_metadata"];
     }
     ```
-
-This common definition provided by Protobuf allows for quick adaptation and ensures that different implementations (like those in the Wax library) are correctly aligned with the ecosystem's standards.
-
-!!!secondary
-The complete documentation for protobuf operations can be found [here](https://gitlab.syncad.com/hive/wax/-/wikis/interfaces/operation)
-!!!

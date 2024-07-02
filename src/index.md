@@ -3,12 +3,19 @@ order: -1
 icon: home
 ---
 
-# Welcome Hive people
+# Intro to Wax library
 
-The Wax module offers cross-language interoperability features, supporting TypeScript, C++, and Python, and includes a comprehensive set of tools and interfaces for interaction with the Hive blockchain ecosystem. It seamlessly integrates with the Hive protocol library, ensuring access to the full range of Hive blockchain functionalities. This module enables developers to create, manage, and interact with various components of the Hive protocol, including but not limited to transaction creation and analysis, adding operations to ongoing transactions, and performing cryptographic calculations, such as obtaining transaction digests, by directly utilizing the Hive protocol code.
+Wax is a multi-language, object-oriented library for interacting with the Hive blockchain network. There are currently three language implementations of the library: TypeScript, C++, and Python.  Each implementation of Wax incorporates the same code used by the core Hive protocol library to define Hive objects (operations, transactions, etc). This ensures that Wax will always maintain compatibility with the core blockchain protocol.
 
-Additionally, the Wax module simplifies the execution of JSON-API calls and provides built-in data formatters that automatically convert Hive operations into human-readable text. The library is designed for easy extensibility on the client side, offering a high-level API interface that abstracts the complexities of interacting with the Hive blockchain. By encapsulating and concealing the intricate details, it facilitates the development of applications and services within the Hive ecosystem for developers.
+Wax enables developers to:
+* read blockchain data from Hive API endpoints by making API requests
+* write new blockchain data by creating and broadcasting Hive transactions containing various blockchain operations to Hive API endpoints
 
-[!ref icon="./static/typescript.svg" text="TypeScript Reference"](/typescript/config/diff-base-chain/)
+!!!secondary
+This document contains executable examples that readers can directly interact with. When first opened, an example will automatically execute. You can also modify an example and re-run it. To re-run an example after modifying it, press the up-arrow in the terminal window to fetch the last command in the command line history (this is the command used to originally execute the example).
+!!!
 
+Below are links to the TypeScript and Python docs. Currently the TypeScript interface is more feature complete, but the Python interface will catch up soon.
+[!ref icon="./static/typescript.svg" text="TypeScript Reference"](/typescript/config/init-general/)
 [!ref icon="./static/python.svg" text="Python Reference"](/python/config/diff-base-chain/)
+
