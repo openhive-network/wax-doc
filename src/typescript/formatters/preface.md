@@ -5,7 +5,7 @@ icon: comment-discussion
 
 # Preface
 
-Operation formatters in the `@hiveio/wax` library provide a mechanism for converting complex operation objects into human-readable text representations. This is useful for displaying operations in a user-friendly format, making them easier to understand.
+Operation formatters provide a mechanism for converting complex operation objects into human-readable text representations.
 
 ## How Formatters Work
 

@@ -5,9 +5,9 @@ expanded: false
 label: Blockchain data types
 ---
 
-# Transaction and Operation Representation in the Hive Ecosystem
+# Hive Protocol: Transaction and Operations
 
-In the Hive ecosystem, transactions, operations and their properties (i.e. assets) are represented using specific types and data structures defined inside the Hive Protocol library (reference implemenation is in C++). To ensure consistency and accuracy across applications, the Wax library includes language independent definitions (defined using ProtoBuf technology) of such entities, finally resulting in generated code specific to chosen execution environment (here is a Typescript language). This standardized representation allows for seamless integration and interoperability among various services and tools within the ecosystem. It also simplifies usage of such types due to ability to directly share comments and other documentation directly into Typescript generated code. (NEEDS DISCUSSION)
+Hive transactions, operations and their properties (i.e. assets) are represented using specific types and data structures defined inside the Hive Protocol library. These objects are initially defined using Protobuf, and language-specific versions are generated from the Protobuf code. This standardized representation allows for seamless integration and interoperability among various services and tools within the ecosystem.
 
 ## Transactions
 
@@ -55,7 +55,7 @@ YOU CAN FIND A FULL LIST OF POSSIBLE OF OPERATIONS AND THEIR FIELDS HERE. ADD LI
 
 WHY IS THERE A MISMATCH BETWEEN NAMES IN EXAMPLES ABOVE AND PROTOBUF DEFINITIONS?
 
-## Note: Why use Protobuf?
+## Implementation Note: Why use Protobuf?
 
 Protobuf (Protocol Buffers) is a language-neutral and platform-neutral mechanism for serializing structured data. Hive uses Protobuf definitions for transaction and operation data structures in order to make it easy to document and share these structures across different languages and platforms. These common definitions enable safe and rapid update to the Hive protocol while ensuring that different implementations (like those in the Wax library) are correctly aligned with the blockchain network's protocol standard.
 

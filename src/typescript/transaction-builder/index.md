@@ -5,9 +5,11 @@ expanded: false
 label: Transaction builder
 ---
 
-# Introduction to Transaction Builder in Hive Ecosystem
+# Transaction Builders
 
-## What is a Transaction Builder?
+
+A `TransactionBuilder` is an interface for building, signing, and validating transactions. The sample code below constructs a transaction with a single operation.
+
 
 The `TransactionBuilder` in the Hive Ecosystem, provided by the `@hiveio/wax` library, is a tool for creating and managing transactions on the Hive blockchain. It offers functionalities for building, signing, validating, and converting transactions.
 
