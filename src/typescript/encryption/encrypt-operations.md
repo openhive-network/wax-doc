@@ -5,7 +5,7 @@ icon: fiscal-host
 
 # Encrypt operations
 
-Wax provides a simple interface for encrypting operation data within a transaction using the Transaction Builder interface.
+Wax provides a simple interface for encrypting operation data within a transaction using the `Transaction` interface.
 
 ## Operations That Can Be Encrypted
 
@@ -24,7 +24,7 @@ Currently, Hive supports encrypting the following operation data:
 
 ## Encrypting Operations within a Transaction
 
-These examples demonstrate how to handle encryption and decryption using both direct methods and the transaction builder interface in the Wax library.
+These examples demonstrate how to handle encryption and decryption using both direct methods and the `Transaction` interface in the Wax library.
 
 +++ One key encryption
 
@@ -48,5 +48,3 @@ These examples demonstrate how to handle encryption and decryption using both di
 !!!
 
 +++
-
-

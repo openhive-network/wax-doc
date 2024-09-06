@@ -4,7 +4,7 @@ icon: tasklist
 label: HiveApps Operations
 ---
 
-# HiveApps Operations in Transaction Builder
+# HiveApps Operations in Transaction interface
 
 The Hive blockchain enables advanced operations using `custom_json`. These operations are standardized and recognized by the Hive ecosystem, such as Hivemind. This allows us to utilize advanced features that go beyond typical Hive blockchain operations. These custom operations are known as HiveApps operations.
 
@@ -12,13 +12,13 @@ The Hive blockchain enables advanced operations using `custom_json`. These opera
 
 A HiveApps operation is essentially a `custom_json` operation. Through these operations, we can execute custom actions on the Hive blockchain which are recognized and processed by the Hive infrastructure, like Hivemind.
 
-## HiveApps Operations Builders
+## Creating HiveApps Operations
 
-To facilitate the construction and management of these operations, we use the `HiveAppsOperationsBuilder`. Below are specific builders for different types of HiveApps operations:
+To facilitate the construction and management of these operations, we use the `HiveAppsOperation` classes. Below are specific classes for different types of HiveApps operations:
 
-### 1. ResourceCreditsOperationBuilder
+### 1. ResourceCreditsOperation
 
-This builder is used to manage Resource Credits (RC) delegations. Resource Credits allow actions to be performed on the Hive blockchain without paying transaction fees.
+This operation class is used to manage Resource Credits (RC) delegations. Resource Credits allow actions to be performed on the Hive blockchain without paying transaction fees.
 
 #### Example usage:
 
@@ -34,9 +34,9 @@ Meanwhile the other friends does not need your help anymore, so you can remove t
 {
   custom_json: {
     id: 'rc',
-    json: '["delegate_rc",{"from":"your_account","delegatees":["your_friend_account"],"max_rc":"1000","extensions":[]}]',
+    json: '["delegate_rc",{"from":"your-account","delegatees":["your-friend-account"],"max_rc":"1000","extensions":[]}]',
     required_auths: [],
-    required_posting_auths: [ 'your_account' ]
+    required_posting_auths: [ 'your-account' ]
   }
 }
 
@@ -44,21 +44,21 @@ Meanwhile the other friends does not need your help anymore, so you can remove t
 {
   custom_json: {
     id: 'rc',
-    json: '["delegate_rc",{"from":"your_account","delegatees":["other_friend_account"],"max_rc":"0","extensions":[]}]',
+    json: '["delegate_rc",{"from":"your-account","delegatees":["other-friend-account"],"max_rc":"0","extensions":[]}]',
     required_auths: [],
-    required_posting_auths: [ 'your_account' ]
+    required_posting_auths: [ 'your-account' ]
   }
 }
 ```
 ===
 
-### 2. FollowOperationBuilder
+### 2. FollowOperation
 
-This builder handles operations related to following, muting, blacklisting blogs, and reblogging posts.
+This operation class handles operations related to following, muting, blacklisting blogs, and reblogging posts.
 
 #### Example usage:
 
-Here is an example of complex `FollowOperationBuilder` usage:
+Here is an example of complex `FollowOperation` usage:
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/hive-apps-operations/follow-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/hive-apps-operations/follow-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fhive-apps-operations%2Ffollow-operation.ts&startScript=test-tb-hive-apps-follow-operation)" :::
 
@@ -69,9 +69,9 @@ Here is an example of complex `FollowOperationBuilder` usage:
 {
   custom_json: {
     id: 'follow',
-    json: '["follow",{"follower":"your_account","following":"interesting_blog","what":["blog"]}]',
+    json: '["follow",{"follower":"your-account","following":"interesting-blog","what":["blog"]}]',
     required_auths: [],
-    required_posting_auths: [ 'your_account' ]
+    required_posting_auths: [ 'your-account' ]
   }
 }
 
@@ -79,9 +79,9 @@ Here is an example of complex `FollowOperationBuilder` usage:
 {
   custom_json: {
     id: 'follow',
-    json: '["follow",{"follower":"your_account","following":"spammer","what":["ignore"]}]',
+    json: '["follow",{"follower":"your-account","following":"spammer","what":["ignore"]}]',
     required_auths: [],
-    required_posting_auths: [ 'your_account' ]
+    required_posting_auths: [ 'your-account' ]
   }
 }
 
@@ -89,17 +89,17 @@ Here is an example of complex `FollowOperationBuilder` usage:
 {
   custom_json: {
     id: 'follow',
-    json: '["reblog",{"account":"your_account","author":"reblog_me","permlink":"post_permlink"}]',
+    json: '["reblog",{"account":"your-account","author":"reblog-me","permlink":"post-permlink"}]',
     required_auths: [],
-    required_posting_auths: [ 'your_account' ]
+    required_posting_auths: [ 'your-account' ]
   }
 }
 ```
 ===
 
-### 3. CommunityOperationBuilder
+### 3. CommunityOperation
 
-This builder manages operations specific to communities on the Hive blockchain.
+This operation class manages operations specific to communities on the Hive blockchain.
 
 #### Example Usage:
 
@@ -116,9 +116,9 @@ You want to join a specific community to stay updated with its content and you w
 {
   custom_json: {
     id: 'community',
-    json: '["subscribe",{"community":"community_name"}]',
+    json: '["subscribe",{"community":"community-name"}]',
     required_auths: [],
-    required_posting_auths: [ 'your_account' ]
+    required_posting_auths: [ 'your-account' ]
   }
 }
 
@@ -126,9 +126,9 @@ You want to join a specific community to stay updated with its content and you w
 {
   custom_json: {
     id: 'community',
-    json: '["flagPost",{"community":"community_name","account":"author_account","permlink":"post_permlink","notes":"violation notes"}]',
+    json: '["flagPost",{"community":"community-name","account":"author-account","permlink":"post-permlink","notes":"violation notes"}]',
     required_auths: [],
-    required_posting_auths: [ 'your_account' ]
+    required_posting_auths: [ 'your-account' ]
   }
 }
 ```
@@ -146,9 +146,9 @@ Since you are an community administrator, you can update its properties:
 {
   custom_json: {
     id: 'community',
-    json: '["updateProps",{"community":"community_name","props":{"title":"New Community Title","about":"Community Description","description":"Detailed community description","flag_text":"Post flagging rules","is_nsfw":false,"lang":"en"}}]',
+    json: '["updateProps",{"community":"community-name","props":{"title":"New Community Title","about":"Community Description","description":"Detailed community description","flag_text":"Post flagging rules","is_nsfw":false,"lang":"en"}}]',
     required_auths: [],
-    required_posting_auths: [ 'your_account' ]
+    required_posting_auths: [ 'your-account' ]
   }
 }
 ```
@@ -160,4 +160,4 @@ Since you are an community administrator, you can update its properties:
 
 ## Summary
 
-HiveApps operations enable the execution of complex tasks on the Hive blockchain using `custom_json`. By utilizing the appropriate builders, users and developers can efficiently create, manage, and authorize these operations, ensuring smooth and standardized interactions in the Hive ecosystem. This simplifies and automates the management of communities, resource credits, and subscriptions.
+HiveApps operations enable the execution of complex tasks on the Hive blockchain using `custom_json`. By utilizing the appropriate operation classes, users and developers can efficiently create, manage, and authorize these operations, ensuring smooth and standardized interactions in the Hive ecosystem. This simplifies and automates the management of communities, resource credits, and subscriptions.

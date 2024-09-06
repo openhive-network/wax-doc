@@ -5,7 +5,7 @@ icon: tab-external
 
 # Using UpdateProposal
 
-The `UpdateProposalBuilder` allows for updating proposals on the Hive blockchain.
+The `UpdateProposalOperation` allows for updating proposals on the Hive blockchain.
 
 ## Creating an Update Proposal
 

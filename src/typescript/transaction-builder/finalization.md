@@ -8,9 +8,9 @@ label: Finalization
 
 When the work with the transaction is ready, you now need to decide what you want to do with it next.
 
-## Building
+## Convertion to api form
 
-The simple `build` method returns the proto transaction and also aplies the expiration time:
+The simple `toApi` method returns the transaction in hive api form:
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/simple-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/simple-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fsimple-build.ts&startScript=test-tb-finalization-simple-build)" :::
 
@@ -26,8 +26,8 @@ The simple `build` method returns the proto transaction and also aplies the expi
       "type": "vote_operation",
       "value": {
         "voter": "voter",
-        "author": "test_author",
-        "permlink": "test_permlink",
+        "author": "test-author",
+        "permlink": "test-permlink",
         "weight": 2200
       }
     }
@@ -37,7 +37,7 @@ The simple `build` method returns the proto transaction and also aplies the expi
 
 ===
 
-You can also build your transaction into proto form, and add your signature to the internal signatures array (it will also apply the transaction expiration time):
+You can also represent your transaction in the api form, with your signature added to the internal signatures array (it will also apply the transaction expiration time):
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/proto-form-signature-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/proto-form-signature-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fproto-form-signature-build.ts&startScript=test-tb-finalization-proto-form-signature-build)" :::
 
@@ -53,8 +53,8 @@ You can also build your transaction into proto form, and add your signature to t
       "type": "vote_operation",
       "value": {
         "voter": "voter",
-        "author": "test_author",
-        "permlink": "test_permlink",
+        "author": "author",
+        "permlink": "test-permlink",
         "weight": 2200
       }
     }
@@ -68,10 +68,10 @@ You can also build your transaction into proto form, and add your signature to t
 ===
 
 !!!warning Multiple signatures
-**Also remember that you can add more than one signature while building your transaction.**
+**Also remember that you can add more than one signature while signing your transaction.**
 !!!
 
-If you want to build and sign your transaction and return it in proto form, you can use this sample (it will also apply the transaction expiration time):
+If you want to sing your transaction in traditional way and return it in the api form, you can use this sample (it will also apply the transaction expiration time):
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/sign-and-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/sign-and-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fsign-and-build.ts&startScript=test-tb-finalization-sign-and-build)" :::
 
@@ -87,8 +87,8 @@ If you want to build and sign your transaction and return it in proto form, you 
       "type": "vote_operation",
       "value": {
         "voter": "voter",
-        "author": "test_author",
-        "permlink": "test_permlink",
+        "author": "author",
+        "permlink": "test-permlink",
         "weight": 2200
       }
     }
@@ -101,7 +101,7 @@ If you want to build and sign your transaction and return it in proto form, you 
 
 ===
 
-You can also sign the transaction without building it:
+You can also sign the transaction without converting it to the api form (which will return the signatures):
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/sign.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/sign.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fsign.ts&startScript=test-tb-finalization-sign)" :::
 
@@ -114,7 +114,7 @@ You can also sign the transaction without building it:
 ===
 
 !!!danger Beekeeper Information
-**If you want to sign the transaction, you have to initialize beekeeper library.** If you want to sign the transaction after creating it, using our `TransactionBuilder`, you have to initialize our beekeeper library. Remember to import keys into Beekeeper. It ensures that you can use them securely for transactions and other operations without exposing the raw keys.
+**If you want to sign the transaction, you have to initialize beekeeper library.** If you want to sign the transaction after creating it, using our `Transaction` interface, you have to initialize our beekeeper library. Remember to import keys into Beekeeper. It ensures that you can use them securely for transactions and other operations without exposing the raw keys.
 
 Imported key and the one you want to use for signing must be the same!
 !!!
@@ -137,8 +137,8 @@ At the end you can also just convert your transaction into the Hive API-form JSO
       "type": "vote_operation",
       "value": {
         "voter": "voter",
-        "author": "test_author",
-        "permlink": "test_permlink",
+        "author": "test-author",
+        "permlink": "test-permlink",
         "weight": 2200
       }
     }
@@ -148,7 +148,7 @@ At the end you can also just convert your transaction into the Hive API-form JSO
 
 ===
 
-Or you can convert transction to legacy API form:
+Or you can just convert transction to legacy API form:
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/convert-to-legacy-api.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/convert-to-legacy-api.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fconvert-to-legacy-api.ts&startScript=test-tb-finalization-convert-to-legacy-api)" :::
 
@@ -164,8 +164,8 @@ Or you can convert transction to legacy API form:
       "vote",
       {
         "voter": "voter",
-        "author": "test_author",
-        "permlink": "test_permlink",
+        "author": "test-author",
+        "permlink": "test-permlink",
         "weight": 2200
       }
     ]

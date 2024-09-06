@@ -20,7 +20,7 @@ A brain key is a long passphrase that provides enough entropy to generate crypto
 
 Using a brain key, you can regenerate the same key pairs whenever needed, provided the exact same mnemonic phrase is used. This is especially useful in scenarios requiring backup and recovery of cryptographic keys, ensuring they are never permanently lost.
 
-WE SHOULD PROBABLY DROP ALL THE BRAIN KEY STUFF AND CALL THIS generateRandomPrivateKey() AND THROW AWAY BRAINKEY THAT NO ONE CAN POSSIBLY REMEMBER. THIS MEANS CHANGING TEXT ABOVE TOO.
+<!-- WE SHOULD PROBABLY DROP ALL THE BRAIN KEY STUFF AND CALL THIS generateRandomPrivateKey() AND THROW AWAY BRAINKEY THAT NO ONE CAN POSSIBLY REMEMBER. THIS MEANS CHANGING TEXT ABOVE TOO. -->
 
 ## Generate a random private key
 
@@ -29,9 +29,7 @@ WE SHOULD PROBABLY DROP ALL THE BRAIN KEY STUFF AND CALL THIS generateRandomPriv
 
 
 !!!danger Security Reminder
-**Always save the generated private keys and password securely.** These keys provide access to your Hive account and assets. You can import them into the Beekeeper ensures that you can use them securely for transactions and other operations without exposing the raw keys. 
+**Always save the generated private keys and password securely.** These keys provide access to your Hive account and assets. You can import them into the Beekeeper ensures that you can use them securely for transactions and other operations without exposing the raw keys.
 
-DOES BEEKEEPER SUPPORT IMPORTING PASSWORD OR JUST INDIVIDUAL KEYS (i.e. can it re-generate the keys from account,role,password?)
+<!-- DOES BEEKEEPER SUPPORT IMPORTING PASSWORD OR JUST INDIVIDUAL KEYS (i.e. can it re-generate the keys from account,role,password?) -->
 !!!
-
-

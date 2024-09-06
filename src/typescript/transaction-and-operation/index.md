@@ -11,11 +11,19 @@ Hive transactions, operations and their properties (i.e. assets) are represented
 
 ## Transactions
 
-Hive **transactions** are created by a user to group a sequence of Hive operations that should all succeed or fail together.  Even singular operations need to be put inside a transaction because account signing is also performed at the transaction level. In addition to a sequence of operations, each transaction contains metadata such as the expiration time. 
+Hive **transactions** are created by a user to group a sequence of Hive operations that should all succeed or fail together.  Even singular operations need to be put inside a transaction because account signing is also performed at the transaction level. In addition to a sequence of operations, each transaction contains metadata such as the expiration time.
 
-FULL EXPLANATIONS NEED TO BE ADDED HERE ABOUT TAPOS AND EXPIRATION TIME AFTER MORE RESEARCH.
+## Transaction as Proof of Stake (TaPoS)
 
-Here is a general structure of a transaction:
+The hive software requires every transaction to include part of the hash of a recent block header. This hash serves two purposes:
+
+  1. prevents a replay of a transaction on forks that do not include the referenced block
+  2. signals the network that a particular user and their stake are on a specific fork.
+
+Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
+<!-- FULL EXPLANATIONS NEED TO BE ADDED HERE ABOUT TAPOS AND EXPIRATION TIME AFTER MORE RESEARCH. -->
+
+## Transaction general structure:
 
 - **ref_block_num**: A 16-bit integer referencing the block number.
 - **ref_block_prefix**: A 32-bit integer referencing the block prefix.
@@ -51,9 +59,9 @@ Here are some examples of the contents of some operations:
   - **body**: The content body.
   - **json_metadata**: Additional metadata in JSON format.
 
-YOU CAN FIND A FULL LIST OF POSSIBLE OF OPERATIONS AND THEIR FIELDS HERE. ADD LINK TO PROTOBUF GENERATED DOCUMENTATION HERE.
+You can find a full list of possible of operations and their fields [`here`](https://gitlab.syncad.com/hive/wax/-/wikis/interfaces/operation).
 
-WHY IS THERE A MISMATCH BETWEEN NAMES IN EXAMPLES ABOVE AND PROTOBUF DEFINITIONS?
+<!-- WHY IS THERE A MISMATCH BETWEEN NAMES IN EXAMPLES ABOVE AND PROTOBUF DEFINITIONS? -->
 
 ## Implementation Note: Why use Protobuf?
 

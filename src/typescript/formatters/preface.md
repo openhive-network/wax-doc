@@ -14,7 +14,7 @@ Formatters work by taking operation objects (such as transactions, custom JSON o
 ## Regular Usage
 
 !!!secondary Object traverse direction
-Wax transformers traverse given object from the bottom to the top without modifying the input data, e.g. in the following object, properties will be matched alphabetically:
+Wax transformers traverse given object from the bottom to the top without modifying the input data, e.g. in the following object, properties will be matched in the following order: 'a', 'b', 'c':
 
 ```json
 { b: { a: 10 }, c: 20 }

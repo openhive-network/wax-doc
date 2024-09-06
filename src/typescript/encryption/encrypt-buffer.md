@@ -5,7 +5,7 @@ icon: project-roadmap
 
 # Encrypt buffer
 
-The Wax library provides a robust set of tools for handling encryption and decryption within the Hive ecosystem. This includes both methods for direct encryption/decryption as well as using the transaction builder interface to handle encrypted operations.
+The Wax library provides a robust set of tools for handling encryption and decryption within the Hive ecosystem. This includes both methods for direct encryption/decryption as well as using the `Transaction` interface to handle encrypted operations.
 
 !!!secondary Public Keys in Hive
 One important detail to note is that public keys within the Hive ecosystem start with the prefix `STM`.

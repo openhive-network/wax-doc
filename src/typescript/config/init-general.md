@@ -6,7 +6,7 @@ icon: rocket
 ## Constructing a Wax interface
 
 The root Wax interface can be constructed using either default or custom configuration options.
-Custom options allow selecting a specific blockchain network (e.g. mainnet, testnet, or mirrornet) and a specific Hive API endpoint (e.g. api.hive.blog). It also provides settings to optimize for performance(???), network latency (???), or other custom needs (WHAT ARE THESE? Make some link to what the options are)
+Custom options allow selecting a specific blockchain network (e.g. mainnet, testnet, or mirrornet), a specific Hive API endpoint (e.g. api.hive.blog) and also a custom REST API endpoint. It also provides settings to optimize for performance <!--(???)-->, network latency <!--(???)-->, or other custom needs. <!--(WHAT ARE THESE? Make some link to what the options are)-->
 
 
 ## Default Wax initialization

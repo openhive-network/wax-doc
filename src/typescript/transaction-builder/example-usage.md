@@ -4,9 +4,9 @@ icon: flame
 label: Example usage
 ---
 
-# Example Transaction Builder usage
+# Example Transaction interface usage
 
-Once you know all the `TransactionBuilder` functionality, let's look at an example of complete usage.
+Once you know all the `Transaction` interface functionality, let's look at an example of complete usage.
 
 +++ Example usage (HF26 format)
 
@@ -24,10 +24,10 @@ Once you know all the `TransactionBuilder` functionality, let's look at an examp
     {
       "type": "comment_operation",
       "value": {
-        "parent_author": "parent_author",
-        "parent_permlink": "parent_permlink",
+        "parent_author": "parent-author",
+        "parent_permlink": "parent-permlink",
         "author": "author",
-        "permlink": "re-parent_author-1719488687642",
+        "permlink": "re-parent-author-1719488687642",
         "title": "",
         "body": "body",
         "json_metadata": "{\"format\":\"markdown+html\",\"app\":\"@hiveio/wax/1.27.6-rc1\",\"tags\":[\"tag\"],\"description\":\"description\"}"
@@ -37,7 +37,7 @@ Once you know all the `TransactionBuilder` functionality, let's look at an examp
       "type": "comment_options_operation",
       "value": {
         "author": "author",
-        "permlink": "re-parent_author-1719488687642",
+        "permlink": "re-parent-author-1719488687642",
         "max_accepted_payout": {
           "amount": "1000000000",
           "precision": 3,
@@ -98,8 +98,8 @@ Please note that the output for `txSigned` and `txMultiSigned` is not complete d
       "vote",
       {
         "voter": "voter",
-        "author": "test_author",
-        "permlink": "test_permlink",
+        "author": "test-author",
+        "permlink": "test-permlink",
         "weight": 2200
       }
     ]
@@ -118,8 +118,8 @@ Please note that the output for `txSigned` and `txMultiSigned` is not complete d
       "vote",
       {
         "voter": "voter",
-        "author": "test_author",
-        "permlink": "test_permlink",
+        "author": "test-author",
+        "permlink": "test-permlink",
         "weight": 2200
       }
     ]
@@ -133,19 +133,19 @@ Please note that the output for `txSigned` and `txMultiSigned` is not complete d
 ===
 
 !!!secondary
-Also if you want to use some custom tool for signing the transaction instead of our provided methods, you can do it based on the sample above. If you do not want to use `TransactionBuilder` in legacy form, you can do it just by replacing:
+Also if you want to use some custom tool for signing the transaction instead of our provided methods, you can do it based on the sample above. If you do not want to use `Transaction` interface in legacy form, you can do it just by replacing:
 
 `const digest = tx.legacy_sigDigest;` -> `const digest = tx.sigDigest;`.
 !!!
 
-+++ Full Transaction Builder example usage
++++ Full Transaction interface example usage
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/example-usage/full-transaction-builder-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/example-usage/full-transaction-builder-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fexample-usage%2Ffull-transaction-builder-usage.ts&startScript=test-tb-full-example-usage)" :::
 
 ==- Output
 
 ```javascript
-// simpleOperationTxBuilder
+// simpleOperationTx
 {
   "ref_block_num": 32100,
   "ref_block_prefix": 27252558,
@@ -155,8 +155,8 @@ Also if you want to use some custom tool for signing the transaction instead of 
       "type": "vote_operation",
       "value": {
         "voter": "voter",
-        "author": "test_author",
-        "permlink": "test_permlink",
+        "author": "test-author",
+        "permlink": "test-permlink",
         "weight": 2200
       }
     }
@@ -166,7 +166,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
   ]
 }
 
-// legacyTxBuilder
+// legacyTx
 {
   "ref_block_num": 32100,
   "ref_block_prefix": 27252558,
@@ -188,7 +188,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
   ]
 }
 
-// encryptionTxBuilder
+// encryptionTx
 {
   "ref_block_num": 32100,
   "ref_block_prefix": 27252558,
@@ -218,7 +218,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
   ]
 }
 
-// commentOperationTxBuilder
+// commentOperationTx
 {
   "ref_block_num": 32100,
   "ref_block_prefix": 27252558,
@@ -230,7 +230,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
         "parent_author": "",
         "parent_permlink": "my-category",
         "author": "your-account",
-        "permlink": "My_article_permlink",
+        "permlink": "my-article-permlink",
         "title": "My article title",
         "body": "My article body",
         "json_metadata": "{\"format\":\"markdown\",\"app\":\"@hiveio/wax/1.27.6-rc1\",\"tags\":[\"my-article\"],\"description\":\"This is my article!\",\"image\":[\"article.jpg\"],\"links\":[\"https://example.com\"]}"
@@ -240,7 +240,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
       "type": "comment_options_operation",
       "value": {
         "author": "your-account",
-        "permlink": "My_article_permlink",
+        "permlink": "my-article-permlink",
         "max_accepted_payout": { "amount": "100", "precision": 3, "nai": "@@000000021" },
         "percent_hbd": 10000,
         "allow_votes": true,
@@ -264,7 +264,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
       "type": "comment_operation",
       "value": {
         "parent_author": "your-account",
-        "parent_permlink": "My_article_permlink",
+        "parent_permlink": "my-article-permlink",
         "author": "your-account",
         "permlink": "re-your-account-1719935728826",
         "title": "",
@@ -302,7 +302,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
   ]
 }
 
-// operationFactoriesTxBuilder
+// operationFactoriesTx
 {
   "ref_block_num": 32101,
   "ref_block_prefix": 2985086707,
@@ -356,7 +356,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
   ]
 }
 
-// otherOperationsTxBuilder
+// otherOperationsTx
 {
   "ref_block_num": 32101,
   "ref_block_prefix": 2985086707,
@@ -367,7 +367,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
       "value": {
         "required_posting_auths": [ "your-account" ],
         "id": "follow",
-        "json": "[\"follow\",{\"follower\":\"your-account\",\"following\":\"blog_to_follow\",\"what\":[\"blog\"]}]"
+        "json": "[\"follow\",{\"follower\":\"your-account\",\"following\":\"blog-to-follow\",\"what\":[\"blog\"]}]"
       }
     },
     {
@@ -375,7 +375,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
       "value": {
         "required_posting_auths": [ "your-account" ],
         "id": "follow",
-        "json": "[\"follow\",{\"follower\":\"your-account\",\"following\":\"blog_to_mute\",\"what\":[\"ignore\"]}]"
+        "json": "[\"follow\",{\"follower\":\"your-account\",\"following\":\"blog-to-mute\",\"what\":[\"ignore\"]}]"
       }
     },
     {
@@ -383,7 +383,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
       "value": {
         "required_posting_auths": [ "your-account" ],
         "id": "follow",
-        "json": "[\"reblog\",{\"account\":\"your-account\",\"author\":\"to_reblog\",\"permlink\":\"post_permlink\"}]"
+        "json": "[\"reblog\",{\"account\":\"your-account\",\"author\":\"to-reblog\",\"permlink\":\"post-permlink\"}]"
       }
     },
     {
@@ -407,7 +407,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
       "value": {
         "required_posting_auths": [ "your-account" ],
         "id": "community",
-        "json": "[\"flagPost\",{\"community\":\"community_name\",\"account\":\"author_account\",\"permlink\":\"post_permlink\",\"notes\":\"violation notes\"}]"
+        "json": "[\"flagPost\",{\"community\":\"community-name\",\"account\":\"author-account\",\"permlink\":\"post-permlink\",\"notes\":\"violation notes\"}]"
       }
     }
   ],
