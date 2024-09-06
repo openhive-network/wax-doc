@@ -6,9 +6,11 @@ label: Complex operation
 
 # Adding complex operations
 
-If you want to work with `Transaction` interface in more complex way, it is recommendet to initialize it from hive chain interface. It allows you to avoid complexity of your work.
+Complex usage of `Transaction` interface allows to:
+- manually initialize transaction object with some blockchain properties (like TaPoS) - you can achieve it by using `createTransactionWithTaPoS` method.
+- use provided operation factory classes which encapsulate blockchain complexity (this part operates on any transaction object - regardless of way how you obtained it: by using `createTransactionWithTaPoS` or `createTransaction` method).
 
-Below is an example of fully building more complex transaction using the `Transaction` interface and our `pushOperation` functionality.
+Below is a complete example of a blockchain operation, requiring explicit serialization of input data to properly build final operation. All such steps require complex knowledge of blockchain internals and have been adopted to "regular programming steps" by using provided `WitnessSetPropertiesOperation` class.
 
 :::code source="../../../static/snippets/src/typescript/transaction-builder/working-with-tb/complex-operation/complex-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/working-with-tb/complex-operation/complex-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fworking-with-tb%2Fcomplex-operation%2Fcomplex-operation.ts&startScript=test-tb-working-with-tb-complex-operation)" :::
 
@@ -29,9 +31,7 @@ Below is an example of fully building more complex transaction using the `Transa
 
 ===
 
-The `pushOperation` method allows for simple construction of an operation.
-It takes as an argument new operation class instance, where you can provide all the configuration.
-
-The `pushOperation` method returns an instance of `Transaction` interface, on which you can later perform operations related to the transaction.
+As usually, the `pushOperation` method allows you to push any operation (regadless to complexity related to given blockchain scenario, being encapsulated by used operation class).
+At the end, the `pushOperation` method returns an instance of `Transaction` interface, on which you can later perform operations related  to the transaction. It nicely reuses well known scheme: [Call-chain](https://refactoring.guru/design-patterns/chain-of-responsibility/typescript/example)
 
 More complex information about `pushOperation` are presented in subsequent chapters.
