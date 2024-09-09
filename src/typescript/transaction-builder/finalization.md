@@ -8,7 +8,7 @@ label: Finalization
 
 When the work with the transaction is ready, you now need to decide what you want to do with it next.
 
-## Convertion to api form
+## Conversion to api form
 
 The simple `toApi` method returns the transaction in hive api form:
 

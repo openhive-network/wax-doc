@@ -1,7 +1,7 @@
 ---
 order: -3
 icon: book
-label: Reading properites
+label: Reading properties
 ---
 
 # Reading transaction properites
