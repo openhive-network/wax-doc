@@ -19,6 +19,6 @@ Generate removal removes recurrent transfer:
 
 ## Add Pair Id
 
-In this example we add pair id to recurrent transfer, using `RecurrentTransferOperation` (simply specify the `pairId` filed in the configuration):
+In this example we add pair id to recurrent transfer, using `RecurrentTransferOperation` (simply specify the `pairId` field in the configuration):
 
 :::code source="../../../static/snippets/src/typescript/transaction-builder/operation-factories/recurrent-transfer/add-pair-id.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/operation-factories/recurrent-transfer/add-pair-id.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Foperation-factories%2Frecurrent-transfer%2Fadd-pair-id.ts&startScript=test-tb-operation-factories-add-pair-id)" :::
