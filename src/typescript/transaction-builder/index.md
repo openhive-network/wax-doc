@@ -15,7 +15,7 @@ The `Transaction` in the Hive Ecosystem, provided by the `@hiveio/wax` library, 
 
 ## Beekeeper initialization.
 
-Beekeeper is a library that provides security in storing your keys. With it, you can easily import keys stored in your wallet and use them to sign your transactions. This is an incredibly useful tool in the context of working with the Transaction interface, which you will have the opportunity to see in the following chapters. In our test environment, we have used Beekeeper [here.](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=scripts%2Frunner.js) Thanks to this functionality, to execute code examples, you can utilize specific functionalities of Beekeeper (wallet, privateKey, etc.) by simply destructuring the object available in globalThis:
+Beekeeper is a library that provides security in storing your keys. With it, you can easily import keys stored in your wallet and use them to sign your transactions. This is an incredibly useful tool in the context of working with the `Transaction` interface, which you will have the opportunity to see in the following chapters. In our test environment, we have used Beekeeper [here.](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=scripts%2Frunner.js) Thanks to this functionality, to execute code examples, you can utilize specific functionalities of Beekeeper (wallet, privateKey, etc.) by simply destructuring the object available in globalThis:
 
 ```javascript
 // Here are presented all the available variables that can be used in the examples.
