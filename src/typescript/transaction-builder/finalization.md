@@ -10,7 +10,7 @@ When the work with the transaction is ready, you now need to decide what you wan
 
 ## Conversion to api form
 
-The simple `toApi` method returns the transaction in hive api form:
+The simple `toApi` method returns the transaction in the Hive API-JSON form:
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/simple-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/simple-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fsimple-build.ts&startScript=test-tb-finalization-simple-build)" :::
 
@@ -37,7 +37,7 @@ The simple `toApi` method returns the transaction in hive api form:
 
 ===
 
-You can also represent your transaction in the api form, with your signature added to the internal signatures array (it will also apply the transaction expiration time):
+You can also represent your transaction in the API form, with your signature added to the internal signatures array (it will also apply the transaction expiration time):
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/proto-form-signature-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/proto-form-signature-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fproto-form-signature-build.ts&startScript=test-tb-finalization-proto-form-signature-build)" :::
 
@@ -71,7 +71,7 @@ You can also represent your transaction in the api form, with your signature add
 **Also remember that you can add more than one signature while signing your transaction.**
 !!!
 
-If you want to sign your transaction in traditional way and return it in the api form, you can use this sample (it will also apply the transaction expiration time):
+If you want to sign your transaction in traditional way and return it in the API form, you can use this sample (it will also apply the transaction expiration time):
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/sign-and-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/sign-and-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fsign-and-build.ts&startScript=test-tb-finalization-sign-and-build)" :::
 
@@ -101,7 +101,7 @@ If you want to sign your transaction in traditional way and return it in the api
 
 ===
 
-You can also sign the transaction without converting it to the api form (which will return the signatures):
+You can also sign the transaction without converting it to the API form (which will return the signatures):
 
 :::code source="../../static/snippets/src/typescript/transaction-builder/finalization/sign.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/finalization/sign.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Ffinalization%2Fsign.ts&startScript=test-tb-finalization-sign)" :::
 
