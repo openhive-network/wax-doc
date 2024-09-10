@@ -13,6 +13,6 @@ The `WitnessSetPropertiesOperation` allows witnesses to update their properties 
 
 ## Setting Explicit Witness Properties
 
-Just like in all operation classes, you can set all the optional fields on single class instance.
+As with all operation classes, you can set all the optional fields on a single class instance.
 
 :::code source="../../../static/snippets/src/typescript/transaction-builder/operation-factories/witness-set-properties/set-explicit.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/operation-factories/witness-set-properties/set-explicit.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Foperation-factories%2Fwitness-set-properties%2Fset-explicit.ts&startScript=test-tb-operation-factories-set-explicit)" :::

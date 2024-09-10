@@ -6,7 +6,7 @@ label: HiveApps Operations
 
 # HiveApps Operations in Transaction interface
 
-The Hive blockchain enables advanced operations using `custom_json`. These operations are standardized and recognized by the Hive ecosystem, such as Hivemind. This allows us to utilize advanced features that go beyond typical Hive blockchain operations. These custom operations are known as HiveApps operations.
+The Hive blockchain enables advanced operations using `custom_json`. These operations are standardized and recognized by the Hive Ecosystem, such as Hivemind. This allows us to utilize advanced features that go beyond typical Hive blockchain operations. These custom operations are known as HiveApps operations.
 
 ## What is a HiveApps Operation?
 
