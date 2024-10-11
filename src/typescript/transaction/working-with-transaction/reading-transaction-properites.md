@@ -8,7 +8,7 @@ label: Reading properties
 
 The `Transaction` interface also allows you to read your transaction properties like `sig_digest`, `id`, etc.
 
-:::code source="../../../static/snippets/src/typescript/transaction/working-with-tb/reading-properties/reading-properties.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-tb/reading-properties/reading-properties.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-tb%2Freading-properties%2Freading-properties.ts&startScript=test-transaction-working-with-tb-reading-properties)" :::
+:::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/reading-transaction-properties/reading-properties.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/reading-transaction-properties/reading-properties.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Freading-transaction-properties%2Freading-properties.ts&startScript=test-transaction-working-with-transaction-reading-properties)" :::
 
 === Output
 

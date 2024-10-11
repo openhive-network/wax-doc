@@ -9,10 +9,10 @@ One of the complex operations supported by the Hive blockchain is the publishing
 
 ## Creating a blog post with custom JSON-metadata properties
 
-:::code source="../../../static/snippets/src/typescript/transaction/operation-factories/comment-builder/creating-article.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operation-factories/comment-builder/creating-article.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperation-factories%2Fcomment-builder%2Fcreating-article.ts&startScript=test-transaction-operation-factories-creating-article)" :::
+:::code source="../../../static/snippets/src/typescript/transaction/operations/comment/creating-article.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/comment/creating-article.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Fcomment%2Fcreating-article.ts&startScript=test-transaction-operations-creating-article)" :::
 
 ## Creating a Comment (Reply) with multiple JSON-metadata attributes
 
 You can set multiple properties on one operation class instance, as shown in the example below.
 
-:::code source="../../../static/snippets/src/typescript/transaction/operation-factories/comment-builder/creating-reply.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operation-factories/comment-builder/creating-reply.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperation-factories%2Fcomment-builder%2Fcreating-reply.ts&startScript=test-transaction-operation-factories-creating-reply)" :::
+:::code source="../../../static/snippets/src/typescript/transaction/operations/comment/creating-reply.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/comment/creating-reply.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Fcomment%2Fcreating-reply.ts&startScript=test-transaction-operations-creating-reply)" :::

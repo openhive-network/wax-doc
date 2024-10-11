@@ -12,7 +12,7 @@ Complex usage of `Transaction` interface allows to:
 
 Below is a complete example of a blockchain operation, requiring explicit serialization of input data to properly build final operation. All such steps require complex knowledge of blockchain internals and have been adopted to "regular programming steps" by using provided `WitnessSetPropertiesOperation` class.
 
-:::code source="../../../static/snippets/src/typescript/transaction/working-with-tb/complex-operation/complex-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-tb/complex-operation/complex-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-tb%2Fcomplex-operation%2Fcomplex-operation.ts&startScript=test-transaction-working-with-tb-complex-operation)" :::
+:::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/pushing-complex-operation/complex-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/pushing-complex-operation/complex-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Fpushing-complex-operation%2Fcomplex-operation.ts&startScript=test-transaction-working-with-transaction-complex-operation)" :::
 
 === Output
 
