@@ -24,7 +24,7 @@ Using a brain key, you can regenerate the same key pairs whenever needed, provid
 
 ## Generate a random private key
 
-:::code source="../../static/snippets/src/typescript/key-generation/suggest-brain-key/suggest-brain-key.ts" language="typescript" title="Test it yourself: [src/typescript/key-generation/suggest-brain-key/suggest-brain-key.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fkey-generation%2Fsuggest-brain-key%2Fsuggest-brain-key.ts&startScript=test-key-generation-suggest-brain-key)" :::
+:::code source="../../static/snippets/src/typescript/key-generation/generate-key/suggest-brain-key.ts" language="typescript" title="Test it yourself: [src/typescript/key-generation/generate-key/suggest-brain-key.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fkey-generation%2Fgenerate-key%2Fsuggest-brain-key.ts&startScript=test-key-generation-suggest-brain-key)" :::
 
 
 

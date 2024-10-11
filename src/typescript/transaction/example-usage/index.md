@@ -10,7 +10,7 @@ Once you know all the `Transaction` interface functionality, let's look at an ex
 
 +++ Example usage (HF26 format)
 
-:::code source="../../../static/snippets/src/typescript/transaction-builder/example-usage/example-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/example-usage/example-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fexample-usage%2Fexample-usage.ts&startScript=test-tb-example-usage)" :::
+:::code source="../../../static/snippets/src/typescript/transaction/example-usage/example-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/example-usage/example-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fexample-usage%2Fexample-usage.ts&startScript=test-transaction-example-usage)" :::
 
 ==- Output
 
@@ -83,7 +83,7 @@ Please note that the output for `txSigned` and `txMultiSigned` is not complete d
 
 +++ Example usage (Legacy format)
 
-:::code source="../../../static/snippets/src/typescript/transaction-builder/example-usage/example-legacy-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/example-usage/example-legacy-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fexample-usage%2Fexample-legacy-usage.ts&startScript=test-tb-example-legacy-usage)" :::
+:::code source="../../../static/snippets/src/typescript/transaction/example-usage/example-legacy-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/example-usage/example-legacy-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fexample-usage%2Fexample-legacy-usage.ts&startScript=test-transaction-example-legacy-usage)" :::
 
 ==- Output
 
@@ -140,7 +140,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
 
 +++ Full Transaction interface example usage
 
-:::code source="../../../static/snippets/src/typescript/transaction-builder/example-usage/full-transaction-builder-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/example-usage/full-transaction-builder-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fexample-usage%2Ffull-transaction-builder-usage.ts&startScript=test-tb-full-example-usage)" :::
+:::code source="../../../static/snippets/src/typescript/transaction/example-usage/full-transaction-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/example-usage/full-transaction-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fexample-usage%2Ffull-transaction-usage.ts&startScript=test-transaction-full-example-usage)" :::
 
 ==- Output
 

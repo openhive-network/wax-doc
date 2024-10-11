@@ -25,7 +25,7 @@ This operation class is used to manage Resource Credits (RC) delegations. Resour
 If you want to help a friend perform more operations on their account, you can delegate some of your Resource Credits to them.
 Meanwhile the other friends does not need your help anymore, so you can remove the delegation.
 
-:::code source="../../static/snippets/src/typescript/transaction-builder/hive-apps-operations/resource-credits-operations.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/hive-apps-operations/resource-credits-operations.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fhive-apps-operations%2Fresource-credits-operations.ts&startScript=test-tb-hive-apps-resource-credits)" :::
+:::code source="../../static/snippets/src/typescript/transaction/hive-apps-operations/resource-credits-operations.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/hive-apps-operations/resource-credits-operations.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fhive-apps-operations%2Fresource-credits-operations.ts&startScript=test-transaction-hive-apps-resource-credits)" :::
 
 ==- Output
 
@@ -60,7 +60,7 @@ This operation class handles operations related to following, muting, blacklisti
 
 Here is an example of complex `FollowOperation` usage:
 
-:::code source="../../static/snippets/src/typescript/transaction-builder/hive-apps-operations/follow-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/hive-apps-operations/follow-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fhive-apps-operations%2Ffollow-operation.ts&startScript=test-tb-hive-apps-follow-operation)" :::
+:::code source="../../static/snippets/src/typescript/transaction/hive-apps-operations/follow-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/hive-apps-operations/follow-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fhive-apps-operations%2Ffollow-operation.ts&startScript=test-transaction-hive-apps-follow-operation)" :::
 
 ==- Output
 
@@ -107,7 +107,7 @@ This operation class manages operations specific to communities on the Hive bloc
 
 You want to join a specific community to stay updated with its content and you want flag some post. Here is an example how you can do it:
 
-:::code source="../../static/snippets/src/typescript/transaction-builder/hive-apps-operations/community-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/hive-apps-operations/community-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fhive-apps-operations%2Fcommunity-operation.ts&startScript=test-tb-hive-apps-community-operation)" :::
+:::code source="../../static/snippets/src/typescript/transaction/hive-apps-operations/community-operation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/hive-apps-operations/community-operation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fhive-apps-operations%2Fcommunity-operation.ts&startScript=test-transaction-hive-apps-community-operation)" :::
 
 ==- Output
 
@@ -138,7 +138,7 @@ You want to join a specific community to stay updated with its content and you w
 
 Since you are an community administrator, you can update its properties:
 
-:::code source="../../static/snippets/src/typescript/transaction-builder/hive-apps-operations/community-properties.ts" language="typescript" title="Test it yourself: [src/typescript/transaction-builder/hive-apps-operations/community-properties.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction-builder%2Fhive-apps-operations%2Fcommunity-properties.ts&startScript=test-tb-hive-apps-community-properties)" :::
+:::code source="../../static/snippets/src/typescript/transaction/hive-apps-operations/community-properties.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/hive-apps-operations/community-properties.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fhive-apps-operations%2Fcommunity-properties.ts&startScript=test-transaction-hive-apps-community-properties)" :::
 
 ==- Output
 

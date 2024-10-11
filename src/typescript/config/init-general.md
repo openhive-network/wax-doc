@@ -17,4 +17,4 @@ Custom options allow selecting a specific blockchain network (e.g. mainnet, test
 ## Initializing Wax interface with custom options
 
 
-:::code source="../../static/snippets/src/typescript/config/init-with-config/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-with-config/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-with-config%2Fchain.ts&startScript=test-config-init-with-config-chain)" :::
+:::code source="../../static/snippets/src/typescript/config/init-general/chain-with-config.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-general/chain-with-config.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain-with-config.ts&startScript=test-config-init-with-config-chain)" :::
