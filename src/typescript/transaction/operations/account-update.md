@@ -38,20 +38,20 @@ We currently support only the `hive` role category.
 
 ## Setting new memo key on the profile
 
-TODO: Code
+:::code source="../../../static/snippets/src/typescript/transaction/operations/account-update/set-memo.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/account-update/set-memo.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Faccount-update%2Fset-memo.ts&startScript=test-transaction-operations-account-update-set-memo)" :::
 
 ## Adding account to the posting role
 
-TODO: Code
+:::code source="../../../static/snippets/src/typescript/transaction/operations/account-update/add-posting-account.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/account-update/add-posting-account.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Faccount-update%2Fadd-posting-account.ts&startScript=test-transaction-operations-account-update-add-posting-account)" :::
 
 ## Changing active key
 
-TODO: Code
+:::code source="../../../static/snippets/src/typescript/transaction/operations/account-update/change-active-key.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/account-update/change-active-key.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Faccount-update%2Fchange-active-key.ts&startScript=test-transaction-operations-account-update-change-active-key)" :::
 
 ## Modifying the owner level with treshold change
 
-TODO: Code
+:::code source="../../../static/snippets/src/typescript/transaction/operations/account-update/change-weight-treshold.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/account-update/change-weight-treshold.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Faccount-update%2Fchange-weight-treshold.ts&startScript=test-transaction-operations-account-update-change-weight-treshold)" :::
 
 ## Iterating over the hive category roles
 
-TODO: Code
+:::code source="../../../static/snippets/src/typescript/transaction/operations/account-update/iterate-roles.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/account-update/iterate-roles.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Faccount-update%2Fiterate-roles.ts&startScript=test-transaction-operations-account-update-iterate-roles)" :::
