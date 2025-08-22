@@ -11,17 +11,18 @@ Custom options allow selecting a specific blockchain network (e.g. mainnet, test
 
 ## Default Wax initialization
 
-+++ Tab 1
-TypeScript
-
-
++++ TypeScript
 :::code source="../../static/snippets/src/typescript/config/init-general/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-general/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain.ts&startScript=test-config-init-general-chain)" :::
-+++ Tab 2
-Python
-:::code source="../../static/snippets/src/typescript/config/init-general/chain.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-general/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain.ts&startScript=test-config-init-general-chain)" :::
-+++
+## Initializing Wax interface with custom options
+
+:::code source="../../static/snippets/src/typescript/config/init-general/chain-with-config.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-general/chain-with-config.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain-with-config.ts&startScript=test-config-init-with-config-chain)" :::
+
++++ Python
+
+:::code source="../../static/snippets/src/python/default_wax_initialization.py" range="10-20" language="python" title="Test it yourself on github codespace: [src/typescript/config/init-general/chain.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain.ts&startScript=test-config-init-general-chain)" :::
+
 
 ## Initializing Wax interface with custom options
 
-
-:::code source="../../static/snippets/src/typescript/config/init-general/chain-with-config.ts" language="typescript" title="Test it yourself: [src/typescript/config/init-general/chain-with-config.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain-with-config.ts&startScript=test-config-init-with-config-chain)" :::
+:::code source="../../static/snippets/src/typescript/config/init-general/chain-with-config.ts" language="python" title="Test it yourself: [src/typescript/config/init-general/chain-with-config.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fconfig%2Finit-general%2Fchain-with-config.ts&startScript=test-config-init-with-config-chain)" :::
++++

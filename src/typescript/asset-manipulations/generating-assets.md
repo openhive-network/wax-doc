@@ -10,7 +10,7 @@ There are two primary methods to generate `hive`, `vests`, or `hbd`, categorized
 ## Coins Functions
 
 These functions are designed to handle floating-point numbers using JavaScript's double-precision floating-point format (IEEE 754). They can accept fractional values but are limited to numbers within JavaScript's precision bounds (i.e., not exceeding `2^53 - 1` or below `-(2^53 - 1)`).
-
++++ Typescript
 ```ts
 // Example:
 chain.hiveCoins(100.3) // {"amount":"100300","precision":3,"nai":"@@000000021"}
@@ -21,6 +21,19 @@ chain.hbdCoins(100).amount // 100000
 
 /* Note that the fractional parts have been extended with implicit zeros, making it equivalent to providing 100.000 as the amount! */
 ```
++++ Python
+```python3
+from wax import create_wax_foundation
+
+wax = create_wax_foundation()
+
+# Note that the fractional parts have been extended with implicit zeros, making it equivalent to providing 100.300 as the amount!
+wax.hive.coins(100.3)  # {"amount":"100300","precision":3,"nai":"@@000000021"}
+
+# Note that the fractional parts have been extended with implicit zeros, making it equivalent to providing 100.000 as the amount!
+wax.hbd.coins(100).amount  # 100000
+```
++++
 
 !!!secondary **Fractional parts note**
 Please be mindful of the maximum fractional parts that each asset can accept: 3 for `hive` and `hbd`, and 6 for `vests`.
