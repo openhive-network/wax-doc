@@ -16,6 +16,6 @@ Wax enables developers to:
 This document contains executable examples that readers can directly interact with. When first opened, an example will automatically execute. You can also modify an example and re-run it. To re-run an example after modifying it, press the up-arrow in the terminal window to fetch the last command in the command line history (this is the command used to originally execute the example).
 !!!
 
-Start by exploring the Wax Interfaces reference:
+Start by exploring the Wax Interfaces Reference:
 
-[!ref icon="./static/typescript.svg" text="TypeScript Reference"](./typescript/config/init-general/)
+[!ref icon="repo" text="Interfaces Reference"](./interfaces/config/init-general/)
