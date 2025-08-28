@@ -19,5 +19,12 @@ NAI amounts must be specified as integer values (no decimal point) and the preci
 
 ## Creating NaiAsset objects for each asset type
 
++++ JavaScript
+
 :::code source="../../static/snippets/src/typescript/asset-manipulations/construct-nai-asset/receive-nai-asset.ts" language="typescript" title="Test it yourself: [src/typescript/asset-manipulations/receiving-nai-asset/receive-nai-asset.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fasset-manipulations%2Fconstruct-nai-asset%2Freceive-nai-asset.ts&startScript=test-asset-manipulations-receiving-nai-asset-receive-nai-asset)" :::
 
++++ Python
+
+TBA
+
++++

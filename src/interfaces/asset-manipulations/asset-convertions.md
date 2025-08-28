@@ -13,7 +13,15 @@ The `vestsToHp` method converts VESTS into Hive Power (HP). This conversion requ
 
 ### Code Snippet for `vestsToHp`
 
++++ JavaScript
+
 :::code source="../../static/snippets/src/typescript/asset-manipulations/asset-convertions/vests-to-hp.ts" language="typescript" title="Test it yourself: [src/typescript/asset-manipulations/asset-convertions/vests-to-hp.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fasset-manipulations%2Fasset-convertions%2Fvests-to-hp.ts&startScript=test-asset-manipulations-asset-convertions-vests-to-hp)" :::
+
++++ Python
+
+TBA
+
++++
 
 ## Using `hbdToHive`
 
@@ -21,4 +29,12 @@ The `hbdToHive` method converts HBD into Hive. This conversion requires three `N
 
 ### Code Snippet for `hbdToHive`
 
++++ JavaScript
+
 :::code source="../../static/snippets/src/typescript/asset-manipulations/asset-convertions/hbd-to-hive.ts" language="typescript" title="Test it yourself: [src/typescript/asset-manipulations/asset-convertions/hbd-to-hive.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fasset-manipulations%2Fasset-convertions%2Fhbd-to-hive.ts&startScript=test-asset-manipulations-asset-convertions-hbd-to-hive)" :::
+
++++ Python
+
+TBA
+
++++
