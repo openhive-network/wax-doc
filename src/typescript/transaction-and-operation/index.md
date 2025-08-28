@@ -21,9 +21,8 @@ The hive software requires every transaction to include part of the hash of a re
   2. signals the network that a particular user and their stake are on a specific fork.
 
 Over time all users end up directly confirming the blockchain which makes it difficult to forge counterfeit chains as the counterfeit would not be able to migrate transactions from the legitimate chain.
-<!-- FULL EXPLANATIONS NEED TO BE ADDED HERE ABOUT TAPOS AND EXPIRATION TIME AFTER MORE RESEARCH. -->
 
-## Transaction general structure:
+## Transaction general structure
 
 - **ref_block_num**: A 16-bit integer referencing the block number.
 - **ref_block_prefix**: A 32-bit integer referencing the block prefix.
@@ -59,9 +58,7 @@ Here are some examples of the contents of some operations:
   - **body**: The content body.
   - **json_metadata**: Additional metadata in JSON format.
 
-You can find a full list of possible of operations and their fields [`here`](https://gitlab.syncad.com/hive/wax/-/wikis/interfaces/operation).
-
-<!-- WHY IS THERE A MISMATCH BETWEEN NAMES IN EXAMPLES ABOVE AND PROTOBUF DEFINITIONS? -->
+You can find a full list of possible of operations and their fields in the [`Hive Wiki`](https://gitlab.syncad.com/hive/wax/-/wikis/interfaces/operation).
 
 ## Implementation Note: Why use Protobuf?
 
@@ -71,6 +68,7 @@ Protobuf (Protocol Buffers) is a language-neutral and platform-neutral mechanism
   - These definitions describe the data structures in a language-agnostic way.
   - They are defined directly inside the Hive Protocol library and shared from there
   - Examples:
+
     ```protobuf
     message transfer {
       required string from_account = 1 [json_name = "from"];

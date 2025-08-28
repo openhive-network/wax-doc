@@ -9,7 +9,7 @@ label: Implementation details
 
 This section is mainly for library maintainers who need to understand the low-level structure of the library.
 
-### Root Interface Design Theory
+## Root Interface Design Theory
 
 The `IWaxBaseInterface` is a low-level interface that deals with basic functionalities that don't require communication with an API endpoint. About the only reason to directly use this interface is for creating an offline transaction signer, and even then the transactions first need to be constructed using an online application because valid hive transactions require current blockchain data. Here's a breakdown of what it includes:
 
@@ -32,7 +32,7 @@ The `IWaxBaseInterface` is a low-level interface that deals with basic functiona
    - Methods for working with manabar values, which relate to the user’s resource credits and voting power.
    - Conversion between different transaction and protocol formats.
 
-### Hive Chain Interface
+## Hive Chain Interface
 
 The `IHiveChainInterface` extends the functionalities of the `IWaxBaseInterface` and adds high-level network-related operations. This interface connects to a Hive API endpoint. Here are some highlights:
 
