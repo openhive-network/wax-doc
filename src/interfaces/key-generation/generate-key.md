@@ -41,5 +41,5 @@ TBA
 +++
 
 !!!danger Security Reminder
-**Always save the generated private keys and password securely.** These keys provide access to your Hive account and assets. You can import them into the Beekeeper or any other [supported Hive wallet](../../signers) to ensure that you can use them securely for transactions and other operations without exposing the raw keys.
+**Always save the generated private keys and password securely.** These keys provide access to your Hive account and assets. You can import them into the Beekeeper or any other [supported Hive wallet](../signers) to ensure that you can use them securely for transactions and other operations without exposing the raw keys.
 !!!

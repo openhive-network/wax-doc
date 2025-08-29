@@ -93,7 +93,7 @@ preview:
     # Create the preview directory structure
     - mkdir -p public/-/mr-$CI_MERGE_REQUEST_IID
     - cp -r .retype/* public/-/mr-$CI_MERGE_REQUEST_IID/
-    - echo "/ /${GITLAB_PAGES_DEFAULT_BRANCH_PATH} 302" > ${PAGES_BASE_DIR}/_redirects  # redirect gitlab pages url like https://wax-cb93b7.pages.syncad.com/ to https://wax-cb93b7.pages.syncad.com/default/
+    - echo "/ /default/ 302" > ${CI_PROJECT_DIR}/public/_redirects  # redirect gitlab pages url like https://wax-cb93b7.pages.syncad.com/ to https://wax-cb93b7.pages.syncad.com/default/
     - echo "Documentation preview deployed to $PREVIEW_URL"
   artifacts:
     paths:
