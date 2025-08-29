@@ -5,20 +5,23 @@ serve:
   port: 5005
 favicon: /static/favicon.ico
 meta:
-  title: " | Hive Docs"
+  title: " | Wax 📚"
 snippets:
   lineNumbers:
+    - javascript
     - typescript
+    - python
+    - rust
 branding:
-  title: Hive Docs
+  title: Wax Docs
   logo: /static/hive.svg
-  label: v1.0
+  label: 1.27.6-rc10
   colors:
     label:
       text: "#e31337"
       background: "#fce7eb"
 cache:
-  token: v1.0
+  token: 1.27.6-rc10
 editor:
   enabled: false
 links:
@@ -29,6 +32,14 @@ links:
   - text: Hive Blog
     link: https://hive.blog
     icon: comment-discussion
+    target: blank
+  - text: Wax GitLab
+    link: https://gitlab.syncad.com/hive/wax
+    icon: git-branch
+    target: blank
+  - text: NPM package
+    link: https://www.npmjs.com/package/@hiveio/wax
+    icon: package
     target: blank
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
