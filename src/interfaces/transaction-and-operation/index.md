@@ -37,19 +37,19 @@ Over time all users end up directly confirming the blockchain which makes it dif
 
 Here are some examples of the contents of some operations:
 
-- **transfer_operation**: Handles token transfers between accounts.
+- [!badge variant="info" text="transfer_operation"]: Handles token transfers between accounts.
   - **from**: The sender's account name.
   - **to**: The receiver's account name.
   - **amount**: The amount to be transferred.
   - **memo**: An optional memo for the transfer.
 
-- **vote_operation**: Handles voting on content.
+- [!badge variant="info" text="vote_operation"]: Handles voting on content.
   - **voter**: The account name of the voter.
   - **author**: The account name of the post author.
   - **permlink**: The permanent link to the content.
   - **weight**: The weight of the vote.
 
-- **comment_operation**: Handles posting or editing content.
+- [!badge variant="info" text="comment_operation"]: Handles posting or editing content.
   - **parent_author**: The account name of the parent post author (for comments).
   - **parent_permlink**: The permanent link to the parent content.
   - **author**: The account name of the author.

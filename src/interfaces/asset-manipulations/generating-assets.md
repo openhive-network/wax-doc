@@ -9,9 +9,9 @@ There are two primary methods to generate `hive`, `vests`, or `hbd`, categorized
 
 ## Coins Functions
 
-These functions are designed to handle floating-point numbers using JavaScript's double-precision floating-point format (IEEE 754). They can accept fractional values but are limited to numbers within JavaScript's precision bounds (i.e., not exceeding `2^53 - 1` or below `-(2^53 - 1)`).
-
 +++ JavaScript
+
+These functions are designed to handle floating-point numbers using JavaScript's double-precision floating-point format (IEEE 754). They can accept fractional values but are limited to numbers within JavaScript's precision bounds (i.e., not exceeding `2^53 - 1` or below `-(2^53 - 1)`).
 
 ```ts
 // Example:
@@ -57,9 +57,11 @@ TBA
 
 ## Satoshis Functions
 
-These functions accept only integer values and do not perform any conversion on the input, other than adding a NaiAsset ID. They are capable of handling very large integers, supported by BigInt and large string representations of numbers.
+These functions accept only integer values and do not perform any conversion on the input, other than adding a NaiAsset ID. They are capable of handling very large integers, and large string representations of numbers.
 
 +++ JavaScript
+
+In JavaScript, you can provide large numbers using the `BigInt` interface
 
 ```ts
 // Example:

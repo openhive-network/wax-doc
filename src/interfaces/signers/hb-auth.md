@@ -1,37 +1,27 @@
 ---
-order: -1
-icon: ../../static/beekeeper.svg
+order: -2
+icon: ../../static/hb-auth.svg
 ---
 
-# Beekeeper
+# HB Auth
 
-Wax signer library extending transaction signing possibilities by a safe wallet - Beekeeper
+Wax signer library extending transaction signing possibilities by a 3rd party Web-only extension - hb-auth
 
 ## Install package
 
-+++ JavaScript
-
 ```bash
-pnpm add @hiveio/wax-signers-beekeeper
+pnpm add @hiveio/wax-signers-hb-auth
 ```
-
-+++ Python
-
-TBA
-
-+++
 
 ## Usage
 
-+++ JavaScript
-
 ```typescript
 import { createHiveChain } from "@hiveio/wax";
-import BeekeeperProvider from "@hiveio/wax-signers-beekeeper";
+import HBAuthProvider from "@hiveio/wax-signers-hb-auth";
 
 const chain = await createHiveChain();
 
-const provider = BeekeeperProvider.for(myWallet, "myaccount", "active", chain);
+const provider = HBAuthProvider.for(hbAuthClient, "gtg", "posting");
 
 // Create a transaction using the Wax Hive chain instance
 const tx = await chain.createTransaction();
@@ -52,9 +42,3 @@ await tx.sign(provider);
 // broadcast the transaction
 await chain.broadcast(tx);
 ```
-
-+++ Python
-
-TBA
-
-+++

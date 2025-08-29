@@ -9,7 +9,7 @@ Operation formatters provide a mechanism for converting complex operation object
 
 ## How Formatters Work
 
-Formatters work by taking operation objects (such as transactions, custom JSON operations, NAI assets, witness properties etc.) and transforming them into strings or JavaScript objects based on predefined or custom formatting rules. The formatting rules can match specific properties or types within the operation objects and then apply the necessary transformations.
+Formatters work by taking operation objects (such as transactions, custom JSON operations, NAI assets, witness properties etc.) and transforming them into strings or objects based on predefined or custom formatting rules. The formatting rules can match specific properties or types within the operation objects and then apply the necessary transformations.
 
 ## Regular Usage
 

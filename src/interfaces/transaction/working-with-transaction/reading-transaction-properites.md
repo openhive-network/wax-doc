@@ -6,7 +6,9 @@ label: Reading properties
 
 # Reading transaction properites
 
-The `Transaction` interface also allows you to read your transaction properties like `sig_digest`, `id`, etc.
+The `ITransaction` interface also allows you to read your transaction properties like sig digest, id, etc.
+
++++ JavaScript
 
 :::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/reading-transaction-properties/reading-properties.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/reading-transaction-properties/reading-properties.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Freading-transaction-properties%2Freading-properties.ts&startScript=test-transaction-working-with-transaction-reading-properties)" :::
 
@@ -20,3 +22,9 @@ ref_block_num: 1960
 ```
 
 ===
+
++++ Python
+
+TBA
+
++++

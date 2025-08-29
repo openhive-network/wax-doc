@@ -10,6 +10,8 @@ When the work with the transaction is ready, you now need to decide what you wan
 
 ## Conversion to api form
 
++++ JavaScript
+
 The simple `toApi` method returns the transaction in the Hive API-JSON form:
 
 :::code source="../../static/snippets/src/typescript/transaction/finalization/simple-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/finalization/simple-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Ffinalization%2Fsimple-build.ts&startScript=test-transaction-finalization-simple-build)" :::
@@ -37,7 +39,15 @@ The simple `toApi` method returns the transaction in the Hive API-JSON form:
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 You can also represent your transaction in the API form, with your signature added to the internal signatures array (it will also apply the transaction expiration time):
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/transaction/finalization/proto-form-signature-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/finalization/proto-form-signature-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Ffinalization%2Fproto-form-signature-build.ts&startScript=test-transaction-finalization-proto-form-signature-build)" :::
 
@@ -67,11 +77,19 @@ You can also represent your transaction in the API form, with your signature add
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 !!!warning Multiple signatures
 **Also remember that you can add more than one signature while signing your transaction.**
 !!!
 
 If you want to sign your transaction in traditional way and return it in the API form, you can use this sample (it will also apply the transaction expiration time):
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/transaction/finalization/sign-and-build.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/finalization/sign-and-build.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Ffinalization%2Fsign-and-build.ts&startScript=test-transaction-finalization-sign-and-build)" :::
 
@@ -101,7 +119,15 @@ If you want to sign your transaction in traditional way and return it in the API
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 You can also sign the transaction without converting it to the API form (which will return the signatures):
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/transaction/finalization/sign.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/finalization/sign.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Ffinalization%2Fsign.ts&startScript=test-transaction-finalization-sign)" :::
 
@@ -111,10 +137,16 @@ You can also sign the transaction without converting it to the API form (which w
 1fe8647a82f131671997ce26250bf5a1cb7a18609cbc69b3b2fd7fcaefc848c7fc308abfb0992c1ce9a805715f102416d85c4313a8a00527fa1500ac93898b418a
 ```
 
++++ Python
+
+TBA
+
++++
+
 ===
 
 !!!danger Beekeeper Information
-**If you want to sign the transaction, you have to initialize beekeeper library.** If you want to sign the transaction after creating it, using our `Transaction` interface, you have to initialize our beekeeper library. Remember to import keys into Beekeeper. It ensures that you can use them securely for transactions and other operations without exposing the raw keys.
+**If you want to sign the transaction, you have to initialize beekeeper library.** If you want to sign the transaction after creating it, using our `ITransaction` interface, you have to initialize our beekeeper library. Remember to import keys into Beekeeper. It ensures that you can use them securely for transactions and other operations without exposing the raw keys.
 
 Imported key and the one you want to use for signing must be the same!
 !!!
@@ -122,6 +154,8 @@ Imported key and the one you want to use for signing must be the same!
 ### Convertions
 
 At the end you can also just convert your transaction into the Hive API-form JSON:
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/transaction/finalization/convert-to-api.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/finalization/convert-to-api.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Ffinalization%2Fconvert-to-api.ts&startScript=test-transaction-finalization-convert-to-api)" :::
 
@@ -148,7 +182,15 @@ At the end you can also just convert your transaction into the Hive API-form JSO
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 Or you can just convert transction to legacy API form:
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/transaction/finalization/convert-to-legacy-api.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/finalization/convert-to-legacy-api.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Ffinalization%2Fconvert-to-legacy-api.ts&startScript=test-transaction-finalization-convert-to-legacy-api)" :::
 
@@ -176,3 +218,9 @@ Or you can just convert transction to legacy API form:
 ```
 
 ===
+
++++ Python
+
+TBA
+
++++

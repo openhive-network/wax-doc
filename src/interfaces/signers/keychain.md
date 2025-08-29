@@ -1,37 +1,31 @@
 ---
-order: -1
-icon: ../../static/beekeeper.svg
+order: -4
+icon: ../../static/keychain.svg
 ---
 
-# Beekeeper
+# Keychain
 
-Wax signer library extending transaction signing possibilities by a safe wallet - Beekeeper
+Wax signer library extending transaction signing possibilities by a 3rd party Web-only extension - Keychain
 
 ## Install package
 
-+++ JavaScript
-
 ```bash
-pnpm add @hiveio/wax-signers-beekeeper
+pnpm add @hiveio/wax-signers-keychain
 ```
 
-+++ Python
+## Prerequisites
 
-TBA
-
-+++
+- Configured [Keychain browser extension](https://hive-keychain.com/) with imported keys
 
 ## Usage
 
-+++ JavaScript
-
 ```typescript
 import { createHiveChain } from "@hiveio/wax";
-import BeekeeperProvider from "@hiveio/wax-signers-beekeeper";
+import KeychainProvider from "@hiveio/wax-signers-keychain";
 
 const chain = await createHiveChain();
 
-const provider = BeekeeperProvider.for(myWallet, "myaccount", "active", chain);
+const provider = KeychainProvider.for("myaccount", "active");
 
 // Create a transaction using the Wax Hive chain instance
 const tx = await chain.createTransaction();
@@ -52,9 +46,3 @@ await tx.sign(provider);
 // broadcast the transaction
 await chain.broadcast(tx);
 ```
-
-+++ Python
-
-TBA
-
-+++

@@ -7,13 +7,15 @@ icon: tasklist
 
 ## Formatting RC delegation operations
 
++++ JavaScript
+
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/rc-delegate.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/rc-delegate.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Frc-delegate.ts&startScript=test-formatters-operation-formatters-rc-delegate)" :::
 
 ==- Output
 
 ```javascript
 [{
-  custom_json: {
+  custom_json_operation: {
     delegatees: [ "gtg", "null" ],
     from: "initminer",
     rc: {
@@ -23,7 +25,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     delegatees: [ "null" ],
     from: "initminer",
     rc: {
@@ -37,7 +39,15 @@ icon: tasklist
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 ## Formatting community operations
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/community.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/community.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Fcommunity.ts&startScript=test-formatters-operation-formatters-community)" :::
 
@@ -45,7 +55,7 @@ icon: tasklist
 
 ```javascript
 [{
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -58,7 +68,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -71,7 +81,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -84,7 +94,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -97,7 +107,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -110,7 +120,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -123,7 +133,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -136,7 +146,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -149,7 +159,7 @@ icon: tasklist
     }
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     accounts: [ "gtg" ],
     community: "mycomm",
     data: {
@@ -173,7 +183,15 @@ icon: tasklist
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 ## Formatting follow operations
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/follow.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/follow.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Ffollow.ts&startScript=test-formatters-operation-formatters-follow)" :::
 
@@ -181,7 +199,7 @@ icon: tasklist
 
 ```javascript
 [{
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.FOLLOW_BLACKLIST,
     follower: "initminer",
     following: [
@@ -190,7 +208,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.FOLLOW_MUTED,
     follower: "initminer",
     following: [
@@ -198,7 +216,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.RESET_ALL_LISTS,
     follower: "initminer",
     following: [
@@ -207,7 +225,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.RESET_BLACKLIST,
     follower: "initminer",
     following: [
@@ -215,7 +233,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.RESET_FOLLOW_BLACKLIST,
     follower: "initminer",
     following: [
@@ -224,7 +242,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.RESET_FOLLOW_MUTED_LIST,
     follower: "initminer",
     following: [
@@ -232,7 +250,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.UNBLACKLIST,
     follower: "initminer",
     following: [
@@ -241,7 +259,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.UNFOLLOW_BLACKLIST,
     follower: "initminer",
     following: [
@@ -249,7 +267,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.UNFOLLOW,
     follower: "initminer",
     following: [
@@ -258,7 +276,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     action: EFollowActions.UNFOLLOW_MUTED,
     follower: "initminer",
     following: [
@@ -266,7 +284,7 @@ icon: tasklist
     ]
   }
 }, {
-  custom_json: {
+  custom_json_operation: {
     account: "initminer",
     author: "gtg",
     permlink: "first-post"
@@ -276,9 +294,17 @@ icon: tasklist
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 ## Formatting witness properties object
 
 You can also parse the serialized [!badge variant="info" text="witness_set_properties"] operation - `props` property from the chain:
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/witness-update.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/witness-update.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Fwitness-update.ts&startScript=test-formatters-operation-formatters-witness-update)" :::
 
@@ -299,3 +325,9 @@ You can also parse the serialized [!badge variant="info" text="witness_set_prope
 ```
 
 ===
+
++++ Python
+
+TBA
+
++++

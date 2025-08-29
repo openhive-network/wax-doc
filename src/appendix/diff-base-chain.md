@@ -5,13 +5,15 @@ label: Implementation details
 ---
 
 
-# Implementation details: `IHiveChainInterface` (requires an endpoint) vs `IWaxBaseInterface` (no endpoint required)
+# Implementation details
+
+> Chain interface (requires an endpoint) VS Base interface (no endpoint required)
 
 This section is mainly for library maintainers who need to understand the low-level structure of the library.
 
 ## Root Interface Design Theory
 
-The `IWaxBaseInterface` is a low-level interface that deals with basic functionalities that don't require communication with an API endpoint. About the only reason to directly use this interface is for creating an offline transaction signer, and even then the transactions first need to be constructed using an online application because valid hive transactions require current blockchain data. Here's a breakdown of what it includes:
+The Base interface is a low-level interface that deals with basic functionalities that don't require communication with an API endpoint. About the only reason to directly use this interface is for creating an offline transaction signer, and even then the transactions first need to be constructed using an online application because valid hive transactions require current blockchain data. Here's a breakdown of what it includes:
 
 1. **Transaction Building:**
    - Provides 3 methods for creating transactions. Each of them returns `ITransaction` type, the difference is only in parameters that each of those methods take:
@@ -34,7 +36,7 @@ The `IWaxBaseInterface` is a low-level interface that deals with basic functiona
 
 ## Hive Chain Interface
 
-The `IHiveChainInterface` extends the functionalities of the `IWaxBaseInterface` and adds high-level network-related operations. This interface connects to a Hive API endpoint. Here are some highlights:
+The Chain interface extends the functionalities of the Base interface and adds high-level network-related operations. This interface connects to a Hive API endpoint. Here are some highlights:
 
 1. **Network Operations:**
    - **Creating transaction with Automatic Data Fetching:** It can fetch the head block or reference block data automatically, which is crucial for building and broadcasting transactions.

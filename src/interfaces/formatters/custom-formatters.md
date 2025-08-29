@@ -5,9 +5,9 @@ icon: sort-asc
 
 # Extending formatter
 
-Operation formatters may be easily extended for formatting other operation types and Hive-related structures using `WaxFormattable` [TypeScript decorator](https://www.typescriptlang.org/docs/handbook/decorators.html).
++++ JavaScript
 
-## How it works
+Operation formatters may be easily extended for formatting other operation types and Hive-related structures using `WaxFormattable` [TypeScript decorator](https://www.typescriptlang.org/docs/handbook/decorators.html).
 
 `@WaxFormattable()` decorator specifies a custom formatter class method as a "formatter method" that matches objects with a given property name, by value or by instance of and transforms them. The property name can be specified in the decorator arguments as a string, as a property option or it defaults to the method name as the property name to match. By this, you can avoid problems like matching "get" or "constructor" properties.
 
@@ -27,9 +27,17 @@ Inside the formatter method specific to the given property, there will be passed
 
 Upon leaving the function scope, you may return the value other than `undefined` if you want to change the matched property to the given data.
 
++++ Python
+
+TBA
+
++++
+
 ## Regular Usage
 
 ### Matching property name by the function name
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/custom-formatters/by-name.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/custom-formatters/by-name.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fcustom-formatters%2Fby-name.ts&startScript=test-formatters-custom-formatters-by-name)" :::
 
@@ -41,7 +49,15 @@ MyData: 12542
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 ### Matching property name and value for operation formatting
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/custom-formatters/by-value.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/custom-formatters/by-value.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fcustom-formatters%2Fby-value.ts&startScript=test-formatters-custom-formatters-by-value)" :::
 
@@ -56,7 +72,15 @@ MyData: 12542
 
 ===
 
++++ Python
+
+TBA
+
++++
+
 ### Matching property instance of for hive apps operation formatting
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/custom-formatters/by-instance.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/custom-formatters/by-instance.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fcustom-formatters%2Fby-instance.ts&startScript=test-formatters-custom-formatters-by-instance)" :::
 
@@ -67,3 +91,9 @@ MyData: 12542
 ```
 
 ===
+
++++ Python
+
+TBA
+
++++

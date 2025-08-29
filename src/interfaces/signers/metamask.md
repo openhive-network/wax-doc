@@ -1,37 +1,33 @@
 ---
-order: -1
-icon: ../../static/beekeeper.svg
+order: -3
+icon: ../../static/metamask.svg
 ---
 
-# Beekeeper
+# MetaMask
 
-Wax signer library extending transaction signing possibilities by a safe wallet - Beekeeper
+Wax signer library extending transaction signing possibilities by the Hive Wallet - a 3rd party Web-only MetaMask extension snap
+
+Please read the [Knowledge Base](https://github.com/openhive-network/metamask-snap/wiki/KB#on-chain-usage)
 
 ## Install package
 
-+++ JavaScript
-
 ```bash
-pnpm add @hiveio/wax-signers-beekeeper
+pnpm add @hiveio/wax-signers-metamask
 ```
 
-+++ Python
+## Prerequisites
 
-TBA
-
-+++
+- Configured MetaMask (Flask) wallet according to [the tutorial](https://youtu.be/zKT1GXO6G-0)
 
 ## Usage
 
-+++ JavaScript
-
 ```typescript
 import { createHiveChain } from "@hiveio/wax";
-import BeekeeperProvider from "@hiveio/wax-signers-beekeeper";
+import MetaMaskProvider from "@hiveio/wax-signers-metamask";
 
 const chain = await createHiveChain();
 
-const provider = BeekeeperProvider.for(myWallet, "myaccount", "active", chain);
+const provider = MetaMaskProvider.for(0);
 
 // Create a transaction using the Wax Hive chain instance
 const tx = await chain.createTransaction();
@@ -52,9 +48,3 @@ await tx.sign(provider);
 // broadcast the transaction
 await chain.broadcast(tx);
 ```
-
-+++ Python
-
-TBA
-
-+++

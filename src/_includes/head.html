@@ -40,9 +40,12 @@
 
     const originalHistoryPush = history.pushState;
     history.pushState = function(...args) {
+      const url = new URL(args[2]);
+      if (url.host !== window.location.host)
+        return originalHistoryPush.apply(this, args); // Do not interfere with external links
+
       const lang = window.localStorage.getItem('lang');
       if (lang) {
-        const url = new URL(args[2]);
         // We could use the official Retype supported syntax, but it is not persistant over multiple websites,
         // We also cannot link to a specific section when using the hash syntax and when used, it scrolls down.
         // We can uncomment the following code when Retype makes it work better or adds some official support for persistant state tabs.

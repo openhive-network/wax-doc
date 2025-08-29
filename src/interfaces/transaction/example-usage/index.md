@@ -6,9 +6,11 @@ label: Example usage
 
 # Example Transaction interface usage
 
-Once you know all the `Transaction` interface functionality, let's look at an example of complete usage.
+Once you know all the `ITransaction` interface functionality, let's look at an example of complete usage.
 
-+++ Example usage (HF26 format)
+## Example usage (HF26 format)
+
++++ JavaScript
 
 :::code source="../../../static/snippets/src/typescript/transaction/example-usage/example-usage/example-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/example-usage/example-usage/example-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fexample-usage%2Fexample-usage%2Fexample-usage.ts&startScript=test-transaction-example-usage)" :::
 
@@ -75,13 +77,22 @@ signatures: [
   '20562268d6bffe4bebc95dddceccf40479ea8e6a2d079f7d0d2a3627d45b2d1bef7283852299b8a1d64444f89007b90bd92714c3aec8a541906bd0754419d85980'
 ]
 ```
+
 ===
 
 !!!secondary
 Please note that the output for `txSigned` and `txMultiSigned` is not complete due to its complexity. Only the signatures field is presented. You can see the full output in the console by testing it yourself.
 !!!
 
-+++ Example usage (Legacy format)
++++ Python
+
+TBA
+
++++
+
+## Example usage (Legacy format)
+
++++ JavaScript
 
 :::code source="../../../static/snippets/src/typescript/transaction/example-usage/example-usage/example-legacy-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/example-usage/example-usage/example-legacy-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fexample-usage%2Fexample-usage%2Fexample-legacy-usage.ts&startScript=test-transaction-example-legacy-usage)" :::
 
@@ -130,15 +141,24 @@ Please note that the output for `txSigned` and `txMultiSigned` is not complete d
   ]
 }
 ```
+
 ===
 
 !!!secondary
-Also if you want to use some custom tool for signing the transaction instead of our provided methods, you can do it based on the sample above. If you do not want to use `Transaction` interface in legacy form, you can do it just by replacing:
+Also if you want to use some custom tool for signing the transaction instead of our provided methods, you can do it based on the sample above. If you do not want to use `ITransaction` interface in legacy form, you can do it just by replacing:
 
 `const digest = tx.legacy_sigDigest;` -> `const digest = tx.sigDigest;`.
 !!!
 
-+++ Full Transaction interface example usage
++++ Python
+
+TBA
+
++++
+
+## Full Transaction interface example usage
+
++++ JavaScript
 
 :::code source="../../../static/snippets/src/typescript/transaction/example-usage/example-usage/full-transaction-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/example-usage/example-usage/full-transaction-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fexample-usage%2Fexample-usage%2Ffull-transaction-usage.ts&startScript=test-transaction-full-example-usage)" :::
 
@@ -416,4 +436,11 @@ Also if you want to use some custom tool for signing the transaction instead of 
   ]
 }
 ```
+
 ===
+
++++ Python
+
+TBA
+
++++

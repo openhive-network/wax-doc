@@ -12,9 +12,11 @@ Manabars in the Hive ecosystem represent the available resources for different a
 The calculations for each type of manabar follow a similar methodology, and they require some common parameters:
 
 - `now`: Current head block time. (Timestamp in seconds)
-- `maxManaLH`: Maximum account mana. Can be either `number`, `string` or [`long`](https://www.npmjs.com/package/long) (Used for large numbers)
-- `currentManaLH`: Current account mana. Can be either `number`, `string` or [`long`](https://www.npmjs.com/package/long) (Used for large numbers)
+- `maxMana`: Maximum account mana. Can be any numeric type, string or `BigInt`\*
+- `currentMana`: Current account mana. Can be any numeric type, string or `BigInt`\*
 - `lastUpdateTime`: Last update time of the current mana (in seconds)
+
+> \* - (Only in **JavaScript** for large numbers)
 
 ## Calculation Methods using Wax Base Interface
 
@@ -23,8 +25,8 @@ The calculations for each type of manabar follow a similar methodology, and they
 To calculate the upvote manabar, you need to gather the following values:
 
 - `now`: Can be obtained using the `time` property from the dynamic global properties.
-- `maxManaLH`: Equivalent to `post_voting_power.amount` from the `find_account` API call.
-- `currentManaLH`: Equivalent to `voting_manabar.current_mana` from the `find_account` API call.
+- `maxMana`: Equivalent to `post_voting_power.amount` from the `find_account` API call.
+- `currentMana`: Equivalent to `voting_manabar.current_mana` from the `find_account` API call.
 - `lastUpdateTime`: Equivalent to `voting_manabar.last_update_time` from the `find_account` API call
 
 ### Downvote Manabar Calculation
@@ -32,8 +34,8 @@ To calculate the upvote manabar, you need to gather the following values:
 To calculate the downvote manabar, you need to gather the following values:
 
 - `now`: Can be obtained using the `time` property from the dynamic global properties.
-- `maxManaLH`: Equivalent to `post_voting_power.amount` multiplied by `downvote_pool_percent` from the dynamic global properties.
-- `currentManaLH`: Equivalent to `downvote_manabar.current_mana` from the `find_account` API call.
+- `maxMana`: Equivalent to `post_voting_power.amount` multiplied by `downvote_pool_percent` from the dynamic global properties.
+- `currentMana`: Equivalent to `downvote_manabar.current_mana` from the `find_account` API call.
 - `lastUpdateTime`: Equivalent to `downvote_manabar.current_mana` from the `find_account` API call.
 
 ### RC Manabar Calculation
@@ -41,8 +43,8 @@ To calculate the downvote manabar, you need to gather the following values:
 To calculate the RC manabar, you need to gather the following values:
 
 - `now`: Can be obtained using the `time` property from the dynamic global properties.
-- `maxManaLH`: Equivalent to `max_rc` value from the `rc_accounts` API call.
-- `currentManaLH`: Equivalent to `rc_manabar.current_mana` from the `rc_accounts` API call.
+- `maxMana`: Equivalent to `max_rc` value from the `rc_accounts` API call.
+- `currentMana`: Equivalent to `rc_manabar.current_mana` from the `rc_accounts` API call.
 - `lastUpdateTime`: Equivalent to `rc_manabar.last_update_time` from the `rc_accounts` API call.
 
 !!!secondary Blockchain state
@@ -57,13 +59,31 @@ You can also calculate the manabar values using high-level Wax Chain interface t
 
 ### Calculation of Upvote Manabar for an Account
 
++++ JavaScript
+
 :::code source="../../static/snippets/src/typescript/manabars/manabars-calculations/manabar-upvote-account.ts" language="typescript" title="Test it yourself: [src/typescript/manabars/manabars-calculations/manabar-upvote-account.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fmanabars%2Fmanabars-calculations%2Fmanabar-upvote-account.ts&startScript=test-manabars-manabars-calculations-manabar-upvote-account)" :::
+
++++ Python
+
+TBA
+
++++
 
 ### Calculation of Full Regeneration Time for Downvote Manabar
 
++++ JavaScript
+
 :::code source="../../static/snippets/src/typescript/manabars/manabars-calculations/manabar-downvote-account.ts" language="typescript" title="Test it yourself: [src/typescript/manabars/manabars-calculations/manabar-downvote-account.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fmanabars%2Fmanabars-calculations%2Fmanabar-downvote-account.ts&startScript=test-manabars-manabars-calculations-manabar-downvote-account)" :::
 
++++ Python
+
+TBA
+
++++
+
 ### Calculation of Full Regeneration Time for Resource Credits Manabar
+
++++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/manabars/manabars-calculations/manabar-rc-account.ts" language="typescript" title="Test it yourself: [src/typescript/manabars/manabars-calculations/manabar-rc-account.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fmanabars%2Fmanabars-calculations%2Fmanabar-rc-account.ts&startScript=test-manabars-manabars-calculations-manabar-rc-account)" :::
 
@@ -72,3 +92,9 @@ Function `calculateManabarFullRegenerationTimeForAccount` returns a JavaScript `
 
 `calculateCurrentManabarValueForAccount` returns an object with manabar values and percent loaded.
 !!!
+
++++ Python
+
+TBA
+
++++
