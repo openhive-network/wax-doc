@@ -30,6 +30,8 @@ default:
     - variables:
         # default branch subpath
         PREVIEW_URL_PATH: "${GITLAB_PAGES_DEFAULT_BRANCH_PATH}"
+        # Override so we can access the official documentation also from the root URL
+        DOC_URL: "${CI_PAGES_URL}"
   variables:
     PAGES_ENV_NAME: "pages/${CI_COMMIT_REF_SLUG}"
     GITLAB_PAGES_DEFAULT_BRANCH_PATH: "default/"
