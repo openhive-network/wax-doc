@@ -1,6 +1,7 @@
-image: node:18
+image: node:20
 
 stages:
+  - .pre
   - build
   - deploy
 
@@ -21,22 +22,54 @@ default:
   tags:
     - public-runner-docker
 
-build:
-  stage: build
+.pnpm_based_job:
   before_script:
     - corepack enable
     - corepack prepare pnpm@9.1.1 --activate
     - pnpm config set store-dir .pnpm-store
     - pnpm install
+
+lint:
+  stage: .pre
+  extends: .pnpm_based_job
+  script:
+    - pnpm run lint
+
+build:
+  stage: build
+  extends: .pnpm_based_job
+  needs:
+    - job: lint
   script:
     # Replace the base URL in retype.yml with the GitLab Pages URL
     - sed -i "s#http://localhost:5005#$CI_PAGES_URL#g" retype.yml
-    - npm run build
+    - pnpm run build
   artifacts:
     paths:
       - ".retype"
     when: always
     expire_in: 1 week
+  only:
+    - main
+
+build_preview:
+  stage: build
+  extends: .pnpm_based_job
+  needs:
+    - job: lint
+  variables:
+    PREVIEW_URL: "$CI_PAGES_URL/-/mr-$CI_MERGE_REQUEST_IID"
+  script:
+    # Replace the base URL in retype.yml with the GitLab Pages URL
+    - sed -i "s#http://localhost:5005#$PREVIEW_URL#g" retype.yml
+    - pnpm run build
+  artifacts:
+    paths:
+      - ".retype"
+    when: always
+    expire_in: 1 week
+  only:
+    - merge_requests
 
 pages:
   stage: deploy
@@ -48,3 +81,38 @@ pages:
       - .retype
   only:
     - main
+
+preview:
+  stage: deploy
+  needs:
+    - job: build_preview
+      artifacts: true
+  variables:
+    PREVIEW_URL: "$CI_PAGES_URL/-/mr-$CI_MERGE_REQUEST_IID"
+  script:
+    # Create the preview directory structure
+    - mkdir -p public/-/mr-$CI_MERGE_REQUEST_IID
+    - cp -r .retype/* public/-/mr-$CI_MERGE_REQUEST_IID/
+    - echo "/ /${GITLAB_PAGES_DEFAULT_BRANCH_PATH} 302" > ${PAGES_BASE_DIR}/_redirects  # redirect gitlab pages url like https://wax-cb93b7.pages.syncad.com/ to https://wax-cb93b7.pages.syncad.com/default/
+    - echo "Documentation preview deployed to $PREVIEW_URL"
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  environment:
+    name: preview/mr-$CI_MERGE_REQUEST_IID
+    url: $CI_PAGES_URL/-/mr-$CI_MERGE_REQUEST_IID
+    on_stop: cleanup_preview
+  only:
+    - merge_requests
+
+cleanup_preview:
+  stage: deploy
+  script:
+    - echo "Cleaning up preview environment for MR $CI_MERGE_REQUEST_IID"
+  environment:
+    name: preview/mr-$CI_MERGE_REQUEST_IID
+    action: stop
+  when: manual
+  only:
+    - merge_requests
