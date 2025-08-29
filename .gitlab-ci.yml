@@ -90,7 +90,7 @@ pages:
     - mkdir -p "$DOC_PATH"
     - cp -r .retype/* "$DOC_PATH"
     # redirect gitlab pages url like https://hive.pages.syncad.com/wax-doc/ to https://hive.pages.syncad.com/wax-doc/default/
-    - echo "/ /${GITLAB_PAGES_DEFAULT_BRANCH_PATH} 302" > ${CACHED_PUBLIC_DIR}/_redirects
+    - echo "/${CI_PROJECT_PATH_SLUG}/ /${CI_PROJECT_PATH_SLUG}/${GITLAB_PAGES_DEFAULT_BRANCH_PATH} 302" > ${CACHED_PUBLIC_DIR}/_redirects
   environment:
     name: "$PAGES_ENV_NAME"
     url: "$DOC_URL"
