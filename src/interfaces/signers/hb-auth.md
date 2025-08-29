@@ -1,6 +1,6 @@
 ---
 order: -2
-icon: ../../static/hb-auth.svg
+icon: credit-card
 ---
 
 # HB Auth
