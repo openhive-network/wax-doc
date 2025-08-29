@@ -9,7 +9,7 @@ label: Creating transactions
 
 A `ITransaction` is an interface for building, signing, and validating transactions.
 
-The `ITransaction` in the Hive Ecosystem, provided by the `@hiveio/wax` library, is a tool for creating and managing transactions on the Hive blockchain. It offers functionalities for building, signing, validating, and converting transactions.
+The `ITransaction` in the Hive Ecosystem, provided by the Wax library, is a tool for creating and managing transactions on the Hive blockchain. It offers functionalities for building, signing, validating, and converting transactions.
 
 ## Beekeeper initialization
 

@@ -1,5 +1,5 @@
 ---
-order: -3
+order: -2
 icon: graph
 label: Complex operation
 ---

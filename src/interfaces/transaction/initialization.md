@@ -6,7 +6,7 @@ label: Initialization
 
 # Creating a Transaction
 
-The code below shows how to create a new transaction (having TaPoS (reference block) data automatically fetched from the remote Hive API endpoint):
+The code below shows how to create a new transaction, having TaPoS (reference block) data automatically fetched from the remote Hive API endpoint. This implicitly creates an instance of [Online transaction](./working-with-transaction/online-transaction):
 
 +++ JavaScript
 
