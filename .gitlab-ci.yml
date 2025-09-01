@@ -26,7 +26,7 @@ default:
     - if: '$CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH'
       variables:
         # subpath to branches content for preview
-        PREVIEW_URL_PATH: "-/mr-$CI_MERGE_REQUEST_IID/"
+        PREVIEW_URL_PATH: "-/$CI_COMMIT_SHORT_SHA/"
     - variables:
         # default branch subpath
         PREVIEW_URL_PATH: "default/"
