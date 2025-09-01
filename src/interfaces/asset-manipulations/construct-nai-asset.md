@@ -25,6 +25,6 @@ NAI amounts must be specified as integer values (no decimal point) and the preci
 
 +++ Python
 
-TBA
+:::code source="../../static/snippets/src/python/asset-manipulations/construct-nai-asset/receive_nai_asset.py" language="python" title="Test it yourself on Codespace: [receive_nai_asset.py](https://github.com/codespaces/new/openhive-network/wax-doc-snippets?branch=kudmich/ci/wax-doc-snippets-image&file=src/python/default_wax_initialization.py)" :::
 
 +++

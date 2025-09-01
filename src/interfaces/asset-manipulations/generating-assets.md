@@ -26,7 +26,16 @@ chain.hbdCoins(100).amount // 100000
 
 +++ Python
 
-TBA
+```python
+# Example:
+chain.hive.coins(100.3) #  {"amount":"100300","precision":3,"nai":"@@000000021"}
+
+# Note that the fractional parts have been extended with implicit zeros, making it equivalent to providing 100.300 as the amount!
+
+chain.hbd.coins(100).amount // 100000
+
+# Note that the fractional parts have been extended with implicit zeros, making it equivalent to providing 100.000 as the amount!
+```
 
 +++
 
@@ -51,7 +60,14 @@ chain.vestsCoins(100.123456789).amount // 100123456 - the rest of the fractional
 
 +++ Python
 
-TBA
+```python
+# Example of exceeding the precision limit for fractional parts:
+chain.hive.coins(100.123456).amount #  100123 - the rest of the fractional parts have been cut without any rounding down.
+
+chain.hbd.coins(100.123678).amount #  100123 - the rest of the fractional parts have been cut without any rounding up.
+
+chain.vests.coins(100.123456789).amount # 100123456 - the rest of the fractional parts have just been cut.
+```
 
 +++
 
@@ -70,7 +86,10 @@ chain.hiveSatoshis(100) // {"amount":"100","precision":3,"nai":"@@000000021"}
 
 +++ Python
 
-TBA
+```python
+# Example:
+chain.hive.satoshis(100) #  {"amount":"100","precision":3,"nai":"@@000000021"}
+```
 
 +++
 
