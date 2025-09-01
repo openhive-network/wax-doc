@@ -57,6 +57,8 @@ build:
   script:
     # Replace the base URL in retype.yml with the GitLab Pages URL
     - sed -i "s#http://localhost:5005#${DOC_URL}#g" retype.yml
+    # Replace the commit hash value to ensure which version of the documentation we are deploying
+    - sed -i "s#commithashvalue#${CI_COMMIT_SHORT_SHA}#g" src/_includes/head.html
     - pnpm run build
   artifacts:
     paths:
@@ -84,8 +86,9 @@ pages:
       artifacts: true
   script:
     - echo "The site will be deployed to $DOC_URL identified by $PAGES_ENV_NAME"
+    - rm -rf "$DOC_PATH"
     - mkdir -p "$DOC_PATH"
-    - cp -r .retype/* "$DOC_PATH"
+    - mv .retype/* "$DOC_PATH"
     - echo "/ /default/ 302" > "${CACHED_PUBLIC_DIR}/_redirects"
   environment:
     name: "$PAGES_ENV_NAME"
