@@ -151,3 +151,7 @@ The trace can help understand:
 - Which authorities were satisfied
 - What authorities are still missing
 - The full verification path through nested authorities
+
+By utilizing these features, we were able to create the [Transaction Inspector app](https://tx.openhive.network/):
+
+![Transaction Inspector UI](../../../static/tx-inspector.jpg)
