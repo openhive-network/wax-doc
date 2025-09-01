@@ -89,7 +89,7 @@ pages:
     - rm -rf "$DOC_PATH"
     - mkdir -p "$DOC_PATH"
     - mv .retype/* "$DOC_PATH"
-    - echo "/ /default/ 302" > "${CACHED_PUBLIC_DIR}/_redirects"
+    - echo "/wax-doc /wax-doc/default/ 302" > "${CACHED_PUBLIC_DIR}/_redirects"
   environment:
     name: "$PAGES_ENV_NAME"
     url: "$DOC_URL"
