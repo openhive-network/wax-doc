@@ -62,10 +62,10 @@ As you can see it is a little complicated and REST API can potentially change fr
 
 +++ JavaScript
 
-- **HAfAH**: [`@hiveio/wax-api-hafah`](https://gitlab.syncad.com/hive/HAfAH/-/packages)
-- **Block Explorer**: [`@hiveio/wax-api-hafbe`](https://gitlab.syncad.com/hive/haf_block_explorer/-/packages)
-- **Reputation Tracker**: [`@hiveio/wax-api-reputation-tracker`](https://gitlab.syncad.com/hive/balance_tracker/-/packages)
-- **Balance Tracker**: [`@hiveio/wax-api-balance-tracker`](https://gitlab.syncad.com/hive/reputation_tracker/-/packages)
+- **HAfAH**: [`@hiveio/wax-api-hafah`](https://npmjs.com/package/@hiveio/wax-api-hafah)
+- **Block Explorer**: [`@hiveio/wax-api-hafbe`](https://npmjs.com/package/@hiveio/wax-api-hafbe)
+- **Reputation Tracker**: [`@hiveio/wax-api-reputation-tracker`](https://npmjs.com/package/@hiveio/wax-api-reputation-tracker)
+- **Balance Tracker**: [`@hiveio/wax-api-balance-tracker`](https://npmjs.com/package/@hiveio/wax-api-balance-tracker)
 
 Example usage:
 
