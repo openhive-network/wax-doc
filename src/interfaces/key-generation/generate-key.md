@@ -12,6 +12,10 @@ Hive layer 1 keys can be generated via two methods:
 
 ## Generate a private key for an account role from a password
 
+!!!
+The master password should always be a truly random and secure value
+!!!
+
 +++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/key-generation/generate-key/generate-private-key.ts" language="typescript" title="Test it yourself: [src/typescript/key-generation/generate-key/generate-private-key.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fkey-generation%2Fgenerate-key%2Fgenerate-private-key.ts&startScript=test-key-generation-generate-key-generate-private-key)" :::
@@ -27,8 +31,6 @@ TBA
 A brain key is a long passphrase that provides enough entropy to generate cryptographic keys. The `suggestBrainKey` function returns a brain key along with the corresponding private and public keys.
 
 Using a brain key, you can regenerate the same key pairs whenever needed, provided the exact same mnemonic phrase is used. This is especially useful in scenarios requiring backup and recovery of cryptographic keys, ensuring they are never permanently lost.
-
-## Generate a random private key
 
 +++ JavaScript
 

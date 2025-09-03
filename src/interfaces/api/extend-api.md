@@ -8,6 +8,8 @@ label: Custom API endpoints
 
 When writing an advanced Hive blockchain application, you may want to add more APIs to the standard set of Wax methods. There is a feature in Wax called `extend` or `extendRest` (for REST API) allowing you to extend Wax Chain with fully-typed requests with full typization.
 
+![Wax extended using HAfAH REST API package - Full IntelliSense support](../../static/intellisense-rest-api.png)
+
 ## Add simple endpoint
 
 +++ JavaScript
@@ -58,14 +60,14 @@ TBA
 
 ## Automatically extending REST API
 
-As you can see it is a little complicated and REST API can potentially change frequently as it is not consensus-based, so we created multiple packages, automatically generating API definitions for each endpoint. You would only need to install the package and use the generated types:
+As you can see it is a little complicated and REST API can potentially change frequently as it is not consensus-based, so we created multiple packages, automatically generating API definitions from OpenAPI definitions for each endpoint. You would only need to install the package and use the generated types:
 
 +++ JavaScript
 
-- **HAfAH**: [`@hiveio/wax-api-hafah`](https://npmjs.com/package/@hiveio/wax-api-hafah)
-- **Block Explorer**: [`@hiveio/wax-api-hafbe`](https://npmjs.com/package/@hiveio/wax-api-hafbe)
-- **Reputation Tracker**: [`@hiveio/wax-api-reputation-tracker`](https://npmjs.com/package/@hiveio/wax-api-reputation-tracker)
-- **Balance Tracker**: [`@hiveio/wax-api-balance-tracker`](https://npmjs.com/package/@hiveio/wax-api-balance-tracker)
+[!ref icon="../../static/npm.svg" target="_blank" text="View **HAfAH** API package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-hafah)
+[!ref icon="../../static/npm.svg" target="_blank" text="View **Block Explorer** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-hafbe)
+[!ref icon="../../static/npm.svg" target="_blank" text="View **Reputation Tracker** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-reputation-tracker)
+[!ref icon="../../static/npm.svg" target="_blank" text="View **Balance Tracker** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-balance-tracker)
 
 Example usage:
 

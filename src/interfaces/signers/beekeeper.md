@@ -11,6 +11,8 @@ Wax signer library extending transaction signing possibilities by a safe wallet 
 
 +++ JavaScript
 
+[!ref icon="../../static/npm.svg" target="_blank" text="View **Beekeeper signer** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-signers-beekeeper)
+
 ```bash
 pnpm add @hiveio/wax-signers-beekeeper
 ```
@@ -47,7 +49,7 @@ tx.pushOperation({
 });
 
 // Wait for the keychain to sign the transaction
-await tx.sign(provider);
+ await provider.signTransaction(tx);
 
 // broadcast the transaction
 await chain.broadcast(tx);

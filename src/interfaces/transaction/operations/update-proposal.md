@@ -7,7 +7,7 @@ icon: tab-external
 
 The Update Proposal Operation allows for updating proposals on the Hive blockchain.
 
-## Creating an Update Proposal
+## Performing a proposal update
 
 +++ JavaScript
 

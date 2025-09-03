@@ -7,6 +7,10 @@ icon: comment
 
 One of the complex operations supported by the Hive blockchain is the publishing of blog posts and replies (comments) to them. To simplify it, the Wax library provides specific helper operation factory classes: Blog Post Operation and Reply Operation. Below, we provide snippets for creating blog posts and replies including scenarios where additional properties are defined. These scenarios internally involve an additional blockchain operation called [!badge variant="info" text="comment_options_operation"].
 
+!!!secondary
+This complex operations generate [!badge variant="info" text="comment_options_operation"] only if user provided values different from the defaults.
+!!!
+
 ## Creating a blog post with custom JSON-metadata properties
 
 +++ JavaScript

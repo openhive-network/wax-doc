@@ -1,5 +1,5 @@
 ---
-order: -10
+order: -7
 icon: verified
 expanded: false
 label: Signers
@@ -17,7 +17,7 @@ Wax provides a variety of signers to accommodate different user needs and prefer
 
 1. **Software Signers**: These are applications or libraries that manage private keys and facilitate signing transactions, encrypting operations & memos on behalf of the user. Examples include:
    - [Beekeeper](./beekeeper): A user-friendly, safe Web & Node.js wallet for managing Hive accounts and keys. Allows both: memo encryption & transaction signing,
-   - [hb-auth](./hb-auth): A user-friendly, safe Web-only, Worker-based wallet, sharing state across multiple opened tabs for managing Hive accounts and keys. Allows only transaction signing,
+   - [hb-auth](./hb-auth): A user-friendly, safe Web-only, Worker-based wallet, sharing state across multiple opened tabs for managing Hive accounts and keys. Allows transaction signing, authentication by verifying user authority at chain side,
    - [MetaMask](./metamask): A popular browser extension Hive Wallet Snap for managing accounts and keys. Allows both: memo encryption & transaction signing,
    - [Keychain](./keychain): A browser extension for managing Hive accounts and keys. Allows both: memo encryption & transaction signing,
    - [PeakVault](./peakvault): A browser extension for managing Hive accounts and keys. Allows both: memo encryption & transaction signing.

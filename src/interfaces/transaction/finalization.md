@@ -137,16 +137,16 @@ You can also sign the transaction without converting it to the API form (which w
 1fe8647a82f131671997ce26250bf5a1cb7a18609cbc69b3b2fd7fcaefc848c7fc308abfb0992c1ce9a805715f102416d85c4313a8a00527fa1500ac93898b418a
 ```
 
+===
+
 +++ Python
 
 TBA
 
 +++
 
-===
-
 !!!danger Beekeeper Information
-**If you want to sign the transaction, you have to initialize beekeeper library.** If you want to sign the transaction after creating it, using our `ITransaction` interface, you have to initialize our beekeeper library. Remember to import keys into Beekeeper. It ensures that you can use them securely for transactions and other operations without exposing the raw keys.
+If you want to sign the transaction after creating it, using our `ITransaction` interface, you should use one of the available [signers](../signers). Remember to import keys into Beekeeper. It ensures that you can use them securely for transactions and other operations without exposing the raw keys.
 
 Imported key and the one you want to use for signing must be the same!
 !!!

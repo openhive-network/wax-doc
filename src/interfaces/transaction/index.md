@@ -13,7 +13,12 @@ The `ITransaction` in the Hive Ecosystem, provided by the Wax library, is a tool
 
 ## Beekeeper initialization
 
-Beekeeper is a library that provides security in storing your keys. With it, you can easily import keys stored in your wallet and use them to sign your transactions. This is an incredibly useful tool in the context of working with the `ITransaction` interface, which you will have the opportunity to see in the following chapters.
+Beekeeper is a library that provides security in storing your keys. With it, you can easily import keys stored in your wallet and use them to sign your transactions. This is an incredibly useful tool in the context of working with the `ITransaction` interface, which you will have the opportunity to see in the following chapters. Beekeeper is available in multiple languages:
+
+- TypeScript: [`@hiveio/beekeeper`](https://www.npmjs.com/package/@hiveio/beekeeper)
+- Python: TBA
+
+In wax, you can use Beekeeper to sign transactions and encrypt/decrypt memos, leveraging [signers](../signers) interface.
 
 +++ JavaScript
 

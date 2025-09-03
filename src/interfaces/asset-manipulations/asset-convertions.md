@@ -5,13 +5,11 @@ icon: arrow-switch
 
 # Asset Conversions
 
-Asset conversions are required for various Hive financial transactions. The `@hiveio/wax` library provides methods like `vestsToHp` and `hbdToHive` to facilitate these conversions.
+Asset conversions are required for various Hive financial transactions. The `@hiveio/wax` library provides methods like VESTS to HP and HBD to Hive to facilitate these conversions.
 
-## Using `vestsToHp`
+## VESTS to HP conversion
 
-The `vestsToHp` method converts VESTS into Hive Power (HP). This conversion requires three `NaiAsset` instances: one for the VESTS and two others for the total vesting fund Hive and total vesting shares.
-
-### Code Snippet for `vestsToHp`
+This method converts VESTS into Hive Power (HP). This conversion requires three `NaiAsset` instances: one for the VESTS and two others for the total vesting fund Hive and total vesting shares.
 
 +++ JavaScript
 
@@ -23,11 +21,11 @@ TBA
 
 +++
 
-## Using `hbdToHive`
+## HBD to HIVE conversion
 
-The `hbdToHive` method converts HBD into Hive. This conversion requires three `NaiAsset` instances: one for the HBD, one for the base (another HBD asset), and one for the quote (a HIVE asset).
+This method converts HBD into Hive. This conversion requires three `NaiAsset` instances: one for the HBD, one for the base (another HBD asset), and one for the quote (a HIVE asset).
 
-### Code Snippet for `hbdToHive`
+You can retrieve the base and quote values from the [`database_api.get_current_price_feed`](https://developers.hive.io/apidefinitions/#database_api.get_current_price_feed) API call
 
 +++ JavaScript
 

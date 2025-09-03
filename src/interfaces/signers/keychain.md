@@ -9,6 +9,8 @@ Wax signer library extending transaction signing possibilities by a 3rd party We
 
 ## Install package
 
+[!ref icon="../../static/npm.svg" target="_blank" text="View **Keychain signer** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-signers-keychain)
+
 ```bash
 pnpm add @hiveio/wax-signers-keychain
 ```
@@ -41,7 +43,7 @@ tx.pushOperation({
 });
 
 // Wait for the keychain to sign the transaction
-await tx.sign(provider);
+ await provider.signTransaction(tx);
 
 // broadcast the transaction
 await chain.broadcast(tx);

@@ -7,8 +7,6 @@ icon: tasklist
 
 ## Formatting RC delegation operations
 
-+++ JavaScript
-
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/rc-delegate.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/rc-delegate.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Frc-delegate.ts&startScript=test-formatters-operation-formatters-rc-delegate)" :::
 
 ==- Output
@@ -39,15 +37,7 @@ icon: tasklist
 
 ===
 
-+++ Python
-
-TBA
-
-+++
-
 ## Formatting community operations
-
-+++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/community.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/community.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Fcommunity.ts&startScript=test-formatters-operation-formatters-community)" :::
 
@@ -183,15 +173,7 @@ TBA
 
 ===
 
-+++ Python
-
-TBA
-
-+++
-
 ## Formatting follow operations
-
-+++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/follow.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/follow.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Ffollow.ts&startScript=test-formatters-operation-formatters-follow)" :::
 
@@ -294,17 +276,9 @@ TBA
 
 ===
 
-+++ Python
-
-TBA
-
-+++
-
 ## Formatting witness properties object
 
 You can also parse the serialized [!badge variant="info" text="witness_set_properties"] operation - `props` property from the chain:
-
-+++ JavaScript
 
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/witness-update.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/witness-update.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Fwitness-update.ts&startScript=test-formatters-operation-formatters-witness-update)" :::
 
@@ -325,9 +299,3 @@ You can also parse the serialized [!badge variant="info" text="witness_set_prope
 ```
 
 ===
-
-+++ Python
-
-TBA
-
-+++

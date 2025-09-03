@@ -5,9 +5,11 @@ icon: credit-card
 
 # HB Auth
 
-Wax signer library extending transaction signing possibilities by a 3rd party Web-only extension - hb-auth
+Wax signer library extending transaction signing possibilities by a 3rd party Web-only extension - hb-auth.
 
 ## Install package
+
+[!ref icon="../../static/npm.svg" target="_blank" text="View **HB Auth signer** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-hb-auth)
 
 ```bash
 pnpm add @hiveio/wax-signers-hb-auth
@@ -37,7 +39,7 @@ tx.pushOperation({
 });
 
 // Wait for the keychain to sign the transaction
-await tx.sign(provider);
+ await provider.signTransaction(tx);
 
 // broadcast the transaction
 await chain.broadcast(tx);

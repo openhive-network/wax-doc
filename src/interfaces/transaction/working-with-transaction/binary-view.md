@@ -20,37 +20,41 @@ Thanks to those capabilities, we were able to create the Binary View Component (
 
 ![Binary view UI](../../../static/binary-view.jpg)
 
+## What is Binary Format
+
+The binary format of a transaction is a compact, serialized byte representation of all transaction data following Hive's binary serialization protocol. This format:
+
+- Represents all transaction fields and operations in a compact binary form
+- Is used internally by Hive nodes for transaction processing and blockchain storage
+- Provides a more network-efficient way to transmit transactions compared to JSON
+- Serves as the canonical format for transaction signature generation
+- Contains fixed-length and variable-length fields according to Hive's binary serialization rules
+
+Understanding binary format is essential when working with transaction signatures, blockchain explorers, and low-level Hive tools.
+
+## HF26 and Legacy Format Considerations
+
+Hive implemented significant changes to the transaction format in Hardfork 26 (HF26). This affects binary serialization in the following ways:
+
+- **Pre-HF26 (Legacy)**: Operations are serialized as paired arrays `["optype", {...params}]`
+- **Post-HF26 (Modern)**: Operations are serialized as objects with type and value fields `{type: "optype_operation", value: {...params}}`
+
+When working with binary transactions, you must be aware of which format is expected by the tools or nodes you're interacting with. The WAX library provides methods for both formats:
+
+- `toBinaryForm()` - Returns the modern binary format
+- There are also considerations when calculating transaction digests for signing (see below)
+
+!!!secondary Impact on Signatures
+The binary format directly impacts transaction signatures because signatures are calculated based on the transaction digest (hash of binary data).
+!!!
+
 ## Conversion to binary format
 
 With this conversion method, you can decide to strip to the unsigned transaction, which removes any information about the signatures container (by default the signatures container is present):
 
 +++ JavaScript
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-// Initialize hive chain interface
-const chain = await createHiveChain();
-
-// Initialize an online transaction object
-const tx = await chain.createTransaction();
-
-// Declare example operation
-const operation = {
-  vote_operation: {
-    voter: "gtg",
-    author: "gtg",
-    permlink: "hello-world",
-    weight: 2200
-  }
-};
-
-// Push operation into the transction
-tx.pushOperation(operation);
-
-// Display transaction in the binary form
-console.log(tx.toBinaryForm());
-```
+:::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/binary-view/to-binary.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/binary-view/to-binary.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Fbinary-view%2Fto-binary.ts&startScript=test-transaction-working-with-transaction-binary-to)" :::
 
 === Output
 
@@ -72,31 +76,7 @@ You can also retrieve the binary metadata, which in details describes the struct
 
 +++ JavaScript
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-// Initialize hive chain interface
-const chain = await createHiveChain();
-
-// Initialize an online transaction object
-const tx = await chain.createTransaction();
-
-// Declare example operation
-const operation = {
-  vote_operation: {
-    voter: "gtg",
-    author: "gtg",
-    permlink: "hello-world",
-    weight: 2200
-  }
-};
-
-// Push operation into the transction
-tx.pushOperation(operation);
-
-// Display transaction binary view metadata
-console.log(tx.binaryViewMetadata);
-```
+:::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/binary-view/get-binary-metadata.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/binary-view/get-binary-metadata.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Fbinary-view%2Fget-binary-metadata.ts&startScript=test-transaction-working-with-transaction-binary-metadata)" :::
 
 ==- Output
 
@@ -242,20 +222,7 @@ This feature can be useful if you are reading transactions directly as a stream 
 
 +++ JavaScript
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-// Initialize hive chain interface
-const chain = await createHiveChain();
-
-// Deserialize transaction from binary form
-const tx = chain.convertTransactionFromBinaryForm(
-  '8059b32ca6018b9fb568010003677467036774670b68656c6c6f2d776f726c6498080000'
-);
-
-// Display our transaction - note: This will create a transaction in Hive API-format
-console.log(tx);
-```
+:::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/binary-view/from-binary.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/binary-view/from-binary.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Fbinary-view%2Ffrom-binary.ts&startScript=test-transaction-working-with-transaction-binary-from)" :::
 
 ==- Output
 

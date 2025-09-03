@@ -14,7 +14,6 @@ The Online Transaction class:
 
 - Inherits from the base `ITransaction` class
 - Adds online-specific functionality for chain verification
-- Provides advanced signing mechanisms for wallets
 - Enables security checks for operations to prevent accidental key leaks
 - Verifies account existence and authority requirements
 
@@ -24,39 +23,7 @@ One of the most powerful features of Online Transaction is the ability to perfor
 
 +++ JavaScript
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-// Initialize hive chain interface
-const chain = await createHiveChain();
-
-// Initialize an online transaction object
-const tx = await chain.createTransaction();
-
-// Declare example operation
-const operation = {
-  vote_operation: {
-    voter: "gtg",
-    author: "gtg",
-    permlink: "hello-world",
-    weight: 2200
-  }
-};
-
-// Push operation into the transction
-tx.pushOperation(operation);
-
-// Perform on-chain verification before broadcasting
-try {
-  await tx.performOnChainVerification();
-  console.log('Transaction passed on-chain verification!');
-
-  // Now safe to broadcast
-  // await chain.broadcast(tx);
-} catch (error) {
-  console.error('Verification failed:', error.message);
-}
-```
+:::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/online-transaction/on-chain-verification.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/online-transaction/on-chain-verification.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Fonline-transaction%2Fon-chain-verification.ts&startScript=test-transaction-working-with-transaction-online-verification)" :::
 
 +++ Python
 
@@ -87,36 +54,7 @@ Example of what this prevents:
 
 +++ JavaScript
 
-```typescript
-import { createHiveChain } from '@hiveio/wax';
-
-// Initialize hive chain interface
-const chain = await createHiveChain();
-
-// Initialize an online transaction object
-const tx = await chain.createTransaction();
-
-// Declare example operation
-const operation = {
-  transfer_operation: {
-    from: "gtg",
-    to: "friend",
-    amount: chain.hiveCoins(5),
-    memo: 'Here is my private key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3' // Would be caught!
-  }
-};
-
-// Push operation into the transction
-tx.pushOperation(operation);
-
-// Perform on-chain verification before broadcasting
-try {
-  // The verification would fail before broadcasting
-  await tx.performOnChainVerification(); // Throws error: "Potential private key leak detected!"
-} catch (error) {
-  console.error('Verification failed:', error.message);
-}
-```
+:::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/online-transaction/on-chain-operation-validation.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/online-transaction/on-chain-operation-validation.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Fonline-transaction%2Fon-chain-operation-validation.ts&startScript=test-transaction-working-with-transaction-online-operation-validation)" :::
 
 +++ Python
 
@@ -130,14 +68,134 @@ For debugging or advanced use cases, you can generate a detailed trace of author
 
 +++ JavaScript
 
-```typescript
-// Get detailed authority verification trace
-const trace = await tx.generateAuthorityVerificationTrace();
+:::code source="../../../static/snippets/src/typescript/transaction/working-with-transaction/online-transaction/authority-verification-trace.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/working-with-transaction/online-transaction/authority-verification-trace.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fworking-with-transaction%2Fonline-transaction%2Fauthority-verification-trace.ts&startScript=test-transaction-working-with-transaction-online-trace)" :::
 
-// This trace shows the complete path of authority checks:
-console.log('Authority verification complete:', trace.verificationStatus.entryAccepted);
-console.log('Authority trace:', trace.rootEntries);
+==- Output
+
+```javascript
+{
+  "collectedData": [
+    {
+      "finalAuthorityPath": {
+        "processedEntry": "sandormb",
+        "processedRole": "posting",
+        "threshold": 1,
+        "weight": 1,
+        "recursionDepth": 0,
+        "processingStatus": {
+          "entryAccepted": true,
+          "isOpenAuthority": false
+        },
+        "visitedEntries": [
+          {
+            "processedEntry": "STM5M43EiFVh7eobDsPWeGGDQqUZohxgoBmR25hoz5GHMhNhKDknm",
+            "processedRole": "posting",
+            "threshold": 1,
+            "weight": 1,
+            "recursionDepth": 0,
+            "processingStatus": {
+              "entryAccepted": true,
+              "isOpenAuthority": false
+            },
+            "visitedEntries": []
+          }
+        ]
+      },
+      "matchingSignatures": [
+        {
+          "signature": "202cf9ea0754d1927a7875fdaf3aa6d743d7ffe4ccdc64059b9d6cb8e75ea1e5421e5d28d7205e6c820f8307c36e97b45da2bed6fa5795b3cf675020b77facdaee",
+          "signatureKey": "STM5M43EiFVh7eobDsPWeGGDQqUZohxgoBmR25hoz5GHMhNhKDknm"
+        }
+      ]
+    }
+  ],
+  "rootEntries": [
+    {
+      "processedEntry": "sandormb",
+      "processedRole": "posting",
+      "threshold": 1,
+      "weight": 1,
+      "recursionDepth": 0,
+      "processingStatus": {
+        "entryAccepted": true,
+        "isOpenAuthority": false
+      },
+      "visitedEntries": [
+        {
+          "processedEntry": "STM5M43EiFVh7eobDsPWeGGDQqUZohxgoBmR25hoz5GHMhNhKDknm",
+          "processedRole": "posting",
+          "threshold": 1,
+          "weight": 1,
+          "recursionDepth": 0,
+          "processingStatus": {
+            "entryAccepted": true,
+            "isOpenAuthority": false
+          },
+          "visitedEntries": []
+        }
+      ]
+    }
+  ],
+  "rootEntry": {
+    "processedEntry": "sandormb",
+    "processedRole": "posting",
+    "threshold": 1,
+    "weight": 1,
+    "recursionDepth": 0,
+    "processingStatus": {
+      "entryAccepted": true,
+      "isOpenAuthority": false
+    },
+    "visitedEntries": [
+      {
+        "processedEntry": "STM5M43EiFVh7eobDsPWeGGDQqUZohxgoBmR25hoz5GHMhNhKDknm",
+        "processedRole": "posting",
+        "threshold": 1,
+        "weight": 1,
+        "recursionDepth": 0,
+        "processingStatus": {
+          "entryAccepted": true,
+          "isOpenAuthority": false
+        },
+        "visitedEntries": []
+      }
+    ]
+  },
+  "finalAuthorityPath": [
+    {
+      "processedEntry": "sandormb",
+      "processedRole": "posting",
+      "threshold": 1,
+      "weight": 1,
+      "recursionDepth": 0,
+      "processingStatus": {
+        "entryAccepted": true,
+        "isOpenAuthority": false
+      },
+      "visitedEntries": [
+        {
+          "processedEntry": "STM5M43EiFVh7eobDsPWeGGDQqUZohxgoBmR25hoz5GHMhNhKDknm",
+          "processedRole": "posting",
+          "threshold": 1,
+          "weight": 1,
+          "recursionDepth": 0,
+          "processingStatus": {
+            "entryAccepted": true,
+            "isOpenAuthority": false
+          },
+          "visitedEntries": []
+        }
+      ]
+    }
+  ],
+  "verificationStatus": {
+    "entryAccepted": true,
+    "isOpenAuthority": false
+  }
+}
 ```
+
+===
 
 +++ Python
 

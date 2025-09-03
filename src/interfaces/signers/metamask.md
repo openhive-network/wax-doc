@@ -11,6 +11,8 @@ Please read the [Knowledge Base](https://github.com/openhive-network/metamask-sn
 
 ## Install package
 
+[!ref icon="../../static/npm.svg" target="_blank" text="View **MetaMask signer** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-signers-metamask)
+
 ```bash
 pnpm add @hiveio/wax-signers-metamask
 ```
@@ -43,7 +45,7 @@ tx.pushOperation({
 });
 
 // Wait for the keychain to sign the transaction
-await tx.sign(provider);
+ await provider.signTransaction(tx);
 
 // broadcast the transaction
 await chain.broadcast(tx);
