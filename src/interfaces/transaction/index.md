@@ -1,6 +1,6 @@
 ---
 order: -5
-icon: database
+icon: log
 expanded: false
 label: Creating transactions
 ---

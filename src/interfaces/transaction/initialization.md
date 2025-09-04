@@ -1,6 +1,6 @@
 ---
 order: -1
-icon: rocket
+icon: cpu
 label: Initialization
 ---
 

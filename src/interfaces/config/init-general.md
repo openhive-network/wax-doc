@@ -1,6 +1,6 @@
 ---
 order: -2
-icon: rocket
+icon: tools
 ---
 
 # Constructing a Wax interface
