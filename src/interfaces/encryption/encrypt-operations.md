@@ -42,7 +42,7 @@ Actual encryption is performed while signing transaction!
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -54,7 +54,7 @@ TBA
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -70,6 +70,6 @@ TBA
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++

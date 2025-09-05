@@ -19,6 +19,12 @@ Using Wax Formatters, you can format numbers represented as `string`, `number`, 
 
 ===
 
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
+
 ## Formatting NAI Asset
 
 If you want to format a string, use `waxify` literal
@@ -33,6 +39,12 @@ Amount: 300.000 HIVE
 
 ===
 
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
+
 ## Formatting Transaction
 
 :::code source="../../static/snippets/src/typescript/formatters/blockchain-formatters/format-tx.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/blockchain-formatters/format-tx.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fblockchain-formatters%2Fformat-tx.ts&startScript=test-formatters-blockchain-formatters-format-tx)" :::
@@ -44,6 +56,12 @@ Tx: #3725c81634f152011e2043eb7119911b953d4267
 ```
 
 ===
+
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
 
 ## Formatting entire transaction without replacing with transaction id
 
@@ -79,3 +97,9 @@ You can achieve that by using `format` method and extending the default Wax Form
 ```
 
 ===
+
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++

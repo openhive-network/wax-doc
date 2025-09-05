@@ -15,7 +15,7 @@ The Recurrent Transfer Operation allows for initiating, modifying, and removing 
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -29,7 +29,7 @@ Generate removal removes recurrent transfer:
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -43,6 +43,6 @@ In this example we add pair id to recurrent transfer, using Recurrent Transfer O
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++

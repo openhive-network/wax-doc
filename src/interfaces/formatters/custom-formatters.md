@@ -25,6 +25,12 @@ Inside the formatter method specific to the given property, there will be passed
 
 Upon leaving the function scope, you may return the value other than `undefined` if you want to change the matched property to the given data.
 
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
+
 ## Regular Usage
 
 ### Matching property name by the function name
@@ -38,6 +44,12 @@ MyData: 12542
 ```
 
 ===
+
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
 
 ### Matching property name and value for operation formatting
 
@@ -54,6 +66,12 @@ MyData: 12542
 
 ===
 
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
+
 ### Matching property instance of for hive apps operation formatting
 
 :::code source="../../static/snippets/src/typescript/formatters/custom-formatters/by-instance.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/custom-formatters/by-instance.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Fcustom-formatters%2Fby-instance.ts&startScript=test-formatters-custom-formatters-by-instance)" :::
@@ -65,3 +83,9 @@ MyData: 12542
 ```
 
 ===
+
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++

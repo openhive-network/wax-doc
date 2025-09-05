@@ -19,7 +19,7 @@ This complex operations generate [!badge variant="info" text="comment_options_op
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -33,6 +33,6 @@ You can set multiple properties on one operation class instance, as shown in the
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++

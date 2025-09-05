@@ -23,7 +23,7 @@ The `encrypt` and `decrypt` methods allow for straightforward encryption and dec
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -35,7 +35,7 @@ TBA
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 

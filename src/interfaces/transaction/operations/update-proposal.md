@@ -15,7 +15,7 @@ The Update Proposal Operation allows for updating proposals on the Hive blockcha
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -27,6 +27,6 @@ TBA
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++

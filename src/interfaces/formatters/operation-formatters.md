@@ -37,6 +37,12 @@ icon: tasklist
 
 ===
 
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
+
 ## Formatting community operations
 
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/community.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/community.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Fcommunity.ts&startScript=test-formatters-operation-formatters-community)" :::
@@ -173,6 +179,12 @@ icon: tasklist
 
 ===
 
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
+
 ## Formatting follow operations
 
 :::code source="../../static/snippets/src/typescript/formatters/operation-formatters/follow.ts" language="typescript" title="Test it yourself: [src/typescript/formatters/operation-formatters/follow.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Fformatters%2Foperation-formatters%2Ffollow.ts&startScript=test-formatters-operation-formatters-follow)" :::
@@ -276,6 +288,12 @@ icon: tasklist
 
 ===
 
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
+
 ## Formatting witness properties object
 
 You can also parse the serialized [!badge variant="info" text="witness_set_properties"] operation - `props` property from the chain:
@@ -299,3 +317,9 @@ You can also parse the serialized [!badge variant="info" text="witness_set_prope
 ```
 
 ===
+
++++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++
