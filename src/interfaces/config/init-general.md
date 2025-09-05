@@ -16,7 +16,7 @@ Custom options allow selecting a specific blockchain network (e.g. mainnet, test
 
 +++ Python
 
-TBA
+:::code source="../../static/snippets/src/python/default_wax_initialization.py" range=21-21,30-30,32-33,42-44 language="python" title="Test it yourself on github codespace: [src/python/default_wax_initialization.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/default_wax_initialization.py)" :::
 
 +++
 
@@ -28,6 +28,6 @@ TBA
 
 +++ Python
 
-TBA
+:::code source="../../static/snippets/src/python/default_wax_initialization.py" range=21-22,54-59 language="python" title="Test it yourself on github codespace: [src/python/default_wax_initialization.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/default_wax_initialization.py)" :::
 
 +++
