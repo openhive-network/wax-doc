@@ -38,7 +38,25 @@ Here we utilize `WitnessSetPropertiesOperation` class to build a complex operati
 
 +++ Python
 
-TBA
+:::code source="../../../static/snippets/src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py)" :::
+
+==- Output
+
+```python
+witness_set_properties_operation {
+  owner: "alice"
+  props {
+    key: "url"
+    value: "1368747470733a2f2f6578616d706c652e636f6d"
+  }
+  props {
+    key: "key"
+    value: "021df13f04fc422c703043db939c2f98a600fafd0f719a0ff351b8e36c5cad2eff"
+  }
+}
+```
+
+===
 
 +++
 

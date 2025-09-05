@@ -57,7 +57,7 @@ Meanwhile the other friends does not need your help anymore, so you can remove t
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -109,7 +109,7 @@ This operation class handles operations related to following, muting, blacklisti
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -155,7 +155,7 @@ You want to join a specific community to stay updated with its content and you w
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 
@@ -184,7 +184,7 @@ Since you are an community administrator, you can update its properties:
 
 +++ Python
 
-TBA
+**Not implemented yet** — planned for a future release.
 
 +++
 

@@ -25,6 +25,17 @@ ref_block_num: 1960
 
 +++ Python
 
-TBA
+:::code source="../../../static/snippets/src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py)" :::
+
+=== Output
+
+```text
+id: f0d64ae54e9ae84dbdabb3d6987484db5868aedc
+sig_digest: 14e066439ceb222e911e052583431c47a7d9afaa53732c16990f3d4b0c145cd5
+expiration: 2025-09-05T13:11:08
+ref_block_num: 4170
+```
+
+===
 
 +++

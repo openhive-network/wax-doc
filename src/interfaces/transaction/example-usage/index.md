@@ -88,7 +88,35 @@ Please note that the output for `txSigned` and `txMultiSigned` is not complete d
 
 +++ Python
 
-TBA
+:::code source="../../../static/snippets/src/python/transaction/example_usage/example_usage/example_usage.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/example_usage/example_usage.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/example_usage/example_usage.py)" :::
+
+==- Output
+
+```json
+{
+   "ref_block_num":14073,
+   "ref_block_prefix":3321583026,
+   "expiration":"2025-09-10T10:46:42",
+   "operations":[
+      {
+         "type":"vote_operation",
+         "value":{
+            "voter":"voter",
+            "author":"test-author",
+            "permlink":"test-permlink",
+            "weight":2200
+         }
+      }
+   ],
+   "extensions":[],
+   "signatures":[
+      "20f6b616bbd0f2d00351567b4c92f70f65d086302716addd5efb236631e11e6c3c4bbfc696a2d3e8258354d94ca305e2e1dbc9ab7a38a9d4334aeba8485ea7df8b",
+      "1fefa4bcac7d768ec44db424e99b1973fd71f0af07cea7fa7c850847ee74a098172b0f2d99d1888e49e81ca2b6eb184192fba68e37ce969b12350240e109a8afad"
+   ]
+}
+```
+
+===
 
 +++
 
@@ -158,7 +186,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
 
 +++ Python
 
-TBA
+**The legacy transaction format is deprecated** — wax-python no longer supports this conversion.
 
 +++
 
@@ -447,6 +475,115 @@ TBA
 
 +++ Python
 
-TBA
+:::code source="../../../static/snippets/src/python/transaction/example_usage/example_usage/full_transaction_usage.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/example_usage/full_transaction_usage.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/example_usage/full_transaction_usage.py)" :::
+
+==- Output
+
+```json
+// vote_operation example
+{
+   "ref_block_num":17278,
+   "ref_block_prefix":212961194,
+   "expiration":"2025-09-10T13:27:11",
+   "operations":[
+      {
+         "type":"vote_operation",
+         "value":{
+            "voter":"voter",
+            "author":"test-author",
+            "permlink":"test-permlink",
+            "weight":2200
+         }
+      }
+   ],
+   "extensions":[],
+   "signatures":[
+      "1f3210995ffd58567d1b067dad09e0102cc209fe8ef2d6b4189b8b8fc32aa7698b2cefa4648d4830e458990366f16187d376e9b353a22c6fc5de38a0c1f729b53a"
+   ]
+}
+
+
+// account_update2_operation example
+{
+   "ref_block_num":17278,
+   "ref_block_prefix":212961194,
+   "expiration":"2025-09-10T13:27:11",
+   "operations":[
+      {
+         "type":"account_update2_operation",
+         "value":{
+            "account":"gtg",
+            "active":{
+               "weight_threshold":1,
+               "account_auths":[
+                  [
+                     "frodo",
+                     2
+                  ]
+               ],
+               "key_auths":[
+                  [
+                     "STM8NWQYG4BvjGNu8zqqV9fbR7aSCZHcxkVib41PYnpGmPRe6BHVG",
+                     1
+                  ]
+               ]
+            },
+            "memo_key":"STM8GC13uCZbP44HzMLV6zPZGwVQ8Nt4Kji8PapsPiNq1BK153XTX",
+            "json_metadata":"",
+            "posting_json_metadata":"",
+            "extensions":[]
+         }
+      }
+   ],
+   "extensions":[],
+   "signatures":[
+      "1fd29fcb695d4ac7680dd1f09904b1302c02dbed32d36d3a475ae9f0b3541db37701ebde5132bb38a7d6381bf58c1b3ebb741016bd71ec66cdcf885b82680b65eb"
+   ]
+}
+
+// witness_set_properties_operation example
+{
+   "ref_block_num":17278,
+   "ref_block_prefix":212961194,
+   "expiration":"2025-09-10T13:27:11",
+   "operations":[
+      {
+         "type":"witness_set_properties_operation",
+         "value":{
+            "owner":"your-account",
+            "props":[
+               [
+                  "account_creation_fee",
+                  "e0930400000000002320bcbe"
+               ],
+               [
+                  "hbd_interest_rate",
+                  "ee02"
+               ],
+               [
+                  "key",
+                  "02eb1b5b1c1c8eccb4ec9883ec43feef355516853cb665fc05c40a65ac0b2ff6c9"
+               ],
+               [
+                  "maximum_block_size",
+                  "00000100"
+               ],
+               [
+                  "url",
+                  "1368747470733a2f2f6578616d706c652e636f6d"
+               ]
+            ],
+            "extensions":[]
+         }
+      }
+   ],
+   "extensions":[],
+   "signatures":[
+      "20fd4edef6cc2d024d2dcb1e171d5e7422f8254a236b48771e474ef4c1d54696af7dbe73dd3f5adb72d584db96214602b6e27f88bc7d6155cdd3360f8a137db38b"
+   ]
+}
+```
+
+===
 
 +++

@@ -37,6 +37,22 @@ Below is an example of fully building a simple transaction using the basic `ITra
 
 +++ Python
 
-TBA
+:::code source="../../../static/snippets/src/python/transaction/working_with_transaction/pushing_simple_operation/simple_operation/pushing_simple_operation.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/working_with_transaction/pushing_simple_operation/simple_operation/pushing_simple_operation.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/working_with_transaction/pushing_simple_operation/simple_operation/pushing_simple_operation.py)" :::
+
+=== Output
+
+```python
+[
+    vote_operation
+    {
+        voter: "voter"
+        author: "test-author"
+        permlink: "test-permlink"
+        weight: 2200
+    }
+]
+```
+
+===
 
 +++
