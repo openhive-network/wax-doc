@@ -28,7 +28,15 @@ As you can see in the example, there is a type called: `TWaxApiRequest` which as
 
 +++ Python
 
-TBA
+:::code source="../../static/snippets/src/python/api/extend_api/interface_extend.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend.py)" :::
+
+=== Output
+
+```python
+BlockHeaderResponse(header=BlockHeader(previous='0000007a514fd4034a39ff8bb4225760ccf61154', timestamp='2016-03-24T16:11:39', witness='initminer', transaction_merkle_root='0000000000000000000000000000000000000000', extensions=[]))
+```
+
+===
 
 +++
 
@@ -54,7 +62,7 @@ TBA
 
 +++ Python
 
-TBA
+:::code source="../../static/snippets/src/python/api/extend_api/interface_extend_rest.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend_rest.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend_rest.py)" :::
 
 +++
 
@@ -119,6 +127,20 @@ const extendedChain = chain.extendRest(HAfAH);
 
 +++ Python
 
-TBA
+- **HAfAH**: [`wax-api-hafah`](https://gitlab.syncad.com/hive/HAfAH/-/packages)
+- **Block Explorer**: [`wax-api-hafbe`](https://gitlab.syncad.com/hive/haf_block_explorer/-/packages)
+- **Reputation Tracker**: [`wax-api-reputation-tracker`](https://gitlab.syncad.com/hive/reputation_tracker/-/packages)
+- **Balance Tracker**: [`wax-api-balance-tracker`](https://gitlab.syncad.com/hive/balance_tracker/-/packages)
+
+:::code source="../../static/snippets/src/python/api/extend_api/interface_extend_rest_automatically.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend_rest_automatically.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend_rest_automatically.py)" :::
+==- Output:
+
+```log
+Reputation: 76
+Version: 8393e19323be1002a16df9826423c1fb442b4a12
+Last synced block: 99305697
+```
+
+===
 
 +++
