@@ -22,7 +22,7 @@ Currently, Hive supports encrypting the following operation data:
 
 These examples demonstrate how to handle encryption and decryption using both direct methods and the `ITransaction` interface in the Wax library.
 
-!!!
+!!!warning
 Actual encryption is performed while signing transaction!
 !!!
 

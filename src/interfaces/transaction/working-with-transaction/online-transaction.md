@@ -37,7 +37,7 @@ This verification process includes:
 - Ensuring referenced accounts exist on the blockchain
 - Validating authority changes in account operations
 
-!!!
+!!!secondary
 This verification process is automatically performed **only on online transactions** before broadcasting them.
 This way, you won't have to manually perform on-chain verification every time before broadcasting.
 !!!

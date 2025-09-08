@@ -13,9 +13,11 @@ The second format is called Numeric Asset Identifier (NAI). NAI is the recommend
 
 Here's an example of an NAI asset for 1 hive token: `{"amount":"1000","precision":3,"nai":"@@000000021"}`.
 
-!!!secondary Important note
-NAI amounts must be specified as integer values (no decimal point) and the precision is used to shift the decimal place appropriately. The NAI field is used to specify the asset type: 21 is HIVE, 37 is VESTS, and 13 is HBD. Precision is fixed for each asset type (3 or 6), so when creating NAI objects, only the integer quantity and type must be specified.
-!!!
+## NAI format specifics
+
+* NAI `amount` must be specified as integer value (no decimal point) and the precision is used to shift the decimal place appropriately.
+* The `nai` field is used to specify the asset type: `21` is HIVE, `37` is VESTS, and `13` is HBD.
+* `precision` is fixed for each asset type (`3` or `6` for native tokens), so when creating NAI objects, only the integer quantity and type must be specified.
 
 ## Creating NaiAsset objects for each asset type
 

@@ -12,7 +12,7 @@ Hive layer 1 keys can be generated via two methods:
 
 ## Generate a private key for an account role from a password
 
-!!!
+!!!danger
 The master password should always be a truly random and secure value
 !!!
 

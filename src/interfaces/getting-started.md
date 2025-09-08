@@ -16,8 +16,10 @@ First step is to install the library. Choose the appropriate installation comman
 [!ref icon="../static/npm.svg" target="_blank" text="View **WAX** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax)
 
 ```bash
-pnpm install @hiveio/wax
+pnpm add @hiveio/wax
 ```
+
+> You can also use other package managers, such as: [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-nodejs-and-npm) or [`yarn`](https://yarnpkg.com/getting-started/install)
 
 +++ Python
 

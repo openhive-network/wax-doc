@@ -7,7 +7,7 @@ icon: comment-discussion
 
 Operation formatters provide a mechanism for converting complex operation objects into human-readable text representations.
 
-!!! TypeScript-only feature
+!!!danger TypeScript-only feature
 !!!
 
 ## How Formatters Work
