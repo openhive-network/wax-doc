@@ -10,6 +10,8 @@ Once you know all the `ITransaction` interface functionality, let's look at an e
 
 ## Example usage (HF26 format)
 
+In this example we will create a transaction with two operations: [!badge variant="info" text="comment_operation"] and [!badge variant="info" text="comment_options_operation"]. We will sign it using two different keys (multi-signing) leveraging [signers functionality](../../signers/).
+
 +++ JavaScript
 
 :::code source="../../../static/snippets/src/typescript/transaction/example-usage/example-usage/example-usage.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/example-usage/example-usage/example-usage.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Fexample-usage%2Fexample-usage%2Fexample-usage.ts&startScript=test-transaction-example-usage)" :::
@@ -78,11 +80,11 @@ signatures: [
 ]
 ```
 
-===
-
 !!!secondary
 Please note that the output for `txSigned` and `txMultiSigned` is not complete due to its complexity. Only the signatures field is presented. You can see the full output in the console by testing it yourself.
 !!!
+
+===
 
 +++ Python
 
@@ -91,6 +93,10 @@ TBA
 +++
 
 ## Example usage (Legacy format)
+
+In this example we will create a transaction with one [!badge variant="info" text="vote_operation"]. We will sign it using one key.
+
+Because the legacy format is considered deprecated, the example below is for educational purposes only. We recommend using the HF26 format for creating and managing transactions. Due to the deprecated status of the legacy format, [signers](../../signers/) do not support signing transactions in legacy format. Therefore, in this example, we will use a raw Beekeeper wallet to sign the transaction digest.
 
 +++ JavaScript
 

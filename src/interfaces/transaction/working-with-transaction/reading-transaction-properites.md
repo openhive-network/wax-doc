@@ -4,7 +4,7 @@ icon: book
 label: Reading properties
 ---
 
-# Reading transaction properites
+# Reading transaction properties
 
 The `ITransaction` interface also allows you to read your transaction properties like sig digest, id, etc.
 

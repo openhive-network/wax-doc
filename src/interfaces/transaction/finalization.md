@@ -151,7 +151,7 @@ If you want to sign the transaction after creating it, using our `ITransaction` 
 Imported key and the one you want to use for signing must be the same!
 !!!
 
-### Convertions
+### Conversions
 
 At the end you can also just convert your transaction into the Hive API-form JSON:
 
