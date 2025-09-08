@@ -19,7 +19,9 @@ pnpm add @hiveio/wax-signers-beekeeper
 
 +++ Python
 
-TBA
+```bash
+pip install beekeepy --index-url https://gitlab.syncad.com/api/v4/projects/434/packages/pypi/simple
+```
 
 +++
 
@@ -57,6 +59,6 @@ await chain.broadcast(tx);
 
 +++ Python
 
-TBA
+:::code source="../../static/snippets/src/python/transaction/signers/sign_transaction_by_beekeeper.py" language="python" :::
 
 +++

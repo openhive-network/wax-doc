@@ -24,6 +24,6 @@ Wax provides a variety of signers to accommodate different user needs and prefer
 
 +++ Python
 
-TBA
-
+1. **Software Signers**: These are applications or libraries that manage private keys and facilitate signing transactions, encrypting operations & memos on behalf of the user. Examples include:
+   - [Beekeeper](./beekeeper): A user-friendly, safe Web & python wallet for managing Hive accounts and keys. Allows both: memo encryption & transaction signing.
 +++
