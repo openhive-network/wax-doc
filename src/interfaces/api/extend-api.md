@@ -10,7 +10,7 @@ When writing an advanced Hive blockchain application, you may want to add more A
 
 ![Wax extended using HAfAH REST API package - Full IntelliSense support](../../static/intellisense-rest-api.png)
 
-## Add simple endpoint
+## Manually extending JSON-RPC API
 
 +++ JavaScript
 
@@ -58,16 +58,55 @@ TBA
 
 +++
 
-## Automatically extending REST API
+## Automatically extending API
+
+Thanks to the OpenAPI specifications, we can automatically generate API definitions for both JSON-RPC and REST API. This way you don't have to manually define each method, its parameters, and return types. If you have your own API with OpenAPI spec, you can also automatically generate the types and use them with Wax.
+
++++ JavaScript
+
+When dealing with TypeScript and JavaScript, you can use the following package to automatically generate types from OpenAPI spec:
+
+[!ref icon="../../static/npm.svg" target="_blank" text="View **WAX Spec Generator** package on npmjs 🡭"](https://www.npmjs.com/package/@hiveio/wax-spec-generator)
+
++++ Python
+
+TBA
+
++++
+
+### Use JSON-RPC API packages
+
+For basic wax usage, the default API methods, shipped with the package are usually sufficient. However, if you want to use more advanced API methods, you can extend the default API with additional methods. Defining a whole set of methods can be tedious, so Wax provides a way to automatically extend the API with additional methods, using the `extend` method and external packages with automatically generated spec from OpenAPI.
+
++++ JavaScript
+
+[!ref icon="../../static/npm.svg" target="_blank" text="View **JSON-RPC** API package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-jsonrpc)
+
+Example usage:
+
+```javascript
+import JsonRPC from "@hiveio/wax-api-jsonrpc";
+
+const extendedChain = chain.extend(JsonRPC);
+// You can now call extendedChain.api[apiType][apiMethod](dataToSend)
+```
+
++++ Python
+
+TBA
+
++++
+
+### Use REST API packages
 
 As you can see it is a little complicated and REST API can potentially change frequently as it is not consensus-based, so we created multiple packages, automatically generating API definitions from OpenAPI definitions for each endpoint. You would only need to install the package and use the generated types:
 
 +++ JavaScript
 
 [!ref icon="../../static/npm.svg" target="_blank" text="View **HAfAH** API package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-hafah)
-[!ref icon="../../static/npm.svg" target="_blank" text="View **Block Explorer** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-hafbe)
-[!ref icon="../../static/npm.svg" target="_blank" text="View **Reputation Tracker** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-reputation-tracker)
-[!ref icon="../../static/npm.svg" target="_blank" text="View **Balance Tracker** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-balance-tracker)
+[!ref icon="../../static/npm.svg" target="_blank" text="View **Block Explorer** API package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-hafbe)
+[!ref icon="../../static/npm.svg" target="_blank" text="View **Reputation Tracker** API package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-reputation-tracker)
+[!ref icon="../../static/npm.svg" target="_blank" text="View **Balance Tracker** API package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-api-balance-tracker)
 
 Example usage:
 
