@@ -73,11 +73,11 @@ TBA
 
 +++
 
-## Modifying the owner level with treshold change
+## Modifying the owner level with threshold change
 
 +++ JavaScript
 
-:::code source="../../../static/snippets/src/typescript/transaction/operations/account-update/change-weight-treshold.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/account-update/change-weight-treshold.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Faccount-update%2Fchange-weight-treshold.ts&startScript=test-transaction-operations-account-update-change-weight-treshold)" :::
+:::code source="../../../static/snippets/src/typescript/transaction/operations/account-update/change-weight-threshold.ts" language="typescript" title="Test it yourself: [src/typescript/transaction/operations/account-update/change-weight-threshold.ts](https://stackblitz.com/github/openhive-network/wax-doc-snippets?file=src%2Ftypescript%2Ftransaction%2Foperations%2Faccount-update%2Fchange-weight-threshold.ts&startScript=test-transaction-operations-account-update-change-weight-threshold)" :::
 
 +++ Python
 
