@@ -49,7 +49,9 @@ We currently support only the `hive` role category.
 
 +++
 
-## Adding account to the posting role
+## Adding account proxy to the posting role definition
+
+Sometimes you want to allow a separate account to operate on behalf of your account (e.g., a bot, backup account, or trusted service). To define such authority proxy, you can use the `AccountAuthorityUpdateOperation` by calling its `add(account: TAccountName, weight: number = 1)` method. The important aspect is matching the account weight to the role threshold - only entries with weights equal or greater than the role threshold will be able to authorize operations and satisfy the authority.
 
 +++ JavaScript
 
