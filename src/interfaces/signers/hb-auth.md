@@ -9,7 +9,7 @@ Wax signer library extending transaction signing possibilities by a 3rd party We
 
 ## Install package
 
-[!ref icon="../../static/npm.svg" target="_blank" text="View **HB Auth signer** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-hb-auth)
+[!ref icon="../../static/npm.svg" target="_blank" text="View **HB Auth signer** package on npmjs 🡭"](https://npmjs.com/package/@hiveio/wax-signers-hb-auth)
 
 ```bash
 pnpm add @hiveio/wax-signers-hb-auth
