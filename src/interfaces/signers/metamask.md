@@ -8,7 +8,7 @@ icon: ../../static/metamask.svg
 Wax signer library extending transaction signing possibilities by the Hive Wallet - a 3rd party Web-only MetaMask extension snap
 
 !!!success
-We were able to leverage the MetaMask Snap SDK to create a Hive-compatible signer that works seamlessly with MetaMask Flask. This integration allows users to manage their Hive accounts and sign transactions directly within the MetaMask interface, providing a familiar and secure experience for those already using MetaMask for Ethereum and other EVM-compatible chains: [Official Hive Wallet Snap](https://snaps.metamask.io/snap/npm/hiveio/metamask-snap/)
+We were able to leverage the MetaMask Snap SDK to create a Hive-compatible signer that works seamlessly with MetaMask. This integration allows users to manage their Hive accounts and sign transactions directly within the MetaMask interface, providing a familiar and secure experience for those already using MetaMask for Ethereum and other EVM-compatible chains: [Official Hive Wallet Snap](https://snaps.metamask.io/snap/npm/hiveio/metamask-snap/)
 !!!
 
 Please read the [Knowledge Base](https://github.com/openhive-network/metamask-snap/wiki/KB#on-chain-usage) for more details on how to use the Hive Wallet Snap. You can also check out our official dApp - [Hive Bridge](https://auth.openhive.network).
@@ -23,7 +23,7 @@ pnpm add @hiveio/wax-signers-metamask
 
 ## Prerequisites
 
-- Configured MetaMask (Flask) wallet according to [the tutorial](https://youtu.be/zKT1GXO6G-0)
+- Configured MetaMask wallet according to [the tutorial](https://youtu.be/zKT1GXO6G-0)
 
 ## Usage
 
