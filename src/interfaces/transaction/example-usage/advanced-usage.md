@@ -12,7 +12,7 @@ If you want to use the advanced features of the `ITransaction` interface you can
 
 Creating transaction with TaPoS can be useful for cases when you would like to perform batch operations without any access to remote Hive API calls.
 
-Due to long TaPoS lifespan (near to 64000 blocks, so it really targets to the c.a. 3 hours), you can easily receive TaPoS data (reference block-id) once from blockchain and next reuse it in your code generating massive transactions, to finally sign and broadcast them:
+Due to long TaPoS lifespan (near to 64000 blocks, so it really targets to the c.a. 53 hours), you can easily receive TaPoS data (reference block-id) once from blockchain and next reuse it in your code generating massive transactions, to finally sign and broadcast them:
 
 +++ JavaScript
 
