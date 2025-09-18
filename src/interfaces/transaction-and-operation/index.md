@@ -58,7 +58,7 @@ Here are some examples of the contents of some operations:
   - **body**: The content body.
   - **json_metadata**: Additional metadata in JSON format.
 
-You can find a full list of possible of operations and their fields in the [`Hive Wiki`](https://gitlab.syncad.com/hive/wax/-/wikis/interfaces/operation).
+You can find a full list of possible of operations and their fields in the [Hive Wiki](https://gitlab.syncad.com/hive/wax/-/wikis/interfaces/operation).
 
 ## Implementation Note: Why use Protobuf?
 
