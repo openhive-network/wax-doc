@@ -25,7 +25,7 @@ ref_block_num: 1960
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/working_with_transaction/reading_transaction_properties/reading_properties.py)" :::
 
 === Output
 

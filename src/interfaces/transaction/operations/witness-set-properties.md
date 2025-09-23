@@ -15,7 +15,7 @@ The Witness Set Properties Operation allows witnesses to update their properties
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/operations/witness_set_properties/default_witness_set_properties.py" language="python" title="Test it yourself on github codespace: [src/static/snippets/src/python/transaction/operations/witness_set_properties/default_witness_set_properties.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/operations/witness_set_properties/default_witness_set_properties.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/operations/witness_set_properties/default_witness_set_properties.py" language="python" title="Test it yourself on github codespace: [src/static/snippets/src/python/transaction/operations/witness_set_properties/default_witness_set_properties.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/operations/witness_set_properties/default_witness_set_properties.py)" :::
 
 ==- Output
 
@@ -51,7 +51,7 @@ As with all operation classes, you can set all the optional fields on a single c
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/operations/witness_set_properties/set_explicit.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/witness_set_properties/set_explicit.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/operations/witness_set_properties/set_explicit.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/operations/witness_set_properties/set_explicit.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/witness_set_properties/set_explicit.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/operations/witness_set_properties/set_explicit.py)" :::
 
 ==- Output
 

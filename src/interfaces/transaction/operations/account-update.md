@@ -45,7 +45,7 @@ We currently support only the `hive` role category.
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/operations/account_update/set_memo.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/set_memo.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/set_memo.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/operations/account_update/set_memo.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/set_memo.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/set_memo.py)" :::
 
 +++
 
@@ -59,7 +59,7 @@ Sometimes you want to allow a separate account to operate on behalf of your acco
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/operations/account_update/add_posting_account.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/add_posting_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/add_posting_account.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/operations/account_update/add_posting_account.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/add_posting_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/add_posting_account.py)" :::
 
 +++
 
@@ -71,7 +71,7 @@ Sometimes you want to allow a separate account to operate on behalf of your acco
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/operations/account_update/change_active_key.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/change_active_key.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/change_active_key.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/operations/account_update/change_active_key.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/change_active_key.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/change_active_key.py)" :::
 
 +++
 
@@ -83,7 +83,7 @@ Sometimes you want to allow a separate account to operate on behalf of your acco
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/operations/account_update/change_weight_threshold.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/change_weight_threshold.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/change_weight_threshold.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/operations/account_update/change_weight_threshold.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/change_weight_threshold.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/change_weight_threshold.py)" :::
 
 +++
 
@@ -95,6 +95,6 @@ Sometimes you want to allow a separate account to operate on behalf of your acco
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/operations/account_update/iterate_roles.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/iterate_roles.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/iterate_roles.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/operations/account_update/iterate_roles.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/operations/account_update/iterate_roles.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/operations/account_update/iterate_roles.py)" :::
 
 +++

@@ -46,6 +46,6 @@ We used Beekeeper in our examples for its simplicitly and security in handling p
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/beekeeper_initialize.py" language="python" title="Test it yourself on github codespace: [src/python/beekeeper_initialize.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/static/snippets/python/beekeeper_initialize.py)" :::
+:::code source="../../static/snippets/src/python/beekeeper_initialize.py" language="python" title="Test it yourself on github codespace: [src/python/beekeeper_initialize.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/static/snippets/python/beekeeper_initialize.py)" :::
 
 +++

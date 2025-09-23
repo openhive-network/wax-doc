@@ -43,7 +43,7 @@ The simple `toApi` method returns the transaction in the Hive API-JSON form:
 
 The simple `toApi` method returns the transaction in the Hive API-JSON form:
 
-:::code source="../../static/snippets/src/python/transaction/finalization/simple_build.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/simple_build.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/simple_build.py)" :::
+:::code source="../../static/snippets/src/python/transaction/finalization/simple_build.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/simple_build.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/simple_build.py)" :::
 
 ==- Output
 
@@ -106,7 +106,7 @@ You can also represent your transaction in the API form, with your signature add
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/transaction/finalization/proto_form_signature_build.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/proto_form_signature_build.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/proto_form_signature_build.py)" :::
+:::code source="../../static/snippets/src/python/transaction/finalization/proto_form_signature_build.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/proto_form_signature_build.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/proto_form_signature_build.py)" :::
 
 ==- Output
 
@@ -173,7 +173,7 @@ If you want to sign your transaction in traditional way and return it in the API
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/transaction/finalization/sign_and_build.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/sign_and_build.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/sign_and_build.py)" :::
+:::code source="../../static/snippets/src/python/transaction/finalization/sign_and_build.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/sign_and_build.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/sign_and_build.py)" :::
 
 ==- Output
 
@@ -220,7 +220,7 @@ You can also sign the transaction without converting it to the API form (which w
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/transaction/finalization/sign.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/sign.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/sign.py)" :::
+:::code source="../../static/snippets/src/python/transaction/finalization/sign.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/sign.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/sign.py)" :::
 
 ==- Output
 
@@ -271,7 +271,7 @@ At the end you can also just convert your transaction into the Hive API-form JSO
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/transaction/finalization/convert_to_api.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/convert_to_api.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/convert_to_api.py)" :::
+:::code source="../../static/snippets/src/python/transaction/finalization/convert_to_api.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/finalization/convert_to_api.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/finalization/convert_to_api.py)" :::
 
 ==- Output
 

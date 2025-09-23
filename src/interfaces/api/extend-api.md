@@ -28,7 +28,7 @@ As you can see in the example, there is a type called: `TWaxApiRequest` which as
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/api/extend_api/interface_extend.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend.py)" :::
+:::code source="../../static/snippets/src/python/api/extend_api/interface_extend.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend.py)" :::
 
 === Output
 
@@ -62,7 +62,7 @@ BlockHeaderResponse(header=BlockHeader(previous='0000007a514fd4034a39ff8bb422576
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/api/extend_api/interface_extend_rest.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend_rest.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend_rest.py)" :::
+:::code source="../../static/snippets/src/python/api/extend_api/interface_extend_rest.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend_rest.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend_rest.py)" :::
 
 +++
 
@@ -132,7 +132,7 @@ const extendedChain = chain.extendRest(HAfAH);
 - **Reputation Tracker**: [`wax-api-reputation-tracker`](https://gitlab.syncad.com/hive/reputation_tracker/-/packages)
 - **Balance Tracker**: [`wax-api-balance-tracker`](https://gitlab.syncad.com/hive/balance_tracker/-/packages)
 
-:::code source="../../static/snippets/src/python/api/extend_api/interface_extend_rest_automatically.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend_rest_automatically.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend_rest_automatically.py)" :::
+:::code source="../../static/snippets/src/python/api/extend_api/interface_extend_rest_automatically.py" language="python" title="Test it yourself: [src/python/api/extend_api/interface_extend_rest_automatically.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/api/extend_api/interface_extend_rest_automatically.py)" :::
 ==- Output:
 
 ```log

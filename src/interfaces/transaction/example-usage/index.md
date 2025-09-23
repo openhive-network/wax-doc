@@ -88,7 +88,7 @@ Please note that the output for `txSigned` and `txMultiSigned` is not complete d
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/example_usage/example_usage/example_usage.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/example_usage/example_usage.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/example_usage/example_usage.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/example_usage/example_usage/example_usage.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/example_usage/example_usage.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/example_usage/example_usage.py)" :::
 
 ==- Output
 
@@ -475,7 +475,7 @@ Also if you want to use some custom tool for signing the transaction instead of 
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/example_usage/example_usage/full_transaction_usage.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/example_usage/full_transaction_usage.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/example_usage/full_transaction_usage.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/example_usage/example_usage/full_transaction_usage.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/example_usage/full_transaction_usage.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/example_usage/full_transaction_usage.py)" :::
 
 ==- Output
 

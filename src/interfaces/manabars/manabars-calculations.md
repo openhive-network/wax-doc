@@ -65,7 +65,7 @@ You can also calculate the manabar values using high-level Wax Chain interface t
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_upvote_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_upvote_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_upvote_account.py)" :::
+:::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_upvote_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_upvote_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_upvote_account.py)" :::
 
 +++
 
@@ -77,7 +77,7 @@ You can also calculate the manabar values using high-level Wax Chain interface t
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_downvote_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_downvote_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_downvote_account.py)" :::
+:::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_downvote_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_downvote_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_downvote_account.py)" :::
 
 +++
 
@@ -95,6 +95,6 @@ Function `calculateManabarFullRegenerationTimeForAccount` returns a JavaScript `
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_rc_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_rc_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_rc_account.py)" :::
+:::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_rc_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_rc_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_rc_account.py)" :::
 
 +++

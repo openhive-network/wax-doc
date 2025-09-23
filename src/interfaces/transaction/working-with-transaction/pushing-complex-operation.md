@@ -38,7 +38,7 @@ Here we utilize `WitnessSetPropertiesOperation` class to build a complex operati
 
 +++ Python
 
-:::code source="../../../static/snippets/src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=kudmich/python-snippets&file=workspaces/wax-doc-snippets/src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py)" :::
+:::code source="../../../static/snippets/src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/working_with_transaction/pushing_complex_operation/complex_operation.py)" :::
 
 ==- Output
 
