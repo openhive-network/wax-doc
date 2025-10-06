@@ -54,7 +54,7 @@ Using chain interface, you can retrieve a blockchain block. In the example below
 
 +++ Python
 
-:::code source="../../static/snippets/src/python/api/default_api/retrieve_block.py" language="python" title="Test it yourself on github codespace: [src/python/api/default_api/retrieve_block.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/api/default_api/retrieve_block.py)" :::
+:::code source="../../static/snippets/src/python/api/default_api/default_predefined_api_usage.py" language="python" title="Test it yourself on github codespace: [src/python/api/default_api/default_predefined_api_usage.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/api/default_api/default_predefined_api_usage.py)" :::
 
 +++
 
