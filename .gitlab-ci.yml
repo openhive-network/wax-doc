@@ -7,7 +7,7 @@ stages:
 include:
   - template: Workflows/Branch-Pipelines.gitlab-ci.yml
   - project: 'hive/common-ci-configuration'
-    ref: a89137b24e90517f5dbc1fdbc7136f097493074e
+    ref: 13581fecea817f76e96644880f4fb7490c315777
     file:
       - '/templates/npm_projects.gitlab-ci.yml'
       - '/templates/github_pages.gitlab-ci.yml'
@@ -16,8 +16,6 @@ variables:
   GIT_DEPTH: 0
   GIT_STRATEGY: clone
   GIT_SUBMODULE_STRATEGY: recursive
-  # Reference for GitHub Pages scripts from common-ci-configuration
-  COMMON_CI_GITHUB_PAGES_REF: "a89137b24e90517f5dbc1fdbc7136f097493074e"
 
 cache:
   key:
