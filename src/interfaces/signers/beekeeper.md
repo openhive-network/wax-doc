@@ -23,6 +23,16 @@ pnpm add @hiveio/wax-signers-beekeeper
 pip install beekeepy --index-url https://gitlab.syncad.com/api/v4/projects/434/packages/pypi/simple
 ```
 
++++ Rust
+
+[!ref icon="../../static/crates_io.png" target="_blank" text="View **Beekeeper signer** crate on crates.io"](https://crates.io/crates/hiveio-wax-signers-beekeeper)
+
+```bash
+cargo add hiveio-wax-signers-beekeeper
+```
+
+> The crate is imported as `wax_signers_beekeeper` in code, e.g.: `use wax_signers_beekeeper::BeekeeperSignatureProvider;`
+
 +++
 
 ## Usage
@@ -60,5 +70,47 @@ await chain.broadcast(tx);
 +++ Python
 
 :::code source="../../static/snippets/src/python/transaction/signers/sign_transaction_by_beekeeper.py" language="python" :::
+
++++ Rust
+
+```rust
+use beekeeper::api::BeekeeperApi;
+use beekeeper::options::BeekeeperOptions;
+use wax::prelude::*;
+use wax_signers_beekeeper::BeekeeperSignatureProvider;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let chain = create_hive_chain(None)?;
+
+    // Open an in-memory Beekeeper wallet and import your private key
+    let api = BeekeeperApi::new(BeekeeperOptions::new("my-storage").in_memory(true));
+    let session = api.create_session()?;
+    let mut wallet = session.create_wallet("my-wallet", "my-password")?.wallet;
+    let public_key = wallet.import_key("your-private-key")?;
+
+    // Wrap the unlocked wallet in a Wax signature provider
+    let provider = BeekeeperSignatureProvider::new(wallet);
+
+    // Create a transaction using the Wax Hive chain instance
+    let mut tx = chain.create_transaction(None).await?;
+
+    // Perform some operations, e.g. push the vote operation:
+    tx.push_operation(chain.create_operation(Value::VoteOperation(Vote {
+        voter: "alice".into(),
+        author: "bob".into(),
+        permlink: "example-post".into(),
+        weight: 10000,
+    })));
+
+    // Sign the transaction
+    tx.sign(&provider, &public_key)?;
+
+    // Broadcast the transaction
+    chain.broadcast(&tx).await?;
+
+    Ok(())
+}
+```
 
 +++

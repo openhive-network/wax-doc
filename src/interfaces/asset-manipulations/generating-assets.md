@@ -46,6 +46,27 @@ chain.hbd.coins(100).amount  # 100000
 # Note that the fractional parts have been extended with implicit zeros, making it equivalent to providing 100.000 as the amount!
 ```
 
++++ Rust
+
+These functions accept `i64`, `f64` or [`rust_decimal::Decimal`](https://docs.rs/rust_decimal) values (anything convertible into `AssetAmount`).
+
+```rust
+// Example:
+chain.hive_coins(100.3)? // Asset { amount: "100300", precision: 3, nai: "@@000000021" }
+
+/*
+Note that the fractional parts have been extended with implicit zeros,
+making it equivalent to providing 100.300 as the amount!
+*/
+
+chain.hbd_coins(100)?.amount // "100000"
+
+/*
+Note that the fractional parts have been extended with implicit zeros,
+making it equivalent to providing 100.000 as the amount!
+*/
+```
+
 +++
 
 !!!secondary **Fractional parts note**
@@ -82,6 +103,21 @@ chain.hbd.coins(100.123678).amount  # 100123 - the rest of the fractional parts 
 chain.vests.coins(100.123456789).amount  # 100123456 - the rest of the fractional parts have just been cut.
 ```
 
++++ Rust
+
+```rust
+// Example of exceeding the precision limit for fractional parts:
+
+// 100123 - the rest of the fractional parts have been cut without any rounding down.
+chain.hive_coins(100.123456)?.amount
+
+// 100123 - the rest of the fractional parts have been cut without any rounding up.
+chain.hbd_coins(100.123678)?.amount
+
+// 100123456 - the rest of the fractional parts have just been cut.
+chain.vests_coins(100.123456789)?.amount
+```
+
 +++
 
 ## Satoshis Functions
@@ -100,7 +136,7 @@ In JavaScript, you can provide large numbers using the `BigInt` interface
 // 0.100 HIVE => {"amount":"100","precision":3,"nai":"@@000000021"}
 chain.hiveSatoshis(100);
 
-// 1.500 HIVE => {"amount":"500","precision":3,"nai":"@@000000021"}
+// 1.500 HIVE => {"amount":"1500","precision":3,"nai":"@@000000021"}
 chain.hiveSatoshis(1500);
 ```
 
@@ -112,6 +148,22 @@ As you can see, this means `hiveSatoshis(1000)` call equals `hiveCoins(1)`.
 # Example:
 chain.hive.satoshis(100)  # {"amount":"100","precision":3,"nai":"@@000000021"}
 ```
+
++++ Rust
+
+The satoshis functions take an `i64` value.
+
+```rust
+// Example:
+
+// 0.100 HIVE => Asset { amount: "100", precision: 3, nai: "@@000000021" }
+chain.hive_satoshis(100)?;
+
+// 1.500 HIVE => Asset { amount: "1500", precision: 3, nai: "@@000000021" }
+chain.hive_satoshis(1500)?;
+```
+
+As you can see, this means `hive_satoshis(1000)` call equals `hive_coins(1)`.
 
 +++
 

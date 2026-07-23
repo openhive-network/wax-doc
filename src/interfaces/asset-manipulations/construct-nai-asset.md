@@ -29,4 +29,8 @@ Here's an example of an NAI asset for 1 hive token: `{"amount":"1000","precision
 
 :::code source="../../static/snippets/src/python/asset-manipulations/construct-nai-asset/receive_nai_asset.py" language="python" title="Test it yourself on github codespace: [src/python/asset-manipulations/construct-nai-asset/receive_nai_asset.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/asset-manipulations/construct-nai-asset/receive_nai_asset.py)" :::
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/asset_manipulations/construct_nai_asset/receive_nai_asset.rs" language="rust" title="Test it yourself on github codespace: [src/rust/asset_manipulations/construct_nai_asset/receive_nai_asset.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/asset_manipulations/construct_nai_asset/receive_nai_asset.rs)" :::
+
 +++

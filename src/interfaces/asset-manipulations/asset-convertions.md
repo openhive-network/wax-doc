@@ -27,6 +27,10 @@ You can also perform the reverse conversion from HP to VESTS using the `hpToVest
 
 :::code source="../../static/snippets/src/python/asset-manipulations/asset-conversion/vests_to_hp.py" language="python" title="Test it yourself on github codespace: [src/python/asset-manipulations/asset-conversion/vests_to_hp.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/asset-manipulations/asset-conversion/vests_to_hp.py)" :::
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/asset_manipulations/asset_convertions/vests_to_hp.rs" language="rust" title="Test it yourself on github codespace: [src/rust/asset_manipulations/asset_convertions/vests_to_hp.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/asset_manipulations/asset_convertions/vests_to_hp.rs)" :::
+
 +++
 
 ## HBD to HIVE conversion
@@ -48,5 +52,9 @@ You can also perform the reverse conversion from HIVE to HBD using the `hiveToHb
 +++ Python
 
 :::code source="../../static/snippets/src/python/asset-manipulations/asset-conversion/hbd_to_hive.py" language="python" title="Test it yourself on github codespace: [src/python/asset-manipulations/asset-conversion/hbd_to_hive.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/asset-manipulations/asset-conversion/hbd_to_hive.py)" :::
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/asset_manipulations/asset_convertions/hbd_to_hive.rs" language="rust" title="Test it yourself on github codespace: [src/rust/asset_manipulations/asset_convertions/hbd_to_hive.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/asset_manipulations/asset_convertions/hbd_to_hive.rs)" :::
 
 +++

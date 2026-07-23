@@ -19,9 +19,27 @@ Wax provides an object-oriented interface for making and verifying API requests 
 
 The syntax for making an API call is:
 
++++ JavaScript
+
 ```javascript
 chainInstance.api[apiType][apiMethod](dataToSend);
 ```
+
++++ Python
+
+```python
+await chain_instance.api.api_type.api_method(data_to_send)
+```
+
++++ Rust
+
+```rust
+chain_instance.api().api_type.api_method(request_data).await?
+```
+
+Each API category is a field of the object returned by `api()`, and every method takes a typed request struct imported from `wax::api`, e.g. `GetBlockRequest { block_num: 1 }`.
+
++++
 
 ### Fetching the first blockchain block
 
@@ -56,6 +74,10 @@ Using chain interface, you can retrieve a blockchain block. In the example below
 
 :::code source="../../static/snippets/src/python/api/default_api/default_predefined_api_usage.py" language="python" title="Test it yourself on github codespace: [src/python/api/default_api/default_predefined_api_usage.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/api/default_api/default_predefined_api_usage.py)" :::
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/api/default_api/retrieve_block.rs" language="rust" title="Test it yourself on github codespace: [src/rust/api/default_api/retrieve_block.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/api/default_api/retrieve_block.rs)" :::
+
 +++
 
 ### Changing Wax root's API server (endpointUrl)
@@ -77,5 +99,9 @@ https://best.honey.provider
 +++ Python
 
 Not implemented yet — planned for a future release.
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/api/default_api/set_endpoint.rs" language="rust" title="Test it yourself on github codespace: [src/rust/api/default_api/set_endpoint.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/api/default_api/set_endpoint.rs)" :::
 
 +++

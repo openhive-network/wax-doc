@@ -32,6 +32,10 @@ Public key: STM8b2ESwQaEBJq1AtnXqLSD5S1jSTNmijzoZNqQtok3FBoQFtQTr
 ```
 
 ===
++++ Rust
+
+:::code source="../../static/snippets/src/rust/key_generation/generate_key/generate_private_key.rs" language="rust" title="Test it yourself on github codespace: [src/rust/key_generation/generate_key/generate_private_key.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/key_generation/generate_key/generate_private_key.rs)" :::
+
 +++
 
 ## Suggest Brain Key
@@ -57,6 +61,10 @@ Public key: STM5Br7eDvpXavuxfajqDfhRu6cmVRzRq1z26ch4Dx9b4hoZxKgJt
 ```
 
 ===
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/key_generation/generate_key/suggest_brain_key.rs" language="rust" title="Test it yourself on github codespace: [src/rust/key_generation/generate_key/suggest_brain_key.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/key_generation/generate_key/suggest_brain_key.rs)" :::
 
 +++
 

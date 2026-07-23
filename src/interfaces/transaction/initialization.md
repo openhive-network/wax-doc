@@ -16,4 +16,8 @@ The code below shows how to create a new transaction, having TaPoS (reference bl
 
 :::code source="../../static/snippets/src/python/transaction/initialization/from_remote_initialization.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/initialization/from_remote_initialization.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/initialization/from_remote_initialization.py)" :::
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/transaction/initialization/from_remote_initialization.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/initialization/from_remote_initialization.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/initialization/from_remote_initialization.rs)" :::
+
 +++

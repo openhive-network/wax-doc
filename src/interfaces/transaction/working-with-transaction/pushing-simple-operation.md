@@ -55,4 +55,8 @@ Below is an example of fully building a simple transaction using the basic `ITra
 
 ===
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/pushing_simple_operation/simple_operation.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/pushing_simple_operation/simple_operation.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/pushing_simple_operation/simple_operation.rs)" :::
+
 +++

@@ -29,6 +29,10 @@ One of the most powerful features of Online Transaction is the ability to perfor
 
 TBA
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/online_transaction/on_chain_verification.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/online_transaction/on_chain_verification.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/online_transaction/on_chain_verification.rs)" :::
+
 +++
 
 This verification process includes:
@@ -59,6 +63,10 @@ Example of what this prevents:
 +++ Python
 
 TBA
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/online_transaction/on_chain_operation_validation.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/online_transaction/on_chain_operation_validation.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/online_transaction/on_chain_operation_validation.rs)" :::
 
 +++
 
@@ -200,6 +208,10 @@ For debugging or advanced use cases, you can generate a detailed trace of author
 +++ Python
 
 TBA
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/online_transaction/authority_verification_trace.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/online_transaction/authority_verification_trace.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/online_transaction/authority_verification_trace.rs)" :::
 
 +++
 

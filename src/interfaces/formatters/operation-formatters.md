@@ -43,6 +43,10 @@ icon: tasklist
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+**Not implemented yet** — planned for a future release.
+
 +++
 
 ## Formatting community operations
@@ -187,6 +191,10 @@ icon: tasklist
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+**Not implemented yet** — planned for a future release.
+
 +++
 
 ## Formatting follow operations
@@ -298,6 +306,10 @@ icon: tasklist
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+**Not implemented yet** — planned for a future release.
+
 +++
 
 ## Formatting witness properties object
@@ -327,6 +339,10 @@ You can also parse the serialized [!badge variant="info" text="witness_set_prope
 ===
 
 +++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++ Rust
 
 **Not implemented yet** — planned for a future release.
 

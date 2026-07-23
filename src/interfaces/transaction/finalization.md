@@ -70,6 +70,10 @@ The simple `toApi` method returns the transaction in the Hive API-JSON form:
 
 ===
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/transaction/finalization/simple_build.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/finalization/simple_build.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/finalization/simple_build.rs)" :::
+
 +++
 
 You can also represent your transaction in the API form, with your signature added to the internal signatures array (it will also apply the transaction expiration time):
@@ -132,6 +136,10 @@ You can also represent your transaction in the API form, with your signature add
 ```
 
 ===
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/transaction/finalization/proto_form_signature_build.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/finalization/proto_form_signature_build.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/finalization/proto_form_signature_build.rs)" :::
 
 +++
 
@@ -202,6 +210,10 @@ If you want to sign your transaction in traditional way and return it in the API
 
 ===
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/transaction/finalization/sign_and_build.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/finalization/sign_and_build.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/finalization/sign_and_build.rs)" :::
+
 +++
 
 You can also sign the transaction without converting it to the API form (which will return the signatures):
@@ -229,6 +241,10 @@ You can also sign the transaction without converting it to the API form (which w
 ```
 
 ===
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/transaction/finalization/sign.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/finalization/sign.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/finalization/sign.rs)" :::
 
 +++
 
@@ -298,6 +314,10 @@ At the end you can also just convert your transaction into the Hive API-form JSO
 
 ===
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/transaction/finalization/convert_to_api.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/finalization/convert_to_api.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/finalization/convert_to_api.rs)" :::
+
 +++
 
 Or you can just convert transction to legacy API form:
@@ -336,5 +356,9 @@ Or you can just convert transction to legacy API form:
 ```text
 The legacy transaction format is deprecated — wax-python no longer supports this conversion.
 ```
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/transaction/finalization/convert_to_legacy_api.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/finalization/convert_to_legacy_api.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/finalization/convert_to_legacy_api.rs)" :::
 
 +++

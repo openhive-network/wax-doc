@@ -22,6 +22,10 @@ Due to long TaPoS lifespan (near to 64000 blocks, so it really targets to the c.
 
 :::code source="../../../static/snippets/src/python/transaction/example_usage/advanced_usage/explicit_data_initialization.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/advanced_usage/explicit_data_initialization.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/advanced_usage/explicit_data_initialization.py)" :::
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/example_usage/advanced_usage/explicit_data_initialization.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/example_usage/advanced_usage/explicit_data_initialization.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/example_usage/advanced_usage/explicit_data_initialization.rs)" :::
+
 +++
 
 ## Initialization from hive API-JSON form
@@ -36,6 +40,10 @@ This can be useful for analyzing transactions retrieved from the API or restored
 
 :::code source="../../../static/snippets/src/python/transaction/example_usage/advanced_usage/api_form_initialization.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/advanced_usage/api_form_initialization.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/advanced_usage/api_form_initialization.py)" :::
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/example_usage/advanced_usage/api_form_initialization.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/example_usage/advanced_usage/api_form_initialization.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/example_usage/advanced_usage/api_form_initialization.rs)" :::
+
 +++
 
 ## Initialize from protobuf transaction
@@ -49,5 +57,9 @@ This can be useful for analyzing transactions restored previously from the proto
 +++ Python
 
 :::code source="../../../static/snippets/src/python/transaction/example_usage/advanced_usage/protobuf_transaction_initialization.py" language="python" title="Test it yourself on github codespace: [src/python/transaction/example_usage/advanced_usage/protobuf_transaction_initialization.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/transaction/example_usage/advanced_usage/protobuf_transaction_initialization.py)" :::
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/example_usage/advanced_usage/protobuf_transaction_initialization.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/example_usage/advanced_usage/protobuf_transaction_initialization.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/example_usage/advanced_usage/protobuf_transaction_initialization.rs)" :::
 
 +++

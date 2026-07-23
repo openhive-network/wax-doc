@@ -18,6 +18,10 @@ Custom options allow selecting a specific blockchain network (e.g. mainnet, test
 
 :::code source="../../static/snippets/src/python/default_wax_initialization.py" range=21-21,30-30,32-33,42-44 language="python" title="Test it yourself on github codespace: [src/python/default_wax_initialization.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/default_wax_initialization.py)" :::
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/config/init_general/chain.rs" language="rust" title="Test it yourself on github codespace: [src/rust/config/init_general/chain.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/config/init_general/chain.rs)" :::
+
 +++
 
 ## Initializing Wax interface with custom options
@@ -29,5 +33,9 @@ Custom options allow selecting a specific blockchain network (e.g. mainnet, test
 +++ Python
 
 :::code source="../../static/snippets/src/python/default_wax_initialization.py" range=21-22,54-59 language="python" title="Test it yourself on github codespace: [src/python/default_wax_initialization.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/default_wax_initialization.py)" :::
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/config/init_general/chain_with_config.rs" language="rust" title="Test it yourself on github codespace: [src/rust/config/init_general/chain_with_config.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/config/init_general/chain_with_config.rs)" :::
 
 +++

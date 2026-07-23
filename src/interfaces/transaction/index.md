@@ -19,6 +19,7 @@ In our examples, we used a Beekeeper package that provides security in storing y
 
 - TypeScript: [`@hiveio/beekeeper`](https://www.npmjs.com/package/@hiveio/beekeeper)
 - Python: TBA
+- Rust: [`@hiveio-beekeeper`](https://crates.io/crates/hiveio-beekeeper)
 
 +++ JavaScript
 
@@ -47,5 +48,25 @@ We used Beekeeper in our examples for its simplicitly and security in handling p
 +++ Python
 
 :::code source="../../static/snippets/src/python/beekeeper_initialize.py" language="python" title="Test it yourself on github codespace: [src/python/beekeeper_initialize.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/static/snippets/python/beekeeper_initialize.py)" :::
+
++++ Rust
+
+In our test environment, the same Beekeeper setup lives in [`src/rust/runner.rs`](https://github.com/openhive-network/wax-doc-snippets/blob/main/src/rust/runner.rs). Rust has no `globalThis`, so each code example calls `snippets_beekeeper_data()` itself and destructures the returned fixture:
+
+```rust
+/*
+Here are presented all the available fields that can be used in the examples:
+
+  `signer1`     - Beekeeper signature provider holding wallet with imported private key for public_key1
+  `signer2`     - Beekeeper signature provider holding wallet with imported private key for public_key2
+  `wallet`      - Raw Beekeeper wallet instance holding both keys for example usage of manually
+                  signing using transaction digest (in both: legacy and HF26 ways)
+  `public_key1` - Public key corresponding to the first imported private key
+  `public_key2` - Public key corresponding to the second imported private key
+*/
+use runner::{SnippetsBeekeeperData, snippets_beekeeper_data};
+
+let SnippetsBeekeeperData { signer1, public_key1, .. } = snippets_beekeeper_data();
+```
 
 +++

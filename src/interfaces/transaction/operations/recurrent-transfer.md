@@ -17,6 +17,10 @@ The Recurrent Transfer Operation allows for initiating, modifying, and removing 
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/recurrent_transfer/creating_recurrent_transfer.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/recurrent_transfer/creating_recurrent_transfer.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/recurrent_transfer/creating_recurrent_transfer.rs)" :::
+
 +++
 
 ## Generate Removal Using Recurrent Transfer Operation
@@ -31,6 +35,10 @@ Generate removal removes recurrent transfer:
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/recurrent_transfer/generate_removal.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/recurrent_transfer/generate_removal.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/recurrent_transfer/generate_removal.rs)" :::
+
 +++
 
 ## Add Pair Id
@@ -44,5 +52,9 @@ In this example we add pair id to recurrent transfer, using Recurrent Transfer O
 +++ Python
 
 **Not implemented yet** — planned for a future release.
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/recurrent_transfer/add_pair_id.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/recurrent_transfer/add_pair_id.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/recurrent_transfer/add_pair_id.rs)" :::
 
 +++

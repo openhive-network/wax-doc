@@ -44,6 +44,10 @@ Actual encryption is performed while signing transaction!
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/encryption/encrypt_operations/one_key.rs" language="rust" title="Test it yourself on github codespace: [src/rust/encryption/encrypt_operations/one_key.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/encryption/encrypt_operations/one_key.rs)" :::
+
 +++
 
 ### Two keys encryption
@@ -55,6 +59,10 @@ Actual encryption is performed while signing transaction!
 +++ Python
 
 **Not implemented yet** — planned for a future release.
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/encryption/encrypt_operations/multiple_keys.rs" language="rust" title="Test it yourself on github codespace: [src/rust/encryption/encrypt_operations/multiple_keys.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/encryption/encrypt_operations/multiple_keys.rs)" :::
 
 +++
 
@@ -71,5 +79,9 @@ Actual encryption is performed while signing transaction!
 +++ Python
 
 **Not implemented yet** — planned for a future release.
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/encryption/encrypt_operations/multiple_start_encrypt.rs" language="rust" title="Test it yourself on github codespace: [src/rust/encryption/encrypt_operations/multiple_start_encrypt.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/encryption/encrypt_operations/multiple_start_encrypt.rs)" :::
 
 +++

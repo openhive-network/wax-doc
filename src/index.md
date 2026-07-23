@@ -5,7 +5,7 @@ icon: home
 
 # Intro to Wax library
 
-Wax is a multi-language, object-oriented library for interacting with the Hive blockchain network. There are currently three language implementations of the library: TypeScript, C++, and Python.  Each implementation of Wax incorporates the same code used by the core Hive protocol library to define Hive objects (operations, transactions, etc). This ensures that Wax will always maintain compatibility with the core blockchain protocol.
+Wax is a multi-language, object-oriented library for interacting with the Hive blockchain network. There are currently four language implementations of the library: TypeScript, C++, Python and Rust. Each implementation of Wax incorporates the same code used by the core Hive protocol library to define Hive objects (operations, transactions, etc). This ensures that Wax will always maintain compatibility with the core blockchain protocol.
 
 Wax enables developers to:
 

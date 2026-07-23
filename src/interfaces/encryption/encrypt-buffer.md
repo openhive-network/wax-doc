@@ -25,6 +25,10 @@ The signer's `encryptData` and `decryptData` methods allow for straightforward e
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/encryption/encrypt_buffer/one_key.rs" language="rust" title="Test it yourself on github codespace: [src/rust/encryption/encrypt_buffer/one_key.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/encryption/encrypt_buffer/one_key.rs)" :::
+
 +++
 
 ### Two keys encryption
@@ -36,6 +40,10 @@ The signer's `encryptData` and `decryptData` methods allow for straightforward e
 +++ Python
 
 **Not implemented yet** — planned for a future release.
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/encryption/encrypt_buffer/multiple_keys.rs" language="rust" title="Test it yourself on github codespace: [src/rust/encryption/encrypt_buffer/multiple_keys.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/encryption/encrypt_buffer/multiple_keys.rs)" :::
 
 +++
 

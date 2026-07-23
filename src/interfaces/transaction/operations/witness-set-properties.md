@@ -39,6 +39,10 @@ The Witness Set Properties Operation allows witnesses to update their properties
 
 ===
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/witness_set_properties/default_witness_properties.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/witness_set_properties/default_witness_properties.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/witness_set_properties/default_witness_properties.rs)" :::
+
 +++
 
 ## Setting Explicit Witness Properties
@@ -78,5 +82,9 @@ As with all operation classes, you can set all the optional fields on a single c
 ```
 
 ===
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/witness_set_properties/set_explicit.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/witness_set_properties/set_explicit.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/witness_set_properties/set_explicit.rs)" :::
 
 +++

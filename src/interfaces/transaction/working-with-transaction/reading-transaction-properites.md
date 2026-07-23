@@ -38,4 +38,8 @@ ref_block_num: 4170
 
 ===
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/reading_transaction_properties/reading_properties.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/reading_transaction_properties/reading_properties.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/reading_transaction_properties/reading_properties.rs)" :::
+
 +++

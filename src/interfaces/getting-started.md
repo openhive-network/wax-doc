@@ -25,6 +25,16 @@ pnpm add @hiveio/wax
 
 TBA
 
++++ Rust
+
+[!ref icon="../static/crates_io.png" target="_blank" text="View **WAX** crate on crates.io"](https://crates.io/crates/hiveio-wax)
+
+```bash
+cargo add hiveio-wax
+```
+
+> The crate is imported as `wax` in code, e.g.: `use wax::prelude::*;`
+
 +++
 
 ## Implementation details

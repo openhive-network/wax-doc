@@ -25,6 +25,10 @@ Using Wax Formatters, you can format numbers represented as `string`, `number`, 
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+**Not implemented yet** — planned for a future release.
+
 +++
 
 ## Formatting NAI Asset
@@ -47,6 +51,10 @@ Amount: 300.000 HIVE
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+**Not implemented yet** — planned for a future release.
+
 +++
 
 ## Formatting Transaction
@@ -64,6 +72,10 @@ Tx: #3725c81634f152011e2043eb7119911b953d4267
 ===
 
 +++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++ Rust
 
 **Not implemented yet** — planned for a future release.
 
@@ -107,6 +119,10 @@ You can achieve that by using `format` method and extending the default Wax Form
 ===
 
 +++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++ Rust
 
 **Not implemented yet** — planned for a future release.
 

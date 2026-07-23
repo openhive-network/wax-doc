@@ -21,6 +21,10 @@ This complex operations generate [!badge variant="info" text="comment_options_op
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/comment/creating_article.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/comment/creating_article.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/comment/creating_article.rs)" :::
+
 +++
 
 ## Creating a Comment (Reply) with multiple JSON-metadata attributes
@@ -34,5 +38,9 @@ You can set multiple properties on one operation class instance, as shown in the
 +++ Python
 
 **Not implemented yet** — planned for a future release.
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/comment/creating_reply.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/comment/creating_reply.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/comment/creating_reply.rs)" :::
 
 +++

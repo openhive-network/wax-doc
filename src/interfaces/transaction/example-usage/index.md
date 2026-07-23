@@ -118,6 +118,10 @@ Please note that the output for `txSigned` and `txMultiSigned` is not complete d
 
 ===
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/example_usage/example_usage/example_usage.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/example_usage/example_usage/example_usage.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/example_usage/example_usage/example_usage.rs)" :::
+
 +++
 
 ## Example usage (Legacy format)
@@ -187,6 +191,10 @@ Also if you want to use some custom tool for signing the transaction instead of 
 +++ Python
 
 **The legacy transaction format is deprecated** — wax-python no longer supports this conversion.
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/example_usage/example_usage/example_legacy_usage.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/example_usage/example_usage/example_legacy_usage.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/example_usage/example_usage/example_legacy_usage.rs)" :::
 
 +++
 
@@ -585,5 +593,9 @@ Also if you want to use some custom tool for signing the transaction instead of 
 ```
 
 ===
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/example_usage/example_usage/full_transaction_usage.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/example_usage/example_usage/full_transaction_usage.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/example_usage/example_usage/full_transaction_usage.rs)" :::
 
 +++

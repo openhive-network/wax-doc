@@ -67,6 +67,10 @@ You can also calculate the manabar values using high-level Wax Chain interface t
 
 :::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_upvote_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_upvote_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_upvote_account.py)" :::
 
++++ Rust
+
+:::code source="../../static/snippets/src/rust/manabars/manabars_calculations/manabar_upvote_account.rs" language="rust" title="Test it yourself on github codespace: [src/rust/manabars/manabars_calculations/manabar_upvote_account.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/manabars/manabars_calculations/manabar_upvote_account.rs)" :::
+
 +++
 
 ### Calculation of Full Regeneration Time for Downvote Manabar
@@ -78,6 +82,10 @@ You can also calculate the manabar values using high-level Wax Chain interface t
 +++ Python
 
 :::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_downvote_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_downvote_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_downvote_account.py)" :::
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/manabars/manabars_calculations/manabar_downvote_account.rs" language="rust" title="Test it yourself on github codespace: [src/rust/manabars/manabars_calculations/manabar_downvote_account.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/manabars/manabars_calculations/manabar_downvote_account.rs)" :::
 
 +++
 
@@ -96,5 +104,9 @@ Function `calculateManabarFullRegenerationTimeForAccount` returns a JavaScript `
 +++ Python
 
 :::code source="../../static/snippets/src/python/manabars/manabars_calculations/manabar_rc_account.py" language="python" title="Test it yourself on github codespace: [src/python/manabars/manabars_calculations/manabar_rc_account.py](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/python/manabars/manabars_calculations/manabar_rc_account.py)" :::
+
++++ Rust
+
+:::code source="../../static/snippets/src/rust/manabars/manabars_calculations/manabar_rc_account.rs" language="rust" title="Test it yourself on github codespace: [src/rust/manabars/manabars_calculations/manabar_rc_account.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/manabars/manabars_calculations/manabar_rc_account.rs)" :::
 
 +++

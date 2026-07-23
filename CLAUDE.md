@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Official documentation site for **Wax** - a multi-language (TypeScript, C++, Python) object-oriented API library for the Hive blockchain. Built with Retype static site generator, deployed via GitLab Pages with interactive, executable code examples.
+Official documentation site for **Wax** - a multi-language (TypeScript, C++, Python, Rust) object-oriented API library for the Hive blockchain. Built with Retype static site generator, deployed via GitLab Pages with interactive, executable code examples.
 
 Documentation covers: blockchain API requests, transaction building/signing, asset manipulations (HIVE/HBD/VESTS), encryption, key generation, and multiple signer implementations (Keychain, MetaMask, Beekeeper, PeakVault, HB Auth).
 
@@ -24,7 +24,7 @@ wax-doc/
 │   ├── closing-note.md            # Resources and closing
 │   ├── _includes/head.html        # Custom themes + JS
 │   ├── static/
-│   │   ├── snippets/              # Git submodule (wax-doc-snippets)
+│   │   ├── snippets/              # Git submodule (wax-doc-snippets: src/typescript, src/python, src/rust)
 │   │   └── *.svg, *.ico           # Logos and assets
 │   └── interfaces/                # Main docs (~40 .md files)
 │       ├── getting-started.md
@@ -81,11 +81,12 @@ label: "Title"     # Display name
 ```
 
 ### Code Examples
-- Use multi-language tabs with `+++` syntax (JavaScript/Python)
+- Use multi-language tabs with `+++` syntax, in order: JavaScript, Python, Rust
 - Reference snippets from submodule:
   ```
   :::code source="../../static/snippets/file.ts" language="typescript" title="Test it yourself"
   ```
+- Rust snippets live under `static/snippets/src/rust/` and mirror the TypeScript tree with snake_case paths (`asset-manipulations/vests-to-hp.ts` → `asset_manipulations/vests_to_hp.rs`); reference them with `language="rust"` and a "Test it yourself on github codespace" title, same as Python
 - Collapsed outputs use `===` syntax
 
 ### Callouts

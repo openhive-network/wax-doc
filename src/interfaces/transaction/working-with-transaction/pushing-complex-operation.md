@@ -58,6 +58,10 @@ witness_set_properties_operation {
 
 ===
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/pushing_complex_operation/complex_operation.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/pushing_complex_operation/complex_operation.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/pushing_complex_operation/complex_operation.rs)" :::
+
 +++
 
 As usually, the "push operation" method allows you to push any operation (regadless to complexity related to given blockchain scenario, being encapsulated by used operation class).

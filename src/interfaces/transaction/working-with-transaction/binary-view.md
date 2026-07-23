@@ -68,6 +68,10 @@ With this conversion method, you can decide to strip to the unsigned transaction
 
 TBA
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/binary_view/to_binary.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/binary_view/to_binary.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/binary_view/to_binary.rs)" :::
+
 +++
 
 ## Retrieving transaction binary metadata
@@ -214,9 +218,13 @@ You can also retrieve the binary metadata, which in details describes the struct
 
 TBA
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/binary_view/get_binary_metadata.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/binary_view/get_binary_metadata.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/binary_view/get_binary_metadata.rs)" :::
+
 +++
 
-## Deserializing tranasction
+## Deserializing transaction
 
 This feature can be useful if you are reading transactions directly as a stream of bytes, previously serialized. We are already using transaction in binary form in plenty of Hive apps, such as: HAfAH, hived, etc.
 
@@ -250,5 +258,9 @@ This feature can be useful if you are reading transactions directly as a stream 
 +++ Python
 
 TBA
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/working_with_transaction/binary_view/from_binary.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/working_with_transaction/binary_view/from_binary.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/working_with_transaction/binary_view/from_binary.rs)" :::
 
 +++

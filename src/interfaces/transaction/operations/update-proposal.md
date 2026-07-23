@@ -17,6 +17,10 @@ The Update Proposal Operation allows for updating proposals on the Hive blockcha
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/update_proposal/creating_update_proposal.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/update_proposal/creating_update_proposal.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/update_proposal/creating_update_proposal.rs)" :::
+
 +++
 
 ## Adding an End Date to an Update Proposal
@@ -28,5 +32,9 @@ The Update Proposal Operation allows for updating proposals on the Hive blockcha
 +++ Python
 
 **Not implemented yet** — planned for a future release.
+
++++ Rust
+
+:::code source="../../../static/snippets/src/rust/transaction/operations/update_proposal/update_proposal_end_date.rs" language="rust" title="Test it yourself on github codespace: [src/rust/transaction/operations/update_proposal/update_proposal_end_date.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/transaction/operations/update_proposal/update_proposal_end_date.rs)" :::
 
 +++

@@ -31,6 +31,10 @@ Upon leaving the function scope, you may return the value other than `undefined`
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+**Not implemented yet** — planned for a future release.
+
 +++
 
 ## Regular Usage
@@ -50,6 +54,10 @@ MyData: 12542
 ===
 
 +++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++ Rust
 
 **Not implemented yet** — planned for a future release.
 
@@ -76,6 +84,10 @@ MyData: 12542
 
 **Not implemented yet** — planned for a future release.
 
++++ Rust
+
+**Not implemented yet** — planned for a future release.
+
 +++
 
 ### Matching property instance of for hive apps operation formatting
@@ -93,6 +105,10 @@ MyData: 12542
 ===
 
 +++ Python
+
+**Not implemented yet** — planned for a future release.
+
++++ Rust
 
 **Not implemented yet** — planned for a future release.
 
