@@ -27,7 +27,17 @@ Using Wax Formatters, you can format numbers represented as `string`, `number`, 
 
 +++ Rust
 
-**Not implemented yet** — planned for a future release.
+`format_number` accepts any amount convertible to a string (integers, floats, decimal strings). There is no locale argument — group separators default to the `en-US` style and can be changed with `WaxFormatterOptions::default().with_separators(...)`.
+
+:::code source="../../static/snippets/src/rust/formatters/blockchain_formatters/format_number.rs" language="rust" title="Test it yourself on github codespace: [src/rust/formatters/blockchain_formatters/format_number.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/formatters/blockchain_formatters/format_number.rs)" :::
+
+=== Output
+
+```text
+76,543,212,345,678.000
+```
+
+===
 
 +++
 
@@ -53,7 +63,17 @@ Amount: 300.000 HIVE
 
 +++ Rust
 
-**Not implemented yet** — planned for a future release.
+Rust has no tagged template literals — `display` is the counterpart of `waxify`: it formats the value and renders it for display, ready to be composed with the `format!` family.
+
+:::code source="../../static/snippets/src/rust/formatters/blockchain_formatters/format_nai.rs" language="rust" title="Test it yourself on github codespace: [src/rust/formatters/blockchain_formatters/format_nai.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/formatters/blockchain_formatters/format_nai.rs)" :::
+
+=== Output
+
+```text
+Amount: 300.000 HIVE
+```
+
+===
 
 +++
 
@@ -77,7 +97,15 @@ Tx: #3725c81634f152011e2043eb7119911b953d4267
 
 +++ Rust
 
-**Not implemented yet** — planned for a future release.
+:::code source="../../static/snippets/src/rust/formatters/blockchain_formatters/format_tx.rs" language="rust" title="Test it yourself on github codespace: [src/rust/formatters/blockchain_formatters/format_tx.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/formatters/blockchain_formatters/format_tx.rs)" :::
+
+=== Output
+
+```text
+Tx: #3725c81634f152011e2043eb7119911b953d4267
+```
+
+===
 
 +++
 
@@ -124,6 +152,32 @@ You can achieve that by using `format` method and extending the default Wax Form
 
 +++ Rust
 
-**Not implemented yet** — planned for a future release.
+In Rust the options-only extension is a separate method: `extend_options` derives a new formatter with the same rules but the given options (`extend::<F>()` is the rule-extension form). `format` returns the rewritten tree as plain `serde_json::Value` data.
+
+:::code source="../../static/snippets/src/rust/formatters/blockchain_formatters/format_options.rs" language="rust" title="Test it yourself on github codespace: [src/rust/formatters/blockchain_formatters/format_options.rs](https://github.com/codespaces/new?repo=openhive-network/wax-doc-snippets&ref=main&file=workspaces/wax-doc-snippets/src/rust/formatters/blockchain_formatters/format_options.rs)" :::
+
+==- Output
+
+```json
+{
+  "expiration": "2023-11-09T22:01:24",
+  "extensions": [],
+  "operations": [
+    {
+      "type": "transfer_operation",
+      "value": {
+        "amount": "300.000 HIVE",
+        "from": "oneplus7",
+        "memo": "Roll under 50 4d434bd943616",
+        "to": "kryptogames"
+      }
+    }
+  ],
+  "ref_block_num": 1959,
+  "ref_block_prefix": 3625727107
+}
+```
+
+===
 
 +++
