@@ -1,6 +1,6 @@
 input: src
 output: .retype
-url: http://localhost:5005
+url: https://hive.pages.syncad.com/wax-doc/
 serve:
   port: 5005
 favicon: /static/favicon.ico
