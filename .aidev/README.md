@@ -61,3 +61,7 @@ expired … A Retype license is required"* — and the project has no Retype key
 release's own date check, not the sandbox, so CI's `build` job is expected to fail the same way (develop's last pipeline, 155081, ran in February). Moving to a
 current Retype (the `rustdev` branch has 4.6.0) brings it back; Retype 4.x also wants a real
 `url:` in `retype.yml`.
+
+Since then `retypeapp-linux-x64` is 4.6.0, which builds without a license key; `retype.yml`'s
+`url:` is the GitLab Pages address (Retype 4 rejects a `localhost` one; CI's `build` job
+substitutes the deployment's URL), and CI's jobs run on ccc's `node-test-tools` image (Node 24).

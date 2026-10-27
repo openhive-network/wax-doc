@@ -8,9 +8,9 @@ Documentation covers: blockchain API requests, transaction building/signing, ass
 
 ## Tech Stack
 
-- **Static Site Generator:** Retype v3.11.0
+- **Static Site Generator:** Retype v4.6.0
 - **Package Manager:** pnpm v9.1.1
-- **Node:** v20 (CI image)
+- **Node:** 24, from common-ci-configuration's `node-test-tools` CI image (no repo-owned pin)
 - **Linting:** markdownlint-cli v0.45.0
 - **Git Hooks:** Husky v9.1.7
 - **Deployment:** GitLab Pages
